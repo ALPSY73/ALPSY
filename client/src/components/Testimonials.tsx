@@ -52,11 +52,6 @@ export default function Testimonials() {
                   <div className={`font-medium ${testimonial.name === "Alain" || testimonial.name === "Leïla" || testimonial.name === "Manon" || testimonial.name === "Maxime" ? "text-white" : "text-dark-gray"}`} data-testid={`testimonial-name-${index}`}>
                     {testimonial.name}
                   </div>
-                  <div className="flex text-yellow-400">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-current" />
-                    ))}
-                  </div>
                 </div>
               </div>
               <p className={`${testimonial.name === "Alain" || testimonial.name === "Leïla" || testimonial.name === "Manon" || testimonial.name === "Maxime" ? "text-white" : "text-gray-600"} italic text-justify`} data-testid={`testimonial-text-${index}`}>
