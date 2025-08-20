@@ -59,7 +59,7 @@ export default function About() {
                 const Icon = approach.icon;
                 return (
                   <div key={index} className={`${approach.bgColor} p-4 rounded-lg border-l-4 border-l-gray-200`} data-testid={`approach-${index}`}>
-                    <div className="flex items-start">
+                    <div className="flex items-center">
                       <div className={`w-8 h-8 ${approach.circleColor} rounded-full mr-4 flex-shrink-0 flex items-center justify-center`}>
                         <Icon className={`h-4 w-4 ${approach.title === 'HTSMA' ? 'text-yellow-400' : 'text-white'}`} />
                       </div>
