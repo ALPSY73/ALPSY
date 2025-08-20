@@ -45,7 +45,7 @@ export default function Hero() {
               </div>
               <div className="flex items-center" data-testid="feature-nouveaux-patients">
                 <div className="bg-green-500 rounded-full w-6 h-6 mr-3 flex items-center justify-center flex-shrink-0">
-                  <Heart className="text-white h-4 w-4 fill-current" />
+                  <Heart className="text-white h-3 w-3 fill-current" />
                 </div>
                 <div className="text-sm text-gray-600">
                   <div className="font-medium">Accepte de nouveaux patients</div>
