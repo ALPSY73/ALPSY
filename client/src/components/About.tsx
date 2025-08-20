@@ -1,4 +1,4 @@
-import { Brain, Zap, Shield } from "lucide-react";
+import { Brain, Eye, Heart } from "lucide-react";
 
 export default function About() {
   const approaches = [
@@ -12,14 +12,14 @@ export default function About() {
     {
       bgColor: "bg-orange-50",
       circleColor: "bg-orange-500",
-      icon: Zap,
+      icon: Eye,
       title: "Hypnose",
       description: "Elle facilité l'accès aux ressources inconscientes et favorise le changement psychologique ou comportemental"
     },
     {
       bgColor: "bg-green-50",
       circleColor: "bg-green-500",
-      icon: Shield,
+      icon: Heart,
       title: "HTSMA",
       description: "C'est une technique qui permet d'aider à lever les traumatismes et les blocages émotionnels"
     }
