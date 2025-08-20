@@ -22,7 +22,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200"
               data-testid={`service-card-${index}`}
             >
               <div className="flex items-center mb-4">
