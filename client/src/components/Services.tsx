@@ -34,12 +34,12 @@ export default function Services() {
               <p className="text-gray-600 mb-4" data-testid={`service-description-${index}`}>
                 {service.description}
               </p>
-              <div className="text-primary-blue font-medium" data-testid={`service-price-${index}`}>
-                {service.price}
-              </div>
               <div className="text-gray-500 text-sm flex items-center" data-testid={`service-duration-${index}`}>
                 <Clock className="h-4 w-4 mr-1" />
                 {service.duration}
+              </div>
+              <div className="text-primary-blue font-medium" data-testid={`service-price-${index}`}>
+                {service.price}
               </div>
             </div>
           ))}
