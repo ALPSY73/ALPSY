@@ -9,13 +9,6 @@ export default function Services() {
       price: "50€/séance",
       duration: "Sur RDV"
     },
-    {
-      icon: Brain,
-      title: "Évaluation psychologique",
-      description: "Bilans complets incluant tests psychométriques pour établir un diagnostic précis et orienter la prise en charge.",
-      price: "120€/bilan",
-      duration: "2h environ"
-    }
   ];
 
   return (

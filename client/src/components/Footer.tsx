@@ -1,8 +1,6 @@
 export default function Footer() {
   const prestations = [
-    "Thérapie individuelle",
-    "Séances et conseil",
-    "Évaluation psychologique"
+    "Thérapie individuelle"
   ];
 
   const navigation = [
