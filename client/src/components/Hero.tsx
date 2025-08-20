@@ -69,6 +69,20 @@ export default function Hero() {
                 </div>
               </div>
             </div>
+            
+            <div className="mt-6">
+              <p className="text-sm text-gray-500">
+                En savoir plus sur mon cabinet : 
+                <a 
+                  href="https://hoodspot.fr/autres-professionnels-de-sante/alpsy-psychologue-sebastien-stuhec-79779492200022/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-blue hover:text-blue-600 transition-colors ml-1"
+                >
+                  ALPSY sur HoodSpot
+                </a>
+              </p>
+            </div>
           </div>
           
           <div className="flex justify-center">
