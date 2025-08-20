@@ -33,7 +33,7 @@ export default function Services() {
                   {service.title}
                 </h3>
               </div>
-              <p className="text-gray-600 mb-4" data-testid={`service-description-${index}`}>
+              <p id="text-prestations" className="text-gray-600 mb-4" data-testid={`service-description-${index}`}>
                 {service.description}
               </p>
               <div className="text-gray-500 text-sm flex items-center" data-testid={`service-duration-${index}`}>
