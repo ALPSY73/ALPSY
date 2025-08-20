@@ -40,7 +40,7 @@ export default function Services() {
                 <Clock className="h-4 w-4 mr-1 text-primary-blue" />
                 {service.duration}
               </div>
-              <div className="text-dark-gray font-bold" data-testid={`service-price-${index}`}>
+              <div className="text-primary-blue font-bold" data-testid={`service-price-${index}`}>
                 {service.price}
               </div>
             </div>
