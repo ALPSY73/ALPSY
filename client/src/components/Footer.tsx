@@ -74,8 +74,15 @@ export default function Footer() {
           <div data-testid="footer-contact">
             <h3 className="font-semibold mb-4">Contact</h3>
             <div className="text-gray-300 text-sm space-y-2">
-              <p>73 190 Challes-les-eaux</p>
-              <p>400, avenue de la Breisse</p>
+              <a 
+                href="https://www.google.fr/maps/place/ALPSY+-+Psychologue+S%C3%A9bastien+Stuhec/@45.5554231,5.9695494,17z/data=!3m1!4b1!4m6!3m5!1s0x478baf42f68cef37:0xd0511d5c9d83cd9a!8m2!3d45.5554194!4d5.9721243!16s%2Fg%2F11xn_wfmzs?entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors block"
+              >
+                <p>73 190 Challes-les-eaux</p>
+                <p>400, avenue de la Breisse</p>
+              </a>
               <p>06.10.91.90.47</p>
             </div>
           </div>
