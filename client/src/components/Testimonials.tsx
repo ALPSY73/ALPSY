@@ -8,7 +8,7 @@ export default function Testimonials() {
       name: "Alain",
       avatar: "A",
       bgColor: "bg-primary-blue",
-      text: "Après la réalité conçue au niveau de ses jaillons complètement changé et transformé ma vie. Je parte de tout seul avec entière, comme plus mourir ne pas me sens dans une atmosphère car c'est maintenant que je démarre toujours la vie."
+      text: "Avec le recul, je voulais vraiment vous remercier d'avoir complètement changé et bouleversé ma vie. Je parle de vous assez souvent comme mon sauveur car c'est vraiment la sensation que j'ai avec le recul des années passées. Depuis tout ce temps, j'ai continué une reconstruction en suivant vos conseils, j'ai recentré ma vie sur les choses essentielles et j'ai appris à penser à moi."
     },
     {
       name: "Lucie",
