@@ -40,10 +40,10 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <p className="text-gray-600 mb-6 leading-relaxed" data-testid="text-about-description-1">
-              Depuis plus de quelques années de pratique en psychologie et en médiation, j'ai accompagné des personnes confrontées à des situations de transition, d'accompagnement psychique, diagnostiques, traitement sclérose, phobies, je suis tous éduques élémentaires, addictions, spécifiquement sur l'identité du genre, handicap, psychosomatiques, violences sexuelles chez l'adolescent...
+              Durant mes 12 années de pratique en hôpitaux et en institution, j'ai accompagné des personnes confrontées à des problématiques variées: dépression, anxiété, séparation, harcèlement scolaire, phobies, troubles des conduites alimentaires, addictions, questionnement sur l'identité de genre, handicap, psychotraumatisme, violences sexuelles, idées suicidaires…
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed" data-testid="text-about-description-2">
-              Je peux donc vous aider lors de difficultés d'accompagnement personnel, grâce à une formation solide développée sur plusieurs techniques thérapeutiques pratiques: grâce, conseil intégrés au niveau de plaisir.
+              Je peux donc vous accompagner dans des difficultés d'épanouissement personnel, un passage de vie compliqué ou des souffrances profondes qu'elles soient récentes ou venues du passé.
             </p>
           </div>
           
