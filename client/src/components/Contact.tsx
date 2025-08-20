@@ -86,7 +86,7 @@ export default function Contact() {
                   <Info className="text-blue-600 mt-1 mr-3 h-5 w-5" />
                   <div>
                     <h4 className="font-medium text-blue-800 mb-1">Assistance d'urgence</h4>
-                    <p className="text-blue-700 text-sm">
+                    <p className="text-black text-sm">
                       Pour les urgences de santé mentale, appelez le 15 (SAMU) ou le 3114 (numéro national de prévention du suicide).
                     </p>
                   </div>
