@@ -3,17 +3,17 @@ export default function About() {
     {
       color: "bg-primary-blue",
       title: "Thérapies cognitives et comportementales",
-      description: "Pour permettre d'agir sur les pensées, les émotions et les comportements des personnes comportementales."
+      description: "Elles permettent d'agir sur les pensées, les émotions et les comportements, vécus comme problématiques"
     },
     {
       color: "bg-orange-500",
       title: "Hypnose",
-      description: "Une méthode douce sans expositions thérapeutiques et fonction le traitement psychologique des stress défenses."
+      description: "Elle facilite l'accès aux ressources inconscientes et favorise le changement psychologique ou comportemental."
     },
     {
       color: "bg-green-500",
-      title: "EMDR",
-      description: "Une technique de stimulation bilatérale à la base les traumatismes et les thérapies émotionnelles."
+      title: "HTSMA",
+      description: "C'est une technique qui permet d'aider à lever les traumatismes et les blocages émotionnels"
     }
   ];
 
