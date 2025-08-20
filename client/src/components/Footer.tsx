@@ -1,5 +1,5 @@
 import { SiLinkedin } from "react-icons/si";
-import { Phone } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   const prestations = [
@@ -81,7 +81,10 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors block"
               >
-                <p>ALPSY</p>
+                <div className="flex items-center">
+                  <MapPin className="text-white h-4 w-4 mr-2 flex-shrink-0" />
+                  <p>ALPSY</p>
+                </div>
                 <p>2ème étage- Bâtiment terre de soins</p>
                 <p>400, avenue de la Breisse</p>
                 <p>73 190 Challes-les-eaux</p>
