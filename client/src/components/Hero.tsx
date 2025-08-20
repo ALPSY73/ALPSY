@@ -59,13 +59,15 @@ export default function Hero() {
                 </div>
                 <div className="text-sm text-gray-600">Patients aidés</div>
               </div>
-              <div className="flex items-center" data-testid="feature-nouveaux-patients">
-                <div className="bg-green-500 rounded-full w-8 h-8 mr-3 flex items-center justify-center flex-shrink-0">
-                  <Heart className="text-white h-4 w-4 fill-current" />
-                </div>
-                <div className="text-sm text-gray-600">
-                  <div className="font-medium">Accepte de nouveaux patients</div>
-                  <div>Rendez-vous disponibles</div>
+              <div className="bg-white p-3 rounded-lg shadow-sm border" data-testid="feature-nouveaux-patients">
+                <div className="flex items-center">
+                  <div className="bg-green-500 rounded-full w-8 h-8 mr-3 flex items-center justify-center flex-shrink-0">
+                    <Heart className="text-white h-4 w-4 fill-current" />
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    <div className="font-medium">Accepte de nouveaux patients</div>
+                    <div>Rendez-vous disponibles</div>
+                  </div>
                 </div>
               </div>
             </div>
