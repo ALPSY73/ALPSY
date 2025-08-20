@@ -53,7 +53,7 @@ export default function Header() {
               className="bg-primary-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors font-medium"
               data-testid="button-prendre-rdv-desktop"
             >
-              <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-5 w-auto" />
+              <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-4 w-auto" />
               Prendre RDV
             </Button>
           </div>
@@ -89,7 +89,7 @@ export default function Header() {
                 className="w-full text-left bg-primary-blue text-white px-3 py-2 rounded-lg font-medium mt-2"
                 data-testid="button-prendre-rdv-mobile"
               >
-                <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-5 w-auto" />
+                <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-4 w-auto" />
                 Prendre RDV
               </Button>
             </div>

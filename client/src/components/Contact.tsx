@@ -71,7 +71,7 @@ export default function Contact() {
                 <img 
                   src={doctolibLogo} 
                   alt="Doctolib" 
-                  className="mr-2 h-5 w-auto"
+                  className="mr-2 h-4 w-auto"
                   data-testid="logo-doctolib"
                 />
                 Prendre RDV
