@@ -98,6 +98,9 @@ export default function About() {
                   {formation.includes("D.U. Thérapies cognitives") && (
                     <MessageCircle className="h-4 w-4 text-green-500 ml-2" />
                   )}
+                  {formation.includes("Master en neuropsychologie") && (
+                    <Brain className="h-4 w-4 text-blue-500 ml-2" />
+                  )}
                 </div>
               </div>
             ))}
