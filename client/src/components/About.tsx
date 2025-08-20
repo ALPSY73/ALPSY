@@ -76,11 +76,11 @@ export default function About() {
         </div>
         
         <div className="mt-8">
-          <h3 className="text-xl font-semibold text-dark-gray mb-4" data-testid="title-formations">
+          <h3 className="text-xl font-semibold text-dark-gray mb-2" data-testid="title-formations">
             Formations
           </h3>
           
-          <div className="grid md:grid-cols-2 gap-3">
+          <div className="grid md:grid-cols-2 gap-2">
             {formations.map((formation, index) => (
               <div 
                 key={index} 
