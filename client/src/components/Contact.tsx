@@ -66,8 +66,7 @@ export default function Contact() {
           <div>
             <div className="mt-8 flex justify-center" data-testid="doctolib-integration">
               <Button 
-                variant="outline"
-                className="border border-primary-blue text-primary-blue px-8 py-3 rounded-lg hover:bg-light-blue transition-colors font-medium"
+                className="bg-primary-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
                 data-testid="button-contact-prendre-rdv"
               >
                 <img 
