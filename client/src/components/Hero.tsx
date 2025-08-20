@@ -33,6 +33,12 @@ export default function Hero() {
                 variant="outline"
                 className="border border-primary-blue text-primary-blue px-8 py-3 rounded-lg hover:bg-light-blue transition-colors font-medium"
                 data-testid="button-hero-en-savoir-plus"
+                onClick={() => {
+                  const element = document.querySelector("#text-apropos");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
               >
                 En savoir plus
               </Button>
