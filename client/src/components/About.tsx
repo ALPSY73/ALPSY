@@ -89,10 +89,10 @@ export default function About() {
               >
                 <div className="flex items-center">
                   {formation.includes("HTSMA") && (
-                    <Target className="h-4 w-4 text-red-500 mr-2" />
+                    <Target className="h-5 w-5 text-red-500 mr-2" />
                   )}
                   {formation.includes("D.I.U. Hypnose") && (
-                    <Sparkles className="h-4 w-4 text-purple-500 mr-2" />
+                    <Sparkles className="h-5 w-5 text-purple-500 mr-2" />
                   )}
                   {formation.includes("D.U. Thérapies cognitives") && (
                     <MessageCircle className="h-6 w-6 text-green-500 mr-2" />
