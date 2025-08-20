@@ -9,7 +9,7 @@ export default function Footer() {
     { href: "#sebastien-stuhec", label: "Accueil" },
     { href: "#text-apropos", label: "À propos" },
     { href: "#text-prestations", label: "Prestations" },
-    { href: "#contact", label: "Contact" }
+    { href: "#informations-contact", label: "Contact" }
   ];
 
   const handleNavClick = (href: string) => {

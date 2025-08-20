@@ -12,7 +12,7 @@ export default function Header() {
     { href: "#text-apropos", label: "À propos" },
     { href: "#text-prestations", label: "Prestations" },
     { href: "#temoignages", label: "Témoignages" },
-    { href: "#contact", label: "Contact" },
+    { href: "#informations-contact", label: "Contact" },
   ];
 
   const handleNavClick = (href: string) => {
