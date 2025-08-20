@@ -33,7 +33,7 @@ export default function About() {
   ];
 
   return (
-    <section id="apropos" className="py-16 lg:py-24">
+    <section id="apropos" className="pt-4 pb-16 lg:pt-6 lg:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold text-dark-gray mb-12" data-testid="title-about">
           À propos
