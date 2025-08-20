@@ -98,7 +98,7 @@ export default function About() {
                     <MessageCircle className="h-6 w-6 text-green-500 mr-2" />
                   )}
                   {formation.includes("Master en neuropsychologie") && (
-                    <Brain className="h-4 w-4 text-blue-500 mr-2" />
+                    <Brain className="h-6 w-6 text-blue-500 mr-2" />
                   )}
                   <p className="font-medium text-dark-gray">{formation}</p>
                 </div>
