@@ -21,6 +21,12 @@ export default function Testimonials() {
       avatar: "M",
       bgColor: "bg-green-500",
       text: "Voir ma mère mourir à 12 ans a arrêté ma vie, les galères s'en sont suivies. Je ne vivais plus que dans la colère. J'ai vu un tas de thérapeutes avant vous qui n'arrivaient pas à me sortir de cette détresse. Grâce à vous, tout ne va pas mieux mais je vis enfin, j'arrive à penser à maman avec le sourire."
+    },
+    {
+      name: "Maxime",
+      avatar: "M",
+      bgColor: "bg-purple-500",
+      text: "J'ai passé de longs mois en souffrance et malgré mon caractère grognon de l'époque, vous m'avez toujours tenu la main. A présent je vais beaucoup mieux, il y a encore des hauts et des bas bien sûr mais je n'hésite plus à en parler et demander de l'aide quand c'est nécessaire."
     }
   ];
 
