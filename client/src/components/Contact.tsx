@@ -1,5 +1,5 @@
 import { Info } from "lucide-react";
-import doctolibLogo from "@assets/Doctolib_1755678118701.webp";
+import doctolibLogo from "@assets/Doctolib_1755678348912.webp";
 
 export default function Contact() {
   const openingHours = [

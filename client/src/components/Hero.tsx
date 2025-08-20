@@ -2,6 +2,7 @@ import { Calendar, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import heroPhoto from "@assets/Photo héro_1755678118702.webp";
+import doctolibLogo from "@assets/Doctolib_1755678348912.webp";
 
 export default function Hero() {
   return (
@@ -20,7 +21,7 @@ export default function Hero() {
                 className="bg-primary-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
                 data-testid="button-hero-prendre-rdv"
               >
-                <Calendar className="mr-2 h-4 w-4" />
+                <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-4 w-4" />
                 Prendre RDV
               </Button>
               <Button 
