@@ -1,17 +1,25 @@
+import { Brain, Zap, Shield } from "lucide-react";
+
 export default function About() {
   const approaches = [
     {
-      color: "bg-primary-blue",
+      bgColor: "bg-blue-50",
+      circleColor: "bg-blue-500",
+      icon: Brain,
       title: "Thérapies cognitives et comportementales",
       description: "Elles permettent d'agir sur les pensées, les émotions et les comportements, vécus comme problématiques"
     },
     {
-      color: "bg-orange-500",
+      bgColor: "bg-orange-50",
+      circleColor: "bg-orange-500",
+      icon: Zap,
       title: "Hypnose",
       description: "Elle facilite l'accès aux ressources inconscientes et favorise le changement psychologique ou comportemental."
     },
     {
-      color: "bg-green-500",
+      bgColor: "bg-green-50",
+      circleColor: "bg-green-500",
+      icon: Shield,
       title: "HTSMA",
       description: "C'est une technique qui permet d'aider à lever les traumatismes et les blocages émotionnels"
     }
@@ -53,15 +61,22 @@ export default function About() {
             </h3>
             
             <div className="space-y-4">
-              {approaches.map((approach, index) => (
-                <div key={index} className="flex items-start" data-testid={`approach-${index}`}>
-                  <div className={`w-3 h-3 ${approach.color} rounded-full mt-2 mr-4 flex-shrink-0`}></div>
-                  <div>
-                    <h4 className="font-medium text-dark-gray">{approach.title}</h4>
-                    <p className="text-gray-600 text-sm">{approach.description}</p>
+              {approaches.map((approach, index) => {
+                const Icon = approach.icon;
+                return (
+                  <div key={index} className={`${approach.bgColor} p-4 rounded-lg border-l-4 border-l-gray-200`} data-testid={`approach-${index}`}>
+                    <div className="flex items-start">
+                      <div className={`w-8 h-8 ${approach.circleColor} rounded-full mr-4 flex-shrink-0 flex items-center justify-center`}>
+                        <Icon className="text-white h-4 w-4" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-dark-gray mb-1">{approach.title}</h4>
+                        <p className="text-gray-600 text-sm">{approach.description}</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
