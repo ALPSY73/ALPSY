@@ -3,7 +3,7 @@ import { Heart, Users, Brain, Clock } from "lucide-react";
 export default function Services() {
   const services = [
     {
-      icon: Heart,
+      icon: Brain,
       title: "Thérapie individuelle",
       description: "Séances individuelles axées sur vos objectifs personnels, la gestion de l'anxiété, la dépression, les traumatismes ou les transitions de vie.",
       price: "65€/séance",
