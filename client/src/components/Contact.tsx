@@ -21,22 +21,22 @@ export default function Contact() {
               <h3 className="font-semibold text-dark-gray mb-4">Informations de contact</h3>
               
               <div data-testid="contact-address">
-                <h4 className="font-medium text-dark-gray mb-3">Adresse du cabinet</h4>
+                <div className="flex items-center mb-3">
+                  <MapPin className="text-primary-blue h-5 w-5 mr-2 flex-shrink-0" />
+                  <h4 className="font-medium text-dark-gray">Adresse du cabinet</h4>
+                </div>
                 <a 
                   href="https://www.google.fr/maps/place/ALPSY+-+Psychologue+S%C3%A9bastien+Stuhec/@45.5554231,5.9695494,17z/data=!3m1!4b1!4m6!3m5!1s0x478baf42f68cef37:0xd0511d5c9d83cd9a!8m2!3d45.5554194!4d5.9721243!16s%2Fg%2F11xn_wfmzs?entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
-                  <div className="flex items-start">
-                    <MapPin className="text-primary-blue h-5 w-5 mr-2 mt-1 flex-shrink-0" />
-                    <p>
-                      ALPSY<br />
-                      2ème étage- Bâtiment terre de soins<br />
-                      400, avenue de la Breisse<br />
-                      73 190 Challes-les-eaux
-                    </p>
-                  </div>
+                  <p>
+                    ALPSY<br />
+                    2ème étage- Bâtiment terre de soins<br />
+                    400, avenue de la Breisse<br />
+                    73 190 Challes-les-eaux
+                  </p>
                 </a>
               </div>
               
