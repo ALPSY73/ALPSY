@@ -16,13 +16,19 @@ export default function Hero() {
               Je suis un psychologue à l'écoute, empathique, je m'adapte à vos vulnérabilité et je parle, j'oriente, je conseille.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                className="bg-primary-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
-                data-testid="button-hero-prendre-rdv"
+              <a 
+                href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-3 w-auto" />
-                Prendre RDV
-              </Button>
+                <Button 
+                  className="bg-primary-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
+                  data-testid="button-hero-prendre-rdv"
+                >
+                  <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-3 w-auto" />
+                  Prendre RDV
+                </Button>
+              </a>
               <Button 
                 variant="outline"
                 className="border border-primary-blue text-primary-blue px-8 py-3 rounded-lg hover:bg-light-blue transition-colors font-medium"

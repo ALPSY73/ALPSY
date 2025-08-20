@@ -62,13 +62,19 @@ export default function Testimonials() {
         </div>
         
         <div className="text-center mt-6">
-          <Button 
-            className="bg-primary-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
-            data-testid="button-testimonials-prendre-rdv"
+          <a 
+            href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-4 w-auto" />
-            Prendre RDV
-          </Button>
+            <Button 
+              className="bg-primary-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
+              data-testid="button-testimonials-prendre-rdv"
+            >
+              <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-4 w-auto" />
+              Prendre RDV
+            </Button>
+          </a>
         </div>
       </div>
     </section>

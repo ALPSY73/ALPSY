@@ -49,13 +49,19 @@ export default function Header() {
                 {item.label}
               </button>
             ))}
-            <Button 
-              className="bg-primary-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors font-medium"
-              data-testid="button-prendre-rdv-desktop"
+            <a 
+              href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-4 w-auto" />
-              Prendre RDV
-            </Button>
+              <Button 
+                className="bg-primary-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors font-medium"
+                data-testid="button-prendre-rdv-desktop"
+              >
+                <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-4 w-auto" />
+                Prendre RDV
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -85,13 +91,20 @@ export default function Header() {
                   {item.label}
                 </button>
               ))}
-              <Button 
-                className="w-full text-left bg-primary-blue text-white px-3 py-2 rounded-lg font-medium mt-2"
-                data-testid="button-prendre-rdv-mobile"
+              <a 
+                href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-4 w-auto" />
-                Prendre RDV
-              </Button>
+                <Button 
+                  className="w-full text-left bg-primary-blue text-white px-3 py-2 rounded-lg font-medium mt-2"
+                  data-testid="button-prendre-rdv-mobile"
+                >
+                  <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-4 w-auto" />
+                  Prendre RDV
+                </Button>
+              </a>
             </div>
           </div>
         )}
