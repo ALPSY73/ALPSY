@@ -76,7 +76,7 @@ export default function About() {
         </div>
         
         <div className="mt-8">
-          <h3 className="text-xl font-semibold text-dark-gray mb-8" data-testid="title-formations">
+          <h3 className="text-xl font-semibold text-dark-gray mb-4" data-testid="title-formations">
             Formations
           </h3>
           
