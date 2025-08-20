@@ -59,7 +59,7 @@ export default function Testimonials() {
                   </div>
                 </div>
               </div>
-              <p className="text-gray-600 italic" data-testid={`testimonial-text-${index}`}>
+              <p className="text-gray-600 italic text-justify" data-testid={`testimonial-text-${index}`}>
                 "{testimonial.text}"
               </p>
             </div>
