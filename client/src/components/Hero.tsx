@@ -40,14 +40,13 @@ export default function Hero() {
               </div>
               <div className="text-center" data-testid="stat-patients">
                 <div className="text-3xl font-bold text-primary-blue">500+</div>
-                <div className="text-sm text-gray-600">Patients accompagnés</div>
+                <div className="text-sm text-gray-600">Patients aidés</div>
               </div>
               <div className="flex items-center" data-testid="feature-nouveaux-patients">
-                <div className="bg-green-500 rounded-full p-1 mr-1 flex items-center justify-center">
-                  <Heart className="text-white h-3 w-3 fill-current" />
+                <div className="bg-green-500 rounded-full w-4 h-4 mr-3 flex items-center justify-center flex-shrink-0">
                 </div>
                 <div className="text-sm text-gray-600">
-                  <div>Accepte de nouveaux patients</div>
+                  <div className="font-medium">Accepte de nouveaux patients</div>
                   <div>Rendez-vous disponibles</div>
                 </div>
               </div>
