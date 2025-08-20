@@ -31,7 +31,7 @@ export default function Hero() {
               </a>
               <Button 
                 variant="outline"
-                className="border border-primary-blue text-primary-blue px-4 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-light-blue transition-colors font-medium text-sm sm:text-base"
+                className="border border-primary-blue-dark text-primary-blue-dark px-4 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-light-blue transition-colors font-medium text-sm sm:text-base"
                 data-testid="button-hero-en-savoir-plus"
                 onClick={() => {
                   const element = document.querySelector("#text-apropos") as HTMLElement;

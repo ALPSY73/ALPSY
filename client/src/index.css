@@ -39,8 +39,10 @@
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
   --radius: 1.3rem;
-  --primary-blue: hsl(214 75% 56%);
+  --primary-blue: hsl(214 85% 42%);
   --light-blue: hsl(214 85% 96%);
+  --primary-blue-dark: hsl(214 85% 32%);
+  --primary-blue-light: hsl(214 75% 60%);
   --dark-gray: hsl(0 0% 20%);
   --light-gray: hsl(210 17% 97%);
 }
@@ -82,8 +84,10 @@
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
   --radius: 1.3rem;
-  --primary-blue: hsl(214 75% 56%);
+  --primary-blue: hsl(214 85% 42%);
   --light-blue: hsl(214 85% 96%);
+  --primary-blue-dark: hsl(214 85% 32%);
+  --primary-blue-light: hsl(214 75% 60%);
   --dark-gray: hsl(0 0% 20%);
   --light-gray: hsl(210 17% 97%);
 }
@@ -100,4 +104,29 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Custom color utilities for better contrast */
+.text-primary-blue {
+  color: var(--primary-blue);
+}
+
+.text-primary-blue-dark {
+  color: var(--primary-blue-dark);
+}
+
+.text-primary-blue-light {
+  color: var(--primary-blue-light);
+}
+
+.border-primary-blue-dark {
+  border-color: var(--primary-blue-dark);
+}
+
+.bg-primary-blue {
+  background-color: var(--primary-blue);
+}
+
+.bg-primary-blue-dark {
+  background-color: var(--primary-blue-dark);
 }
