@@ -25,7 +25,7 @@ export default function Hero() {
                   className="bg-primary-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
                   data-testid="button-hero-prendre-rdv"
                 >
-                  <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-3 w-auto" />
+                  <img src={doctolibLogo} alt="Prendre rendez-vous en ligne psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
                   Prendre RDV
                 </Button>
               </a>
@@ -34,7 +34,7 @@ export default function Hero() {
                 className="border border-primary-blue text-primary-blue px-4 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-light-blue transition-colors font-medium text-sm sm:text-base"
                 data-testid="button-hero-en-savoir-plus"
                 onClick={() => {
-                  const element = document.querySelector("#text-apropos");
+                  const element = document.querySelector("#text-apropos") as HTMLElement;
                   if (element) {
                     const offsetTop = element.offsetTop - 120;
                     window.scrollTo({
@@ -74,7 +74,7 @@ export default function Hero() {
           <div className="flex justify-center">
             <img 
               src={heroPhoto} 
-              alt="Sébastien Stuhec - Psychologue" 
+              alt="Sébastien Stuhec - Psychologue clinicien à Challes-les-Eaux, cabinet ALPSY" 
               className="rounded-xl shadow-lg w-full max-w-md h-auto object-cover"
               data-testid="img-hero-photo"
             />

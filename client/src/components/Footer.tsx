@@ -14,7 +14,7 @@ export default function Footer() {
   ];
 
   const handleNavClick = (href: string) => {
-    const element = document.querySelector(href);
+    const element = document.querySelector(href) as HTMLElement;
     if (element) {
       const offset = href === "#informations-contact" ? 160 : 120;
       const offsetTop = element.offsetTop - offset;

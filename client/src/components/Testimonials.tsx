@@ -71,7 +71,7 @@ export default function Testimonials() {
               className="bg-primary-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
               data-testid="button-testimonials-prendre-rdv"
             >
-              <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-4 w-auto" />
+              <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib psychologue Challes-les-Eaux" className="mr-2 h-4 w-auto" />
               Prendre RDV
             </Button>
           </a>

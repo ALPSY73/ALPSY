@@ -108,7 +108,7 @@ export default function Contact() {
                 >
                   <img 
                     src={doctolibLogo} 
-                    alt="Doctolib" 
+                    alt="Prendre rendez-vous Doctolib psychologue Challes-les-Eaux" 
                     className="mr-2 h-3 w-auto"
                     data-testid="logo-doctolib"
                   />
