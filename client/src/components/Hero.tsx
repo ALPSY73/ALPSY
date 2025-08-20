@@ -1,4 +1,4 @@
-import { Calendar, Info, Heart } from "lucide-react";
+import { Calendar, Info, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroPhoto from "@assets/Photo héro_1755678370552.webp";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
@@ -41,6 +41,11 @@ export default function Hero() {
               <div className="text-center flex flex-col items-center" data-testid="stat-patients">
                 <div className="text-3xl font-bold text-primary-blue">500+</div>
                 <div className="text-sm text-gray-600">Patients aidés</div>
+                <div className="flex items-center mt-1">
+                  <Star className="text-yellow-500 h-4 w-4 fill-current mr-1" />
+                  <span className="text-sm font-medium text-primary-blue">5.0</span>
+                  <span className="text-sm text-gray-600 ml-1">(7)</span>
+                </div>
               </div>
               <div className="flex items-center" data-testid="feature-nouveaux-patients">
                 <div className="bg-green-500 rounded-full w-6 h-6 mr-3 flex items-center justify-center flex-shrink-0">
