@@ -1,4 +1,5 @@
 import { SiLinkedin } from "react-icons/si";
+import { Phone } from "lucide-react";
 
 export default function Footer() {
   const prestations = [
@@ -83,7 +84,10 @@ export default function Footer() {
                 <p>73 190 Challes-les-eaux</p>
                 <p>400, avenue de la Breisse</p>
               </a>
-              <p>06.10.91.90.47</p>
+              <div className="flex items-center">
+                <Phone className="text-white h-4 w-4 mr-2 flex-shrink-0" />
+                <p>06.10.91.90.47</p>
+              </div>
             </div>
           </div>
         </div>
