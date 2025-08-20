@@ -46,11 +46,16 @@ export default function Hero() {
               <div className="text-center flex flex-col items-center" data-testid="stat-patients">
                 <div className="flex items-center justify-center">
                   <div className="text-3xl font-bold text-primary-blue">500+</div>
-                  <div className="flex items-center ml-2">
+                  <a
+                    href="https://www.google.com/search?sa=X&sca_esv=1c2c48b035966a68&tbm=lcl&sxsrf=AE3TifPHCQ8PNRyRlJNPHOi9w4Ze2xi2mw:1755687286087&q=ALPSY+-+Psychologue+S%C3%A9bastien+Stuhec+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDUwNLAwNDQ2NDMztDQxNjQ2MtrAyPiKUcvRJyA4UkFXIaC4MjkjPyc_vTRVIfjwyqTE4pLM1DyF4JLSjNRkBceyzOJFrCQoBgBVVFkndQAAAA&rldimm=15010811316619431322&hl=fr-FR&ved=2ahUKEwiTnZjonJmPAxWcNvsDHa00DboQ9fQKegQIUhAF&cshid=1755687313494893&biw=1366&bih=599&dpr=1#lkt=LocalPoiReviews"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center ml-2 hover:opacity-80 transition-opacity"
+                  >
                     <Star className="text-yellow-500 h-4 w-4 fill-current mr-1" />
                     <span className="text-sm font-medium text-primary-blue">5.0</span>
                     <span className="text-sm text-gray-600 ml-1">(7)</span>
-                  </div>
+                  </a>
                 </div>
                 <div className="text-sm text-gray-600">Patients aidés</div>
               </div>
