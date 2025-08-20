@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300 text-sm" data-testid="footer-copyright">
-          <p>&copy; 2024 Sébastien Stuhec - Psychologue Clinicien. Tous droits réservés.</p>
+          <p>En cas d'urgence de santé mentale, appeler le 15 (SAMU) ou le 3114 (numéro national de prévention du suicide).</p>
         </div>
       </div>
     </footer>
