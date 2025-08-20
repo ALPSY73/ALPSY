@@ -16,7 +16,8 @@ export default function Footer() {
   const handleNavClick = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      const offsetTop = element.offsetTop - 120;
+      const offset = href === "#informations-contact" ? 160 : 120;
+      const offsetTop = element.offsetTop - offset;
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth"
