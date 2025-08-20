@@ -47,29 +47,26 @@ export default function Hero() {
                 <div className="text-3xl font-bold text-primary-blue">500+</div>
                 <div className="text-sm text-gray-600">Patients aidés</div>
               </div>
-              <div className="text-center" data-testid="stat-rating">
-                <a
-                  href="https://www.google.com/search?sa=X&sca_esv=1c2c48b035966a68&tbm=lcl&sxsrf=AE3TifPHCQ8PNRyRlJNPHOi9w4Ze2xi2mw:1755687286087&q=ALPSY+-+Psychologue+S%C3%A9bastien+Stuhec+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDUwNLAwNDQ2NDMztDQxNjQ2MtrAyPiKUcvRJyA4UkFXIaC4MjkjPyc_vTRVIfjwyqTE4pLM1DyF4JLSjNRkBceyzOJFrCQoBgBVVFkndQAAAA&rldimm=15010811316619431322&hl=fr-FR&ved=2ahUKEwiTnZjonJmPAxWcNvsDHa00DboQ9fQKegQIUhAF&cshid=1755687313494893&biw=1366&bih=599&dpr=1#lkt=LocalPoiReviews"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:opacity-80 transition-opacity"
-                >
-                  <div className="flex items-center justify-center">
-                    <div className="text-3xl font-bold text-primary-blue">5.0</div>
-                    <Star className="text-yellow-500 h-5 w-5 fill-current ml-2" />
-                  </div>
-                  <div className="text-sm text-gray-600">(7) avis</div>
-                </a>
-              </div>
               <div className="bg-white p-3 rounded-lg shadow-sm border" data-testid="feature-nouveaux-patients">
-                <div className="flex items-center">
-                  <div className="bg-green-500 rounded-full w-8 h-8 mr-3 flex items-center justify-center flex-shrink-0">
-                    <Heart className="text-white h-4 w-4 fill-current" />
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="bg-green-500 rounded-full w-8 h-8 mr-3 flex items-center justify-center flex-shrink-0">
+                      <Heart className="text-white h-4 w-4 fill-current" />
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      <div className="font-medium">Accepte de nouveaux patients</div>
+                      <div>Rendez-vous disponibles</div>
+                    </div>
                   </div>
-                  <div className="text-sm text-gray-600">
-                    <div className="font-medium">Accepte de nouveaux patients</div>
-                    <div>Rendez-vous disponibles</div>
-                  </div>
+                  <a
+                    href="https://www.google.com/search?sa=X&sca_esv=1c2c48b035966a68&tbm=lcl&sxsrf=AE3TifPHCQ8PNRyRlJNPHOi9w4Ze2xi2mw:1755687286087&q=ALPSY+-+Psychologue+S%C3%A9bastien+Stuhec+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDUwNLAwNDQ2NDMztDQxNjQ2MtrAyPiKUcvRJyA4UkFXIaC4MjkjPyc_vTRVIfjwyqTE4pLM1DyF4JLSjNRkBceyzOJFrCQoBgBVVFkndQAAAA&rldimm=15010811316619431322&hl=fr-FR&ved=2ahUKEwiTnZjonJmPAxWcNvsDHa00DboQ9fQKegQIUhAF&cshid=1755687313494893&biw=1366&bih=599&dpr=1#lkt=LocalPoiReviews"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center hover:opacity-80 transition-opacity"
+                  >
+                    <span className="text-lg font-bold text-black mr-1">5.0</span>
+                    <Star className="text-yellow-500 h-4 w-4 fill-current" />
+                  </a>
                 </div>
               </div>
             </div>
