@@ -41,7 +41,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className={`${testimonial.name === "Alain" ? "bg-primary-blue" : testimonial.name === "Leïla" ? "bg-orange-500" : testimonial.name === "Manon" ? "bg-green-500" : testimonial.name === "Maxime" ? "bg-purple-500" : "bg-white"} p-6 rounded-xl shadow-lg border border-gray-100`}
+              className={`${testimonial.name === "Alain" ? "bg-blue-100" : testimonial.name === "Leïla" ? "bg-orange-100" : testimonial.name === "Manon" ? "bg-green-100" : testimonial.name === "Maxime" ? "bg-purple-100" : "bg-white"} p-6 rounded-xl shadow-lg border border-gray-100`}
               data-testid={`testimonial-card-${index}`}
             >
               <div className="flex items-center mb-4">
@@ -49,12 +49,12 @@ export default function Testimonials() {
                   <span className="text-white font-semibold">{testimonial.avatar}</span>
                 </div>
                 <div>
-                  <div className={`font-medium ${testimonial.name === "Alain" || testimonial.name === "Leïla" || testimonial.name === "Manon" || testimonial.name === "Maxime" ? "text-white" : "text-dark-gray"}`} data-testid={`testimonial-name-${index}`}>
+                  <div className={`font-medium text-dark-gray`} data-testid={`testimonial-name-${index}`}>
                     {testimonial.name}
                   </div>
                 </div>
               </div>
-              <p className={`${testimonial.name === "Alain" || testimonial.name === "Leïla" || testimonial.name === "Manon" || testimonial.name === "Maxime" ? "text-white" : "text-gray-600"} italic text-justify`} data-testid={`testimonial-text-${index}`}>
+              <p className={`text-gray-600 italic text-justify`} data-testid={`testimonial-text-${index}`}>
                 "{testimonial.text}"
               </p>
             </div>
