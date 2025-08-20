@@ -4,8 +4,8 @@ import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
 export default function Contact() {
   const openingHours = [
-    { day: "Lundi-Jeudi", morning: "09h-12h", afternoon: "13h-17h", status: "Ouvert", isSpecial: false },
-    { day: "Vendredi-Dimanche", morning: "", afternoon: "", status: "Fermé", isSpecial: true, color: "text-red-600" },
+    { day: "Lundi - Jeudi", morning: "09h-12h", afternoon: "13h-17h", status: "Ouvert", isSpecial: false },
+    { day: "Vendredi - Dimanche", morning: "", afternoon: "", status: "Fermé", isSpecial: true, color: "text-red-600" },
   ];
 
   return (
