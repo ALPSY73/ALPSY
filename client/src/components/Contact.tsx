@@ -18,8 +18,10 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <div id="informations-contact" className="bg-white p-6 rounded-lg shadow-sm border space-y-6">
+              <h3 className="font-semibold text-dark-gray mb-4">Informations de contact</h3>
+              
               <div data-testid="contact-address">
-                <h3 className="font-semibold text-dark-gray mb-4">Adresse du cabinet</h3>
+                <h4 className="font-medium text-dark-gray mb-3">Adresse du cabinet</h4>
                 <a 
                   href="https://www.google.fr/maps/place/ALPSY+-+Psychologue+S%C3%A9bastien+Stuhec/@45.5554231,5.9695494,17z/data=!3m1!4b1!4m6!3m5!1s0x478baf42f68cef37:0xd0511d5c9d83cd9a!8m2!3d45.5554194!4d5.9721243!16s%2Fg%2F11xn_wfmzs?entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
@@ -39,7 +41,7 @@ export default function Contact() {
               </div>
               
               <div data-testid="contact-phone">
-                <h3 className="font-semibold text-dark-gray mb-4">Téléphone</h3>
+                <h4 className="font-medium text-dark-gray mb-3">Téléphone</h4>
                 <div className="flex items-center">
                   <Phone className="text-green-500 h-5 w-5 mr-2 flex-shrink-0" />
                   <a href="tel:+33610919047" className="text-gray-600 hover:text-blue-600 transition-colors">06.10.91.90.47</a>
