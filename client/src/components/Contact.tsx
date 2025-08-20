@@ -15,7 +15,7 @@ export default function Contact() {
           Informations de contact
         </h2>
         
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-6">
           <div>
             <div id="informations-contact" className="bg-white p-6 rounded-lg shadow-sm border space-y-6">
               <h3 className="font-semibold text-dark-gray mb-4">Informations de contact</h3>
