@@ -5,7 +5,7 @@ import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
 export default function Hero() {
   return (
-    <section id="accueil" className="bg-light-gray">
+    <section id="accueil" className="bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
