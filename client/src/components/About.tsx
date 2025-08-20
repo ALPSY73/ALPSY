@@ -84,7 +84,7 @@ export default function About() {
             {formations.map((formation, index) => (
               <div 
                 key={index} 
-                className="bg-light-blue p-6 rounded-lg" 
+                className="p-6" 
                 data-testid={`formation-${index}`}
               >
                 <p className="font-medium text-dark-gray">{formation}</p>
