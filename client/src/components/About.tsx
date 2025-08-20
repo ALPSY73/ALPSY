@@ -84,7 +84,7 @@ export default function About() {
             {formations.map((formation, index) => (
               <div 
                 key={index} 
-                className="p-6" 
+                className="p-2" 
                 data-testid={`formation-${index}`}
               >
                 <div className="flex items-center">
