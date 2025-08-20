@@ -30,7 +30,7 @@ export default function Contact() {
               
               <div data-testid="contact-phone">
                 <h3 className="font-semibold text-dark-gray mb-4">Téléphone</h3>
-                <p className="text-gray-600">06.XX.XX.XX</p>
+                <p className="text-gray-600">06.10.91.90.47</p>
               </div>
               
               <div data-testid="contact-hours">

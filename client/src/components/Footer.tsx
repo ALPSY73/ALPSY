@@ -57,9 +57,9 @@ export default function Footer() {
           <div data-testid="footer-contact">
             <h3 className="font-semibold mb-4">Contact</h3>
             <div className="text-gray-300 text-sm space-y-2">
-              <p>92 100 Île Défense</p>
-              <p>23bis Avenue Sébastien Henri</p>
-              <p>06.XX.XX.XX</p>
+              <p>73 190 Challes-les-eaux</p>
+              <p>400, avenue de la Breisse</p>
+              <p>06.10.91.90.47</p>
             </div>
           </div>
         </div>
