@@ -17,10 +17,10 @@ export default function Testimonials() {
       text: "Après des méditations de ce type et à Sébastien ce ne me faisait pas des troubles, énormément de défis. Dans façons deux, ma mère a travaillé de son thérapie utélète. Il a y a finalement le mal mais c'était mais je pousse sur."
     },
     {
-      name: "Marine",
+      name: "Manon",
       avatar: "M",
       bgColor: "bg-green-500",
-      text: "J'ai passé de longs mois en souffrance et malgré mon caractère, j'arrivais au bout de thérapies faisées très. Ma mère a commencé de voir thérapie utélète. Il a y a passé beaucoup mal mais chez c'était pas je jouais sur l'hôpital pour la récupération, mais je survis bien. Je pense à travers là-dessus."
+      text: "Voir ma mère mourir à 12 ans a arrêté ma vie, les galères s'en sont suivies. Je ne vivais plus que dans la colère. J'ai vu un tas de thérapeutes avant vous qui n'arrivaient pas à me sortir de cette détresse. Grâce à vous, tout ne va pas mieux mais je vis enfin, j'arrive à penser à maman avec le sourire."
     }
   ];
 
