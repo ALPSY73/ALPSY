@@ -55,6 +55,10 @@ export default function Contact() {
                           <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-medium">
                             {schedule.status}
                           </span>
+                        ) : schedule.status === "Fermé" ? (
+                          <span className="bg-red-100 text-red-800 px-2 py-1 rounded text-sm font-medium">
+                            {schedule.status}
+                          </span>
                         ) : (
                           <span className="text-gray-600">{schedule.status}</span>
                         )}
