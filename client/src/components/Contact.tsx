@@ -50,8 +50,14 @@ export default function Contact() {
                       <span className="text-gray-600 font-medium">{schedule.day}</span>
                       <span className="text-gray-600 text-center">{schedule.morning}</span>
                       <span className="text-gray-600 text-center">{schedule.afternoon}</span>
-                      <span className={schedule.isSpecial ? `${schedule.color} font-medium text-center` : "text-gray-600 text-center"}>
-                        {schedule.status}
+                      <span className={schedule.isSpecial ? `${schedule.color} font-medium text-center` : "text-center"}>
+                        {schedule.status === "Ouvert" ? (
+                          <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-medium">
+                            {schedule.status}
+                          </span>
+                        ) : (
+                          <span className="text-gray-600">{schedule.status}</span>
+                        )}
                       </span>
                     </div>
                   ))}
