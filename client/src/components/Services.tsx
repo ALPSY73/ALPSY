@@ -10,13 +10,6 @@ export default function Services() {
       duration: "Sur RDV"
     },
     {
-      icon: Users,
-      title: "Séances et conseil",
-      description: "50€/séance",
-      price: "Sur RDV",
-      duration: ""
-    },
-    {
       icon: Brain,
       title: "Évaluation psychologique",
       description: "Bilans complets incluant tests psychométriques pour établir un diagnostic précis et orienter la prise en charge.",
