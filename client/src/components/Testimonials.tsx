@@ -66,7 +66,7 @@ export default function Testimonials() {
           ))}
         </div>
         
-        <div className="text-center mt-12">
+        <div className="text-center mt-6">
           <Button 
             className="bg-primary-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
             data-testid="button-testimonials-prendre-rdv"
