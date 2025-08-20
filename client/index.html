@@ -89,9 +89,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://replit.com">
+    <link rel="dns-prefetch" href="https://www.doctolib.fr">
     
-    <!-- LCP Image Preload -->
+    <!-- Critical Resources Preload -->
     <link rel="preload" href="/assets/Photo%20h%C3%A9ro_1755678370552-DmvLH9xu.webp" as="image" fetchpriority="high">
+    <link rel="modulepreload" href="/src/main.tsx" fetchpriority="high">
+    <link rel="modulepreload" href="/src/App.tsx">
+    <link rel="modulepreload" href="/src/components/Hero.tsx">
     
     <!-- Critical CSS Inline -->
     <style>
@@ -178,22 +182,23 @@
     
     <!-- Non-critical CSS async loading with optimization -->
     <script>
-      // Load CSS asynchronously
-      function loadCSS(href) {
+      // Load CSS asynchronously with high priority
+      function loadCSS(href, priority) {
         var link = document.createElement('link');
         link.rel = 'stylesheet';
         link.href = href;
         link.media = 'print';
+        if (priority) link.fetchPriority = 'high';
         link.onload = function() { this.media = 'all'; };
         document.head.appendChild(link);
       }
-      // Load CSS when DOM is ready
+      // Preload and prioritize critical path
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', function() {
-          loadCSS('/src/index.css');
+          loadCSS('/src/index.css', true);
         });
       } else {
-        loadCSS('/src/index.css');
+        loadCSS('/src/index.css', true);
       }
     </script>
     <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
@@ -204,7 +209,7 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx" fetchpriority="high"></script>
     <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
     <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js" async></script>
   </body>

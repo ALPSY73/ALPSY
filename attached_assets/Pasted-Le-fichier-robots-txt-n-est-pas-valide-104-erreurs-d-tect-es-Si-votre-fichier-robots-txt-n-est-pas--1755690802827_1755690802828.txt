@@ -1,0 +1,317 @@
+Le fichier robots.txt n'est pas valide 104 erreurs détectées
+Si votre fichier robots.txt n'est pas créé correctement, il se peut que les robots d'exploration ne puissent pas comprendre comment votre site Web doit être exploré ou indexé. En savoir plus sur les fichiers robots.txt
+Line #
+Content
+Error
+1
+<!DOCTYPE html>
+Syntax not understood
+2
+<html lang="fr">
+Syntax not understood
+3
+<head>
+Syntax not understood
+4
+<meta charset="UTF-8" />
+Syntax not understood
+5
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+Syntax not understood
+7
+<!-- SEO Meta Tags -->
+Syntax not understood
+8
+<title>Sébastien Stuhec - Psychologue Clinicien à Challes-les-Eaux | ALPSY</title>
+Syntax not understood
+9
+<meta name="description" content="Psychologue clinicien expérimenté à Challes-les-Eaux. Sébastien Stuhec accompagne adultes et adolescents dans leur bien-être psychologique. Consultations individuelles, thérapie comportementale. Doctolib disponible." />
+Syntax not understood
+10
+<meta name="keywords" content="psychologue Challes-les-Eaux, psychologue clinicien, thérapie individuelle, consultation psychologique, Sébastien Stuhec, ALPSY, bien-être mental, psychothérapie Savoie" />
+Syntax not understood
+11
+<meta name="author" content="Sébastien Stuhec - ALPSY" />
+Syntax not understood
+12
+<meta name="robots" content="index, follow" />
+Syntax not understood
+13
+<meta name="language" content="French" />
+Syntax not understood
+14
+<meta name="geo.region" content="FR-73" />
+Syntax not understood
+15
+<meta name="geo.placename" content="Challes-les-Eaux" />
+Syntax not understood
+16
+<meta name="geo.position" content="45.5554194;5.9721243" />
+Syntax not understood
+17
+<meta name="ICBM" content="45.5554194, 5.9721243" />
+Syntax not understood
+19
+<!-- Canonical URL -->
+Syntax not understood
+20
+<link rel="canonical" href="https://alpsy.fr" />
+Unknown directive
+22
+<!-- Open Graph / Facebook -->
+Syntax not understood
+23
+<meta property="og:type" content="website" />
+Unknown directive
+24
+<meta property="og:url" content="https://alpsy.fr" />
+Unknown directive
+25
+<meta property="og:title" content="Sébastien Stuhec - Psychologue Clinicien à Challes-les-Eaux | ALPSY" />
+Unknown directive
+26
+<meta property="og:description" content="Psychologue clinicien expérimenté à Challes-les-Eaux. Accompagnement personnalisé pour adultes et adolescents. 12 ans d'expérience en thérapie individuelle." />
+Unknown directive
+27
+<meta property="og:site_name" content="ALPSY - Psychologue Sébastien Stuhec" />
+Unknown directive
+28
+<meta property="og:locale" content="fr_FR" />
+Unknown directive
+30
+<!-- Twitter -->
+Syntax not understood
+31
+<meta property="twitter:card" content="summary_large_image" />
+Unknown directive
+32
+<meta property="twitter:url" content="https://alpsy.fr" />
+Unknown directive
+33
+<meta property="twitter:title" content="Sébastien Stuhec - Psychologue Clinicien à Challes-les-Eaux" />
+Unknown directive
+34
+<meta property="twitter:description" content="Psychologue clinicien expérimenté à Challes-les-Eaux. Accompagnement personnalisé pour votre bien-être psychologique." />
+Unknown directive
+36
+<!-- Structured Data - JSON-LD -->
+Syntax not understood
+37
+<script type="application/ld+json">
+Syntax not understood
+38
+{
+Syntax not understood
+39
+"@context": "https://schema.org",
+Unknown directive
+40
+"@type": "Psychologist",
+Unknown directive
+41
+"name": "Sébastien Stuhec",
+Unknown directive
+42
+"alternateName": "ALPSY",
+Unknown directive
+43
+"description": "Psychologue clinicien expérimenté spécialisé dans l'accompagnement psychologique individuel",
+Unknown directive
+44
+"url": "https://alpsy.fr",
+Unknown directive
+45
+"telephone": "+33610919047",
+Unknown directive
+46
+"email": "contact@alpsy.fr",
+Unknown directive
+47
+"address": {
+Unknown directive
+48
+"@type": "PostalAddress",
+Unknown directive
+49
+"streetAddress": "400, avenue de la Breisse, 2ème étage - Bâtiment terre de soins",
+Unknown directive
+50
+"addressLocality": "Challes-les-Eaux",
+Unknown directive
+51
+"postalCode": "73190",
+Unknown directive
+52
+"addressRegion": "Savoie",
+Unknown directive
+53
+"addressCountry": "FR"
+Unknown directive
+54
+},
+Syntax not understood
+55
+"geo": {
+Unknown directive
+56
+"@type": "GeoCoordinates",
+Unknown directive
+57
+"latitude": 45.5554194,
+Unknown directive
+58
+"longitude": 5.9721243
+Unknown directive
+59
+},
+Syntax not understood
+60
+"openingHours": "Mo-Th 09:00-12:00,13:00-17:00",
+Unknown directive
+61
+"priceRange": "€€",
+Unknown directive
+62
+"hasOfferCatalog": {
+Unknown directive
+63
+"@type": "OfferCatalog",
+Unknown directive
+64
+"name": "Services de psychologie",
+Unknown directive
+65
+"itemListElement": [
+Unknown directive
+66
+{
+Syntax not understood
+67
+"@type": "Offer",
+Unknown directive
+68
+"itemOffered": {
+Unknown directive
+69
+"@type": "Service",
+Unknown directive
+70
+"name": "Thérapie individuelle",
+Unknown directive
+71
+"description": "Consultation psychologique individuelle pour adultes et adolescents"
+Unknown directive
+72
+}
+Syntax not understood
+73
+}
+Syntax not understood
+74
+]
+Syntax not understood
+75
+},
+Syntax not understood
+76
+"areaServed": {
+Unknown directive
+77
+"@type": "Place",
+Unknown directive
+78
+"name": "Challes-les-Eaux et région Savoie"
+Unknown directive
+79
+},
+Syntax not understood
+80
+"knowsAbout": ["Psychologie clinique", "Thérapie comportementale", "Accompagnement psychologique", "Santé mentale"],
+Unknown directive
+81
+"memberOf": {
+Unknown directive
+82
+"@type": "Organization",
+Unknown directive
+83
+"name": "Ordre des Psychologues"
+Unknown directive
+84
+}
+Syntax not understood
+85
+}
+Syntax not understood
+86
+</script>
+Syntax not understood
+88
+<!-- Performance Optimizations -->
+Syntax not understood
+89
+<link rel="preconnect" href="https://fonts.googleapis.com">
+Unknown directive
+90
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+Unknown directive
+91
+<link rel="dns-prefetch" href="https://replit.com">
+Unknown directive
+93
+<!-- Critical CSS Inline for FOUT prevention -->
+Syntax not understood
+94
+<style>
+Syntax not understood
+95
+body { font-family: system-ui, -apple-system, sans-serif; }
+Unknown directive
+96
+.font-inter { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+Unknown directive
+97
+</style>
+Syntax not understood
+99
+<!-- Critical Resources Preload -->
+Syntax not understood
+100
+<link rel="preload" href="data:application/octet-stream;base64,aW1wb3J0IHsgY3JlYXRlUm9vdCB9IGZyb20gInJlYWN0LWRvbS9jbGllbnQiOwppbXBvcnQgQXBwIGZyb20gIi4vQXBwIjsKaW1wb3J0ICIuL2luZGV4LmNzcyI7CgpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJyb290IikhKS5yZW5kZXIoPEFwcCAvPik7Cg==" as="script" crossorigin>
+Unknown directive
+102
+<!-- Optimized Fonts Loading -->
+Syntax not understood
+103
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+Unknown directive
+104
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+Unknown directive
+105
+<script type="module" crossorigin src="/assets/index-B86LyX2l.js"></script>
+Syntax not understood
+106
+<link rel="stylesheet" crossorigin href="/assets/index-BQZaFpbx.css">
+Syntax not understood
+107
+</head>
+Syntax not understood
+108
+<body>
+Syntax not understood
+109
+<div id="root"></div>
+Syntax not understood
+110
+<!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+Syntax not understood
+111
+<script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js" async></script>
+Unknown directive
+112
+</body>
+Syntax not understood
+113
+</html>
+Syntax not understood
