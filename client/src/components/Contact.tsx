@@ -23,7 +23,7 @@ export default function Contact() {
               <div data-testid="contact-address">
                 <div className="flex items-center mb-3">
                   <MapPin className="text-primary-blue h-5 w-5 mr-2 flex-shrink-0" />
-                  <h4 className="font-medium text-dark-gray">Adresse du cabinet</h4>
+                  <h4 className="font-bold text-dark-gray">Adresse du cabinet</h4>
                 </div>
                 <a 
                   href="https://www.google.fr/maps/place/ALPSY+-+Psychologue+S%C3%A9bastien+Stuhec/@45.5554231,5.9695494,17z/data=!3m1!4b1!4m6!3m5!1s0x478baf42f68cef37:0xd0511d5c9d83cd9a!8m2!3d45.5554194!4d5.9721243!16s%2Fg%2F11xn_wfmzs?entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D"
