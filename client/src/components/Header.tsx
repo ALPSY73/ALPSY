@@ -8,7 +8,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "#accueil", label: "Accueil" },
+    { href: "#sebastien-stuhec", label: "Accueil" },
     { href: "#apropos", label: "À propos" },
     { href: "#prestations", label: "Prestations" },
     { href: "#temoignages", label: "Témoignages" },
