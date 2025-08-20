@@ -18,7 +18,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-6">
           <div>
             <div id="informations-contact" className="bg-white p-6 rounded-lg shadow-sm border space-y-6">
-              <h3 className="font-semibold text-dark-gray mb-4">Informations de contact</h3>
+              <h3 className="text-lg font-semibold text-dark-gray mb-4">Informations de contact</h3>
               
               <div data-testid="contact-address">
                 <div className="flex items-center mb-3">
