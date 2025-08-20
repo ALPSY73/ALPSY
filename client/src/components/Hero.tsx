@@ -9,9 +9,20 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-4 lg:pt-3 lg:pb-6 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h1 id="sebastien-stuhec" className="text-4xl lg:text-5xl font-bold text-primary-blue mb-6" data-testid="title-hero">
-              Sébastien Stuhec
-            </h1>
+            <div className="flex items-center justify-between mb-6">
+              <h1 id="sebastien-stuhec" className="text-4xl lg:text-5xl font-bold text-primary-blue" data-testid="title-hero">
+                Sébastien Stuhec
+              </h1>
+              <a
+                href="https://www.google.com/search?sa=X&sca_esv=1c2c48b035966a68&tbm=lcl&sxsrf=AE3TifPHCQ8PNRyRlJNPHOi9w4Ze2xi2mw:1755687286087&q=ALPSY+-+Psychologue+S%C3%A9bastien+Stuhec+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDUwNLAwNDQ2NDMztDQxNjQ2MtrAyPiKUcvRJyA4UkFXIaC4MjkjPyc_vTRVIfjwyqTE4pLM1DyF4JLSjNRkBceyzOJFrCQoBgBVVFkndQAAAA&rldimm=15010811316619431322&hl=fr-FR&ved=2ahUKEwiTnZjonJmPAxWcNvsDHa00DboQ9fQKegQIUhAF&cshid=1755687313494893&biw=1366&bih=599&dpr=1#lkt=LocalPoiReviews"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center hover:opacity-80 transition-opacity"
+              >
+                <span className="text-lg font-bold text-black mr-1">5.0 (7)</span>
+                <Star className="text-yellow-500 h-4 w-4 fill-current" />
+              </a>
+            </div>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed" data-testid="text-hero-description">
               Je suis un psychologue à l'écoute, empathique, je m'adapte à vos vulnérabilité et je parle, j'oriente, je conseille.
             </p>
@@ -57,27 +68,16 @@ export default function Hero() {
                 <div className="text-3xl font-bold text-primary-blue">500+</div>
                 <div className="text-sm text-gray-600">Patients aidés</div>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="bg-white p-3 rounded-lg shadow-sm border" data-testid="feature-nouveaux-patients">
-                  <div className="flex items-center">
-                    <div className="bg-green-500 rounded-full w-8 h-8 mr-3 flex items-center justify-center flex-shrink-0">
-                      <Heart className="text-white h-4 w-4 fill-current" />
-                    </div>
-                    <div className="text-sm text-gray-600">
-                      <div className="font-medium">Accepte de nouveaux patients</div>
-                      <div>Rendez-vous disponibles</div>
-                    </div>
+              <div className="bg-white p-3 rounded-lg shadow-sm border w-full sm:w-auto" data-testid="feature-nouveaux-patients">
+                <div className="flex items-center">
+                  <div className="bg-green-500 rounded-full w-8 h-8 mr-3 flex items-center justify-center flex-shrink-0">
+                    <Heart className="text-white h-4 w-4 fill-current" />
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    <div className="font-medium">Accepte de nouveaux patients</div>
+                    <div>Rendez-vous disponibles</div>
                   </div>
                 </div>
-                <a
-                  href="https://www.google.com/search?sa=X&sca_esv=1c2c48b035966a68&tbm=lcl&sxsrf=AE3TifPHCQ8PNRyRlJNPHOi9w4Ze2xi2mw:1755687286087&q=ALPSY+-+Psychologue+S%C3%A9bastien+Stuhec+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDUwNLAwNDQ2NDMztDQxNjQ2MtrAyPiKUcvRJyA4UkFXIaC4MjkjPyc_vTRVIfjwyqTE4pLM1DyF4JLSjNRkBceyzOJFrCQoBgBVVFkndQAAAA&rldimm=15010811316619431322&hl=fr-FR&ved=2ahUKEwiTnZjonJmPAxWcNvsDHa00DboQ9fQKegQIUhAF&cshid=1755687313494893&biw=1366&bih=599&dpr=1#lkt=LocalPoiReviews"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center hover:opacity-80 transition-opacity"
-                >
-                  <span className="text-lg font-bold text-black mr-1">5.0 (7)</span>
-                  <Star className="text-yellow-500 h-4 w-4 fill-current" />
-                </a>
               </div>
             </div>
           </div>
