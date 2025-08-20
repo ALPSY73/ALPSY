@@ -1,4 +1,4 @@
-import { Users, Eye, Heart, Target, Star, MessageCircle, Brain } from "lucide-react";
+import { Users, Moon, Heart, Target, Star, MessageCircle, Brain } from "lucide-react";
 
 export default function About() {
   const approaches = [
@@ -12,7 +12,7 @@ export default function About() {
     {
       bgColor: "bg-orange-50",
       circleColor: "bg-orange-500",
-      icon: Eye,
+      icon: Moon,
       title: "Hypnose",
       description: "Elle facilité l'accès aux ressources inconscientes et favorise le changement psychologique ou comportemental"
     },
