@@ -36,7 +36,12 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300 text-sm">
               {prestations.map((prestation, index) => (
                 <li key={index} data-testid={`footer-prestation-${index}`}>
-                  {prestation}
+                  <button 
+                    onClick={() => handleNavClick("#prestations")}
+                    className="hover:text-white transition-colors text-left"
+                  >
+                    {prestation}
+                  </button>
                 </li>
               ))}
             </ul>
