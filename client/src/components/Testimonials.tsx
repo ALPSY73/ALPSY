@@ -11,10 +11,10 @@ export default function Testimonials() {
       text: "Avec le recul, je voulais vraiment vous remercier d'avoir complètement changé et bouleversé ma vie. Je parle de vous assez souvent comme mon sauveur car c'est vraiment la sensation que j'ai avec le recul des années passées. Depuis tout ce temps, j'ai continué une reconstruction en suivant vos conseils, j'ai recentré ma vie sur les choses essentielles et j'ai appris à penser à moi."
     },
     {
-      name: "Lucie",
+      name: "Leïla",
       avatar: "L",
       bgColor: "bg-orange-500",
-      text: "Après des méditations de ce type et à Sébastien ce ne me faisait pas des troubles, énormément de défis. Dans façons deux, ma mère a travaillé de son thérapie utélète. Il a y a finalement le mal mais c'était mais je pousse sur."
+      text: "Avoir des hallucinations, être noire et lesbienne ça ne partait pas très bien dans ma vie. Entre les mutilations, les tentatives de suicide et j'en passe, je ne voyais pas très bien comment vous pourriez m'aider. Et pourtant, je suis amoureuse, je fais une fac de psycho."
     },
     {
       name: "Manon",
