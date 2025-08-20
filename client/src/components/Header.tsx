@@ -75,9 +75,6 @@ export default function Header() {
               variant="ghost"
               className="text-black"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label={isMobileMenuOpen ? "Fermer le menu de navigation" : "Ouvrir le menu de navigation"}
-              aria-expanded={isMobileMenuOpen}
-              aria-controls="mobile-navigation"
               data-testid="button-mobile-menu"
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -87,7 +84,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden" id="mobile-navigation">
+          <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
               {navItems.map((item) => (
                 <button

@@ -111,7 +111,7 @@ export default function About() {
           <blockquote className="text-lg italic text-gray-700 mb-0">
             "Le changement est un processus naturel. La thérapie vient lever les obstacles au changement en mobilisant les ressources naturelles du patient."
           </blockquote>
-          <cite className="text-primary-blue-dark font-medium">— Eric Bardot</cite>
+          <cite className="text-primary-blue font-medium">— Eric Bardot</cite>
         </div>
       </div>
     </section>

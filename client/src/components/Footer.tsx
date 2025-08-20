@@ -38,7 +38,6 @@ export default function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block"
-                aria-label="Profil LinkedIn de Sébastien Stuhec, psychologue"
               >
                 <SiLinkedin className="text-gray-300 hover:text-white transition-colors cursor-pointer h-5 w-5" data-testid="footer-linkedin" />
               </a>
