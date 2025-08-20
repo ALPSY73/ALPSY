@@ -36,7 +36,7 @@ export default function Hero() {
                 onClick={() => {
                   const element = document.querySelector("#text-apropos");
                   if (element) {
-                    const offsetTop = element.offsetTop - 80;
+                    const offsetTop = element.offsetTop - 120;
                     window.scrollTo({
                       top: offsetTop,
                       behavior: "smooth"
