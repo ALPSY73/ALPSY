@@ -10,7 +10,7 @@ export default function Header() {
   const navItems = [
     { href: "#sebastien-stuhec", label: "Accueil" },
     { href: "#text-apropos", label: "À propos" },
-    { href: "#text-prestations", label: "Prestations" },
+    { href: "#prestations", label: "Prestations" },
     { href: "#temoignages", label: "Témoignages" },
     { href: "#informations-contact", label: "Contact" },
   ];
