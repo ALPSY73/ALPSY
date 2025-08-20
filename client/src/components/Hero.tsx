@@ -65,7 +65,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   className="flex items-center hover:opacity-80 transition-opacity"
                 >
-                  <span className="text-lg font-bold text-black mr-1">5.0</span>
+                  <span className="text-lg font-bold text-black mr-1">5.0 (7)</span>
                   <Star className="text-yellow-500 h-4 w-4 fill-current" />
                 </a>
               </div>
