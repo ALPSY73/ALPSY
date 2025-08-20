@@ -29,7 +29,6 @@ export default function Hero() {
                 className="border border-primary-blue text-primary-blue px-8 py-3 rounded-lg hover:bg-light-blue transition-colors font-medium"
                 data-testid="button-hero-en-savoir-plus"
               >
-                <Info className="mr-2 h-4 w-4" />
                 En savoir plus
               </Button>
             </div>
