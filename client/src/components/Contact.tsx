@@ -89,7 +89,7 @@ export default function Contact() {
           </div>
           
           <div>
-            <div className="mt-4 flex justify-center" data-testid="doctolib-integration">
+            <div className="mt-1 flex justify-center" data-testid="doctolib-integration">
               <a 
                 href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
                 target="_blank"
