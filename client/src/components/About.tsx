@@ -1,4 +1,4 @@
-import { Brain, Eye, Heart, Target, Star } from "lucide-react";
+import { Brain, Eye, Heart, Target, Star, MessageCircle } from "lucide-react";
 
 export default function About() {
   const approaches = [
@@ -94,6 +94,9 @@ export default function About() {
                   )}
                   {formation.includes("D.I.U. Hypnose") && (
                     <Star className="h-4 w-4 text-purple-500 ml-2" />
+                  )}
+                  {formation.includes("D.U. Thérapies cognitives") && (
+                    <MessageCircle className="h-4 w-4 text-green-500 ml-2" />
                   )}
                 </div>
               </div>
