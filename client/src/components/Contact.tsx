@@ -52,23 +52,28 @@ export default function Contact() {
                 <h3 className="font-semibold text-dark-gray mb-4">Heures d'ouverture</h3>
                 <div className="space-y-2">
                   {openingHours.map((schedule, index) => (
-                    <div key={index} className="grid grid-cols-4 gap-4 items-center" data-testid={`schedule-${index}`}>
-                      <span className="text-gray-600 font-medium">{schedule.day}</span>
-                      <span className="text-gray-600 text-center">{schedule.morning}</span>
-                      <span className="text-gray-600 text-center">{schedule.afternoon}</span>
-                      <span className={schedule.isSpecial ? `${schedule.color} font-medium text-center` : "text-center"}>
-                        {schedule.status === "Ouvert" ? (
-                          <span className="bg-green-100 text-green-800 px-4 py-2 rounded text-sm font-medium">
-                            {schedule.status}
-                          </span>
-                        ) : schedule.status === "Fermé" ? (
-                          <span className="bg-red-100 text-red-800 px-4 py-2 rounded text-sm font-medium">
-                            {schedule.status}
-                          </span>
-                        ) : (
-                          <span className="text-gray-600">{schedule.status}</span>
-                        )}
-                      </span>
+                    <div key={index}>
+                      <div className="grid grid-cols-4 gap-4 items-center" data-testid={`schedule-${index}`}>
+                        <span className="text-gray-600 font-medium">{schedule.day}</span>
+                        <span className="text-gray-600 text-center">{schedule.morning}</span>
+                        <span className="text-gray-600 text-center">{schedule.afternoon}</span>
+                        <span className={schedule.isSpecial ? `${schedule.color} font-medium text-center` : "text-center"}>
+                          {schedule.status === "Ouvert" ? (
+                            <span className="bg-green-100 text-green-800 px-4 py-2 rounded text-sm font-medium">
+                              {schedule.status}
+                            </span>
+                          ) : schedule.status === "Fermé" ? (
+                            <span className="bg-red-100 text-red-800 px-4 py-2 rounded text-sm font-medium">
+                              {schedule.status}
+                            </span>
+                          ) : (
+                            <span className="text-gray-600">{schedule.status}</span>
+                          )}
+                        </span>
+                      </div>
+                      {index === 0 && (
+                        <hr className="border-gray-300 my-3" />
+                      )}
                     </div>
                   ))}
                 </div>
