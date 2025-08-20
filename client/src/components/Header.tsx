@@ -43,7 +43,7 @@ export default function Header() {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-primary-blue hover:text-blue-600 font-medium transition-colors"
+                className="text-black hover:text-gray-600 font-medium transition-colors"
                 data-testid={`nav-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
               >
                 {item.label}
@@ -62,7 +62,7 @@ export default function Header() {
           <div className="md:hidden">
             <Button
               variant="ghost"
-              className="text-primary-blue"
+              className="text-black"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               data-testid="button-mobile-menu"
             >
@@ -79,7 +79,7 @@ export default function Header() {
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="block w-full text-left px-3 py-2 text-primary-blue font-medium"
+                  className="block w-full text-left px-3 py-2 text-black font-medium"
                   data-testid={`nav-mobile-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
                 >
                   {item.label}
