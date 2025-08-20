@@ -34,8 +34,7 @@ export default function Contact() {
               </div>
             </div>
             
-            <div className="space-y-6 mt-6">
-              
+            <div className="bg-white p-6 rounded-lg shadow-sm border space-y-6 mt-6">
               <div data-testid="contact-hours">
                 <h3 className="font-semibold text-dark-gray mb-4">Heures d'ouverture</h3>
                 <div className="space-y-2">
