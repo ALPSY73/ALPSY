@@ -22,9 +22,9 @@ export default function Contact() {
                 <h3 className="font-semibold text-dark-gray mb-4">Adresse du cabinet</h3>
                 <p className="text-gray-600">
                   ALPSY<br />
-                  23bis Avenue Sébastien Henri de Iasini<br />
-                  Centre-ville de Boulogne<br />
-                  92 100 Île Défense Sés-cloud
+                  2ème étage- Bâtiment terre de soins<br />
+                  400, avenue de la Breisse<br />
+                  73 190 Challes-les-eaux
                 </p>
               </div>
               
