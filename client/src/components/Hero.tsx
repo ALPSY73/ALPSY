@@ -76,6 +76,8 @@ export default function Hero() {
               src={heroPhoto} 
               alt="Sébastien Stuhec - Psychologue clinicien à Challes-les-Eaux, cabinet ALPSY" 
               className="rounded-xl shadow-lg w-full max-w-md h-auto object-cover"
+              fetchpriority="high"
+              loading="eager"
               data-testid="img-hero-photo"
             />
           </div>
