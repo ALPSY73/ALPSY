@@ -12,9 +12,9 @@ export default function Services() {
     {
       icon: Users,
       title: "Séances et conseil",
-      description: "Séances multi-visée aux besoins correspondants et fonction le traitement psychologique des stress défenses.",
-      price: "RRV/séance",
-      duration: "Sur RDV"
+      description: "50€/séance",
+      price: "Sur RDV",
+      duration: ""
     },
     {
       icon: Brain,

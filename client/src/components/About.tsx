@@ -25,7 +25,8 @@ export default function About() {
     },
     {
       title: "Master en neuropsychologie - Université Libre de Bruxelles",
-      subtitle: "Le changement est un processus naturel. La thérapie permet donc de dépasser les régressions et mobiliser les ressources présentes."
+      subtitle: "Le changement est un processus naturel. La thérapie permet donc de dépasser les régressions et mobiliser les ressources présentes.",
+      quote: "- Eric Binet"
     }
   ];
 
@@ -81,6 +82,9 @@ export default function About() {
                 <p className="text-gray-600 text-sm mb-2">{formation.subtitle}</p>
                 {formation.additional && (
                   <p className="text-gray-600 text-sm">{formation.additional}</p>
+                )}
+                {formation.quote && (
+                  <p className="text-gray-500 text-sm italic mt-2">{formation.quote}</p>
                 )}
               </div>
             ))}
