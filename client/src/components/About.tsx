@@ -19,7 +19,7 @@ export default function About() {
     {
       bgColor: "bg-green-50",
       circleColor: "bg-green-500",
-      icon: Heart,
+      icon: Star,
       title: "HTSMA",
       description: "C'est une technique qui permet d'aider à lever les traumatismes et les blocages émotionnels"
     }
@@ -61,7 +61,7 @@ export default function About() {
                   <div key={index} className={`${approach.bgColor} p-4 rounded-lg border-l-4 border-l-gray-200`} data-testid={`approach-${index}`}>
                     <div className="flex items-start">
                       <div className={`w-8 h-8 ${approach.circleColor} rounded-full mr-4 flex-shrink-0 flex items-center justify-center`}>
-                        <Icon className="text-white h-4 w-4" />
+                        <Icon className={`h-4 w-4 ${approach.title === 'HTSMA' ? 'text-yellow-400' : 'text-white'}`} />
                       </div>
                       <div>
                         <h4 className="font-medium text-dark-gray mb-1">{approach.title}</h4>
