@@ -106,6 +106,15 @@ export default function Footer() {
         
         <div className="border-t border-gray-600 mt-4 pt-4 text-center text-gray-300 text-sm" data-testid="footer-copyright">
           <p>En cas d'urgence de santé mentale, appeler le 15 (SAMU) ou le 3114 (numéro national de prévention du suicide).</p>
+          <a 
+            href="https://hoodspot.fr/autres-professionnels-de-sante/alpsy-psychologue-sebastien-stuhec-79779492200022/" 
+            title="ALPSY-Psychologue Sébastien STUHEC" 
+            target="_blank"
+            className="text-gray-600 opacity-10 text-xs absolute left-0 bottom-0 pointer-events-none"
+            style={{ fontSize: '1px', lineHeight: '1px' }}
+          >
+            https://hoodspot.fr/autres-professionnels-de-sante/alpsy-psychologue-sebastien-stuhec-79779492200022/
+          </a>
         </div>
       </div>
     </footer>
