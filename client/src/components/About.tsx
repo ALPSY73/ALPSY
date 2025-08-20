@@ -107,8 +107,8 @@ export default function About() {
           </div>
         </div>
         
-        <div className="mt-4 text-center bg-blue-50 p-8 rounded-lg" data-testid="quote-section">
-          <blockquote className="text-lg italic text-gray-700 mb-4">
+        <div className="mt-4 text-center bg-blue-50 px-8 py-4 rounded-lg" data-testid="quote-section">
+          <blockquote className="text-lg italic text-gray-700 mb-0">
             "Le changement est un processus naturel. La thérapie vient lever les obstacles au changement en mobilisant les ressources naturelles du patient."
           </blockquote>
           <cite className="text-primary-blue font-medium">— Eric Bardot</cite>
