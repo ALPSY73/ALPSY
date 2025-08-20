@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section id="accueil" className="bg-white relative">
       <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-50 hidden lg:block"></div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 lg:pt-8 lg:pb-20 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl lg:text-5xl font-bold text-primary-blue mb-6" data-testid="title-hero">
