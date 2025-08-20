@@ -81,13 +81,15 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors block"
               >
-                <div className="flex items-center">
-                  <MapPin className="text-white h-4 w-4 mr-2 flex-shrink-0" />
-                  <p>ALPSY</p>
+                <div className="flex items-start">
+                  <MapPin className="text-white h-4 w-4 mr-2 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p>ALPSY</p>
+                    <p>2ème étage- Bâtiment terre de soins</p>
+                    <p>400, avenue de la Breisse</p>
+                    <p>73 190 Challes-les-eaux</p>
+                  </div>
                 </div>
-                <p>2ème étage- Bâtiment terre de soins</p>
-                <p>400, avenue de la Breisse</p>
-                <p>73 190 Challes-les-eaux</p>
               </a>
               <div className="flex items-center">
                 <Phone className="text-white h-4 w-4 mr-2 flex-shrink-0" />
