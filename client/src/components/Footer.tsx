@@ -1,3 +1,5 @@
+import { SiLinkedin } from "react-icons/si";
+
 export default function Footer() {
   const prestations = [
     "Thérapie individuelle"
@@ -24,6 +26,9 @@ export default function Footer() {
           <div data-testid="footer-about">
             <h3 className="font-semibold mb-4">Sébastien Stuhec</h3>
             <p className="text-gray-300 text-sm">Psychologue clinicien</p>
+            <div className="mt-3">
+              <SiLinkedin className="text-gray-300 hover:text-white transition-colors cursor-pointer h-5 w-5" data-testid="footer-linkedin" />
+            </div>
           </div>
           
           <div data-testid="footer-prestations">
