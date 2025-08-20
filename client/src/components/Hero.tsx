@@ -38,7 +38,7 @@ export default function Hero() {
               </Button>
             </div>
             
-            <div className="flex items-center gap-8 mt-8">
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 mt-8">
               <div className="text-center" data-testid="stat-experience">
                 <div className="text-3xl font-bold text-primary-blue">12+</div>
                 <div className="text-sm text-gray-600">Années d'expérience</div>
@@ -47,7 +47,7 @@ export default function Hero() {
                 <div className="text-3xl font-bold text-primary-blue">500+</div>
                 <div className="text-sm text-gray-600">Patients aidés</div>
               </div>
-              <div className="bg-white p-3 rounded-lg shadow-sm border" data-testid="feature-nouveaux-patients">
+              <div className="bg-white p-3 rounded-lg shadow-sm border w-full sm:w-auto" data-testid="feature-nouveaux-patients">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <div className="bg-green-500 rounded-full w-8 h-8 mr-3 flex items-center justify-center flex-shrink-0">
