@@ -1,4 +1,4 @@
-import { Brain, Eye, Heart, Target } from "lucide-react";
+import { Brain, Eye, Heart, Target, Star } from "lucide-react";
 
 export default function About() {
   const approaches = [
@@ -91,6 +91,9 @@ export default function About() {
                   <p className="font-medium text-dark-gray">{formation}</p>
                   {formation.includes("HTSMA") && (
                     <Target className="h-4 w-4 text-red-500 ml-2" />
+                  )}
+                  {formation.includes("D.I.U. Hypnose") && (
+                    <Star className="h-4 w-4 text-purple-500 ml-2" />
                   )}
                 </div>
               </div>
