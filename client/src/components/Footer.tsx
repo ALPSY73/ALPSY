@@ -27,7 +27,14 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Sébastien Stuhec</h3>
             <p className="text-gray-300 text-sm">Psychologue clinicien</p>
             <div className="mt-3">
-              <SiLinkedin className="text-gray-300 hover:text-white transition-colors cursor-pointer h-5 w-5" data-testid="footer-linkedin" />
+              <a 
+                href="https://www.linkedin.com/in/sebastien-stuhec/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <SiLinkedin className="text-gray-300 hover:text-white transition-colors cursor-pointer h-5 w-5" data-testid="footer-linkedin" />
+              </a>
             </div>
           </div>
           
