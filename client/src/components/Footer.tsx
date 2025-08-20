@@ -99,7 +99,7 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300 text-sm" data-testid="footer-copyright">
+        <div className="border-t border-gray-600 mt-4 pt-4 text-center text-gray-300 text-sm" data-testid="footer-copyright">
           <p>En cas d'urgence de santé mentale, appeler le 15 (SAMU) ou le 3114 (numéro national de prévention du suicide).</p>
         </div>
       </div>
