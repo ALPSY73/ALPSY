@@ -26,16 +26,10 @@ export default function About() {
   ];
 
   const formations = [
-    {
-      title: "PSYAUM - Institut Motricité",
-      subtitle: "D.U. Hypnose - Université de Bordeaux",
-      additional: "D.U. Thérapies cognitives et comportementales - Université de Bordeaux"
-    },
-    {
-      title: "Master en neuropsychologie - Université Libre de Bruxelles",
-      subtitle: "Le changement est un processus naturel. La thérapie permet donc de dépasser les régressions et mobiliser les ressources présentes.",
-      quote: "- Eric Binet"
-    }
+    "HTSMA - Institut Mimethys",
+    "D.I.U. Hypnose - Université de Bordeaux", 
+    "D.U. Thérapies cognitives et comportementales - Université de Bordeaux",
+    "Master en neuropsychologie - Université Libre de Bruxelles"
   ];
 
   return (
@@ -93,14 +87,7 @@ export default function About() {
                 className="bg-light-blue p-6 rounded-lg" 
                 data-testid={`formation-${index}`}
               >
-                <h4 className="font-semibold text-dark-gray mb-2">{formation.title}</h4>
-                <p className="text-gray-600 text-sm mb-2">{formation.subtitle}</p>
-                {formation.additional && (
-                  <p className="text-gray-600 text-sm">{formation.additional}</p>
-                )}
-                {formation.quote && (
-                  <p className="text-gray-500 text-sm italic mt-2">{formation.quote}</p>
-                )}
+                <p className="font-medium text-dark-gray">{formation}</p>
               </div>
             ))}
           </div>
