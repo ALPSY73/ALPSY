@@ -39,18 +39,18 @@ export default function About() {
           À propos
         </h2>
         
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid lg:grid-cols-2 gap-3 lg:gap-4">
           <div>
-            <p id="text-apropos" className="text-gray-600 mb-6 leading-relaxed" data-testid="text-about-description-1">
+            <p id="text-apropos" className="text-gray-600 mb-3 leading-relaxed" data-testid="text-about-description-1">
               Durant mes 12 années de pratique en hôpitaux et en institution, j'ai accompagné des personnes confrontées à des problématiques variées: dépression, anxiété, séparation, harcèlement scolaire, phobies, troubles des conduites alimentaires, addictions, questionnement sur l'identité de genre, handicap, psychotraumatisme, violences sexuelles, idées suicidaires…
             </p>
-            <p className="text-gray-600 mb-6 leading-relaxed" data-testid="text-about-description-2">
+            <p className="text-gray-600 mb-2 leading-relaxed" data-testid="text-about-description-2">
               Je peux donc vous accompagner dans des difficultés d'épanouissement personnel, un passage de vie compliqué ou des souffrances profondes qu'elles soient récentes ou venues du passé.
             </p>
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold text-dark-gray mb-3" data-testid="title-approches">
+            <h3 className="text-xl font-semibold text-dark-gray mb-2" data-testid="title-approches">
               Approches Thérapeutiques
             </h3>
             
