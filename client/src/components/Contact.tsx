@@ -64,13 +64,6 @@ export default function Contact() {
           </div>
           
           <div>
-            <img 
-              src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Cabinet de psychologie professionnel" 
-              className="rounded-xl shadow-lg w-full h-auto"
-              data-testid="img-office"
-            />
-            
             <div className="mt-8 flex items-center justify-center" data-testid="doctolib-integration">
               <img 
                 src={doctolibLogo} 
