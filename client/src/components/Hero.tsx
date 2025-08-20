@@ -21,7 +21,7 @@ export default function Hero() {
                 className="bg-primary-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
                 data-testid="button-hero-prendre-rdv"
               >
-                <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-4 w-4" />
+                <img src={doctolibLogo} alt="Doctolib" className="mr-2 h-5 w-auto" />
                 Prendre RDV
               </Button>
               <Button 
