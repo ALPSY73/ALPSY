@@ -80,7 +80,7 @@ export default function About() {
             Formations
           </h3>
           
-          <div className="grid md:grid-cols-2 gap-2">
+          <div className="grid md:grid-cols-2 gap-0">
             {formations.map((formation, index) => (
               <div 
                 key={index} 
