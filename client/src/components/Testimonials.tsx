@@ -8,19 +8,19 @@ export default function Testimonials() {
       name: "Alain",
       avatar: "A",
       bgColor: "bg-primary-blue",
-      text: "Sébastien m'a aidé à traverser une période très difficile de ma vie. Son approche bienveillante et professionnelle m'a redonné confiance."
+      text: "Après la réalité conçue au niveau de ses jaillons complètement changé et transformé ma vie. Je parte de tout seul avec entière, comme plus mourir ne pas me sens dans une atmosphère car c'est maintenant que je démarre toujours la vie."
     },
     {
       name: "Lucie",
       avatar: "L",
-      bgColor: "bg-green-500",
-      text: "Après des méditations, j'ai repris confiance en moi et j'ai appris à gérer mes angoisses. Je recommande vivement."
+      bgColor: "bg-orange-500",
+      text: "Après des méditations de ce type et à Sébastien ce ne me faisait pas des troubles, énormément de défis. Dans façons deux, ma mère a travaillé de son thérapie utélète. Il a y a finalement le mal mais c'était mais je pousse sur."
     },
     {
       name: "Marine",
       avatar: "M",
-      bgColor: "bg-purple-500",
-      text: "Très professionnel et à l'écoute. Les séances m'ont permis de surmonter mes difficultés et de retrouver un équilibre."
+      bgColor: "bg-green-500",
+      text: "J'ai passé de longs mois en souffrance et malgré mon caractère, j'arrivais au bout de thérapies faisées très. Ma mère a commencé de voir thérapie utélète. Il a y a passé beaucoup mal mais chez c'était pas je jouais sur l'hôpital pour la récupération, mais je survis bien. Je pense à travers là-dessus."
     }
   ];
 

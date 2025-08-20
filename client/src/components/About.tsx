@@ -3,29 +3,29 @@ export default function About() {
     {
       color: "bg-primary-blue",
       title: "Thérapies cognitives et comportementales",
-      description: "Pour permettre d'agir en les pensées, les émotions et les comportements des personnes comportements."
+      description: "Pour permettre d'agir sur les pensées, les émotions et les comportements des personnes comportementales."
     },
     {
       color: "bg-orange-500",
       title: "Hypnose",
-      description: "Une méthode douce plus expositions thérapeutiques et fonction le traitement psychique qui stress défensives."
+      description: "Une méthode douce sans expositions thérapeutiques et fonction le traitement psychologique des stress défenses."
     },
     {
       color: "bg-green-500",
       title: "EMDR",
-      description: "Une technique de stimulation d'acte à base les traumatismes et les thérapies émotionnelles."
+      description: "Une technique de stimulation bilatérale à la base les traumatismes et les thérapies émotionnelles."
     }
   ];
 
   const formations = [
     {
-      title: "DEHUMA - Institut Motricité",
+      title: "PSYAUM - Institut Motricité",
       subtitle: "D.U. Hypnose - Université de Bordeaux",
       additional: "D.U. Thérapies cognitives et comportementales - Université de Bordeaux"
     },
     {
       title: "Master en neuropsychologie - Université Libre de Bruxelles",
-      subtitle: "Le changement est un processus normal. La thérapie permet lors de dépasser un régression et d'avoir des outils de développement personnel."
+      subtitle: "Le changement est un processus naturel. La thérapie permet donc de dépasser les régressions et mobiliser les ressources présentes."
     }
   ];
 
@@ -39,10 +39,10 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <p className="text-gray-600 mb-6 leading-relaxed" data-testid="text-about-description-1">
-              Depuis plus de quelques années en psychologie clinique et en médiation, j'ai accompagné des personnes confrontées à des situations de transition, de remaniement psychique, diagnostiques, traitement et troubles, phobies, troubles addictifs et particulièrement dans l'abandon du genre, handicap, psychosomatiques, violences sexuelles de l'adolescence...
+              Depuis plus de quelques années de pratique en psychologie et en médiation, j'ai accompagné des personnes confrontées à des situations de transition, d'accompagnement psychique, diagnostiques, traitement sclérose, phobies, je suis tous éduques élémentaires, addictions, spécifiquement sur l'identité du genre, handicap, psychosomatiques, violences sexuelles chez l'adolescent...
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed" data-testid="text-about-description-2">
-              Je peux donc vous proposer tout type de troubles differencient à l'accompagnement personnel grâce à que ma formation solide développe et plusieurs différentes pratiques: grâce, conseil dévelopée en début de plaisir.
+              Je peux donc vous aider lors de difficultés d'accompagnement personnel, grâce à une formation solide développée sur plusieurs techniques thérapeutiques pratiques: grâce, conseil intégrés au niveau de plaisir.
             </p>
           </div>
           

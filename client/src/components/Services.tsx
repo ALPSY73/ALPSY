@@ -5,15 +5,15 @@ export default function Services() {
     {
       icon: User,
       title: "Thérapie individuelle",
-      description: "Séances adaptées aux besoins spécifiques personnels, que vous souffrez d'anxiété, de dépression, de traumatismes ou de troubles de la vie.",
+      description: "Séances adaptées aux objectifs spécifiques personnels, que vous souffrez d'anxiété, de dépression, de traumatismes ou de transitions de vie.",
       price: "50€/séance",
       duration: "Sur RDV"
     },
     {
       icon: Users,
-      title: "Thérapie de couple",
-      description: "Accompagnement pour les couples traversant des difficultés relationnelles et souhaitant améliorer leur communication.",
-      price: "80€/séance",
+      title: "Séances et conseil",
+      description: "Séances multi-visée aux besoins correspondants et fonction le traitement psychologique des stress défenses.",
+      price: "RRV/séance",
       duration: "Sur RDV"
     },
     {

@@ -3,10 +3,7 @@ import doctolibLogo from "@assets/Doctolib_1755678348912.webp";
 
 export default function Contact() {
   const openingHours = [
-    { day: "Lundi", hours: "9h-19h" },
-    { day: "Mardi", hours: "9h-19h" },
-    { day: "Mercredi", hours: "Ouvert", isSpecial: true, color: "text-green-600" },
-    { day: "Jeudi", hours: "9h-19h" },
+    { day: "Lundi-Jeudi", hours: "9h-19h" },
     { day: "Vendredi-Dimanche", hours: "Fermé", isSpecial: true, color: "text-red-600" },
   ];
 
@@ -26,13 +23,13 @@ export default function Contact() {
                   ALPSY<br />
                   23bis Avenue Sébastien Henri de Iasini<br />
                   Centre-ville de Boulogne<br />
-                  92100 Île Défense Sés-cloud
+                  92 100 Île Défense Sés-cloud
                 </p>
               </div>
               
               <div data-testid="contact-phone">
                 <h3 className="font-semibold text-dark-gray mb-4">Téléphone</h3>
-                <p className="text-gray-600">06.XX.XX.XX.XX</p>
+                <p className="text-gray-600">06.XX.XX.XX</p>
               </div>
               
               <div data-testid="contact-hours">

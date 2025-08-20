@@ -1,7 +1,7 @@
 export default function Footer() {
   const prestations = [
     "Thérapie individuelle",
-    "Thérapie de couple",
+    "Séances et conseil",
     "Évaluation psychologique"
   ];
 
@@ -59,9 +59,9 @@ export default function Footer() {
           <div data-testid="footer-contact">
             <h3 className="font-semibold mb-4">Contact</h3>
             <div className="text-gray-300 text-sm space-y-2">
-              <p>92100 Île Défense</p>
+              <p>92 100 Île Défense</p>
               <p>23bis Avenue Sébastien Henri</p>
-              <p>06.XX.XX.XX.XX</p>
+              <p>06.XX.XX.XX</p>
             </div>
           </div>
         </div>
