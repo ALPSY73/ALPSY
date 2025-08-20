@@ -1,4 +1,5 @@
 import { Info } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
 export default function Contact() {
@@ -61,14 +62,20 @@ export default function Contact() {
           </div>
           
           <div>
-            <div className="mt-8 flex items-center justify-center" data-testid="doctolib-integration">
-              <img 
-                src={doctolibLogo} 
-                alt="Prendre rendez-vous sur Doctolib" 
-                className="h-12 w-auto"
-                data-testid="logo-doctolib"
-              />
-              <span className="ml-4 text-gray-600">Prendre RDV</span>
+            <div className="mt-8 flex justify-center" data-testid="doctolib-integration">
+              <Button 
+                variant="outline"
+                className="border border-primary-blue text-primary-blue px-8 py-3 rounded-lg hover:bg-light-blue transition-colors font-medium"
+                data-testid="button-contact-prendre-rdv"
+              >
+                <img 
+                  src={doctolibLogo} 
+                  alt="Doctolib" 
+                  className="mr-2 h-4 w-4"
+                  data-testid="logo-doctolib"
+                />
+                Prendre RDV
+              </Button>
             </div>
           </div>
         </div>
