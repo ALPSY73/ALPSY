@@ -1,4 +1,4 @@
-import { Info } from "lucide-react";
+import { Info, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
@@ -26,12 +26,15 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
-                  <p>
-                    ALPSY<br />
-                    2ème étage- Bâtiment terre de soins<br />
-                    400, avenue de la Breisse<br />
-                    73 190 Challes-les-eaux
-                  </p>
+                  <div className="flex items-start">
+                    <MapPin className="text-primary-blue h-5 w-5 mr-2 mt-1 flex-shrink-0" />
+                    <p>
+                      ALPSY<br />
+                      2ème étage- Bâtiment terre de soins<br />
+                      400, avenue de la Breisse<br />
+                      73 190 Challes-les-eaux
+                    </p>
+                  </div>
                 </a>
               </div>
               
