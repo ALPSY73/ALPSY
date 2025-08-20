@@ -95,7 +95,7 @@ export default function About() {
                     <Star className="h-4 w-4 text-purple-500 mr-2" />
                   )}
                   {formation.includes("D.U. Thérapies cognitives") && (
-                    <MessageCircle className="h-4 w-4 text-green-500 mr-2" />
+                    <MessageCircle className="h-6 w-6 text-green-500 mr-2" />
                   )}
                   {formation.includes("Master en neuropsychologie") && (
                     <Brain className="h-4 w-4 text-blue-500 mr-2" />
