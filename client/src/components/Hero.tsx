@@ -69,7 +69,6 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            
             <div className="-mt-2">
               <a 
                 href="https://hoodspot.fr/autres-professionnels-de-sante/alpsy-psychologue-sebastien-stuhec-79779492200022/"
