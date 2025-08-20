@@ -7,14 +7,14 @@ export default function About() {
       circleColor: "bg-blue-500",
       icon: Brain,
       title: "Thérapies cognitives et comportementales",
-      description: "Elles permettent d'agir sur les pensées, les émotions et les comportements, vécus comme problématiques"
+      description: "Elles permettent d'agir les pensées, les émotions et les comportements vécus comme problématiques"
     },
     {
       bgColor: "bg-orange-50",
       circleColor: "bg-orange-500",
       icon: Zap,
       title: "Hypnose",
-      description: "Elle facilite l'accès aux ressources inconscientes et favorise le changement psychologique ou comportemental."
+      description: "Elle facilité l'accès aux ressources inconscientes et favorise le changement psychologique ou comportemental"
     },
     {
       bgColor: "bg-green-50",
