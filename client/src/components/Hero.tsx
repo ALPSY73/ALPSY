@@ -81,7 +81,6 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          
           <div className="flex justify-center">
             <img 
               src={heroPhoto} 
