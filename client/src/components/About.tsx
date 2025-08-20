@@ -41,7 +41,7 @@ export default function About() {
         
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
           <div>
-            <p className="text-gray-600 mb-6 leading-relaxed" data-testid="text-about-description-1">
+            <p id="text-apropos" className="text-gray-600 mb-6 leading-relaxed" data-testid="text-about-description-1">
               Durant mes 12 années de pratique en hôpitaux et en institution, j'ai accompagné des personnes confrontées à des problématiques variées: dépression, anxiété, séparation, harcèlement scolaire, phobies, troubles des conduites alimentaires, addictions, questionnement sur l'identité de genre, handicap, psychotraumatisme, violences sexuelles, idées suicidaires…
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed" data-testid="text-about-description-2">
