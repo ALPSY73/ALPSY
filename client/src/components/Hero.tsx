@@ -44,13 +44,15 @@ export default function Hero() {
                 <div className="text-sm text-gray-600">Années d'expérience</div>
               </div>
               <div className="text-center flex flex-col items-center" data-testid="stat-patients">
-                <div className="text-3xl font-bold text-primary-blue">500+</div>
-                <div className="text-sm text-gray-600">Patients aidés</div>
-                <div className="flex items-center mt-1">
-                  <Star className="text-yellow-500 h-4 w-4 fill-current mr-1" />
-                  <span className="text-sm font-medium text-primary-blue">5.0</span>
-                  <span className="text-sm text-gray-600 ml-1">(7)</span>
+                <div className="flex items-center justify-center">
+                  <div className="text-3xl font-bold text-primary-blue">500+</div>
+                  <div className="flex items-center ml-2">
+                    <Star className="text-yellow-500 h-4 w-4 fill-current mr-1" />
+                    <span className="text-sm font-medium text-primary-blue">5.0</span>
+                    <span className="text-sm text-gray-600 ml-1">(7)</span>
+                  </div>
                 </div>
+                <div className="text-sm text-gray-600">Patients aidés</div>
               </div>
               <div className="flex items-center" data-testid="feature-nouveaux-patients">
                 <div className="bg-green-500 rounded-full w-6 h-6 mr-3 flex items-center justify-center flex-shrink-0">
