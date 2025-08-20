@@ -81,8 +81,10 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors block"
               >
-                <p>73 190 Challes-les-eaux</p>
+                <p>ALPSY</p>
+                <p>2ème étage- Bâtiment terre de soins</p>
                 <p>400, avenue de la Breisse</p>
+                <p>73 190 Challes-les-eaux</p>
               </a>
               <div className="flex items-center">
                 <Phone className="text-white h-4 w-4 mr-2 flex-shrink-0" />
