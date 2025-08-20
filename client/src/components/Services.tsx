@@ -1,4 +1,4 @@
-import { Heart, Users, Brain } from "lucide-react";
+import { Heart, Users, Brain, Clock } from "lucide-react";
 
 export default function Services() {
   const services = [
@@ -37,7 +37,8 @@ export default function Services() {
               <div className="text-primary-blue font-medium" data-testid={`service-price-${index}`}>
                 {service.price}
               </div>
-              <div className="text-gray-500 text-sm" data-testid={`service-duration-${index}`}>
+              <div className="text-gray-500 text-sm flex items-center" data-testid={`service-duration-${index}`}>
+                <Clock className="h-4 w-4 mr-1" />
                 {service.duration}
               </div>
             </div>
