@@ -68,7 +68,7 @@ export default function Contact() {
                 className="h-12 w-auto"
                 data-testid="logo-doctolib"
               />
-              <span className="ml-4 text-gray-600">Prenez rendez-vous en ligne</span>
+              <span className="ml-4 text-gray-600">Prendre RDV</span>
             </div>
           </div>
         </div>
