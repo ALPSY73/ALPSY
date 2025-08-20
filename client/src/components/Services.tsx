@@ -25,12 +25,14 @@ export default function Services() {
               className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
               data-testid={`service-card-${index}`}
             >
-              <div className="w-12 h-12 bg-light-blue rounded-lg flex items-center justify-center mb-6">
-                <service.icon className="text-primary-blue text-xl h-6 w-6" />
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-light-blue rounded-lg flex items-center justify-center mr-4">
+                  <service.icon className="text-primary-blue text-xl h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-semibold text-dark-gray" data-testid={`service-title-${index}`}>
+                  {service.title}
+                </h3>
               </div>
-              <h3 className="text-xl font-semibold text-dark-gray mb-4" data-testid={`service-title-${index}`}>
-                {service.title}
-              </h3>
               <p className="text-gray-600 mb-4" data-testid={`service-description-${index}`}>
                 {service.description}
               </p>
