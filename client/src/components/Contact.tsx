@@ -9,7 +9,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="bg-blue-50 pt-8 pb-8 lg:pt-12 lg:pb-12">
+    <section id="contact" className="bg-slate-50 pt-8 pb-8 lg:pt-12 lg:pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold text-dark-gray mb-12" data-testid="title-contact">
           Informations de contact
