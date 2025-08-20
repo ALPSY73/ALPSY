@@ -1,11 +1,11 @@
-import { Brain, Eye, Heart, Target, Star, MessageCircle } from "lucide-react";
+import { Users, Eye, Heart, Target, Star, MessageCircle, Brain } from "lucide-react";
 
 export default function About() {
   const approaches = [
     {
       bgColor: "bg-blue-50",
       circleColor: "bg-blue-500",
-      icon: Brain,
+      icon: Users,
       title: "Thérapies cognitives et comportementales",
       description: "Elles permettent d'agir les pensées, les émotions et les comportements vécus comme problématiques"
     },
