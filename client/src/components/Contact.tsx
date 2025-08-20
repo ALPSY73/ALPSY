@@ -51,12 +51,12 @@ export default function Contact() {
                 </div>
               </div>
               
-              <div className="bg-blue-50 p-4 rounded-lg" data-testid="contact-emergency">
+              <div className="bg-primary-blue p-4 rounded-lg" data-testid="contact-emergency">
                 <div className="flex items-start">
-                  <Info className="text-primary-blue mt-1 mr-3 h-5 w-5" />
+                  <Info className="text-white mt-1 mr-3 h-5 w-5" />
                   <div>
-                    <h4 className="font-medium text-primary-blue mb-1">Assistance d'urgence</h4>
-                    <p className="text-gray-600 text-sm">
+                    <h4 className="font-medium text-white mb-1">Assistance d'urgence</h4>
+                    <p className="text-white text-sm">
                       Pour les urgences de santé mentale, appelez le 15 (SAMU) ou le 3114 (numéro national de prévention du suicide).
                     </p>
                   </div>
