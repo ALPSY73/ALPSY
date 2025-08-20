@@ -39,7 +39,7 @@ export default function Hero() {
                 <div className="text-3xl font-bold text-primary-blue">12+</div>
                 <div className="text-sm text-gray-600">Années d'expérience</div>
               </div>
-              <div className="text-center" data-testid="stat-patients">
+              <div className="text-center flex flex-col items-center" data-testid="stat-patients">
                 <div className="text-3xl font-bold text-primary-blue">500+</div>
                 <div className="text-sm text-gray-600">Patients aidés</div>
               </div>
