@@ -84,7 +84,7 @@ export default function About() {
             {formations.map((formation, index) => (
               <div 
                 key={index} 
-                className={`p-2 rounded-lg ${formation.includes("HTSMA") ? "bg-green-50" : ""}`}
+                className="p-2" 
                 data-testid={`formation-${index}`}
               >
                 <div className="flex items-center">
