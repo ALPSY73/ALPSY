@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import alpsyLogo from "@assets/ALPSY_1755678118700.webp";
+import alpsyLogo from "@assets/ALPSY_1755678334816.webp";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
