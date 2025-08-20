@@ -2,7 +2,7 @@ import { Calendar, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import heroPhoto from "@assets/Photo héro_1755678370552.webp";
-import doctolibLogo from "@assets/Doctolib_1755678348912.webp";
+import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
 export default function Hero() {
   return (

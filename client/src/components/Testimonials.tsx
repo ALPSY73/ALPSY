@@ -1,6 +1,6 @@
 import { Calendar, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import doctolibLogo from "@assets/Doctolib_1755678348912.webp";
+import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
 export default function Testimonials() {
   const testimonials = [
