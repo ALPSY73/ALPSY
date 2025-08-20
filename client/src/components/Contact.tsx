@@ -4,8 +4,8 @@ import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
 export default function Contact() {
   const openingHours = [
-    { day: "Lundi-Jeudi", hours: "9h-19h" },
-    { day: "Vendredi-Dimanche", hours: "Fermé", isSpecial: true, color: "text-red-600" },
+    { day: "Lundi-Jeudi", morning: "09h-12h", afternoon: "13h-17h", status: "Ouvert", isSpecial: false },
+    { day: "Vendredi-Dimanche", morning: "", afternoon: "", status: "Fermé", isSpecial: true, color: "text-red-600" },
   ];
 
   return (
@@ -37,10 +37,12 @@ export default function Contact() {
                 <h3 className="font-semibold text-dark-gray mb-4">Heures d'ouverture</h3>
                 <div className="space-y-2">
                   {openingHours.map((schedule, index) => (
-                    <div key={index} className="flex justify-between" data-testid={`schedule-${index}`}>
-                      <span className="text-gray-600">{schedule.day}</span>
-                      <span className={schedule.isSpecial ? `${schedule.color} font-medium` : "text-gray-600"}>
-                        {schedule.hours}
+                    <div key={index} className="grid grid-cols-4 gap-4 items-center" data-testid={`schedule-${index}`}>
+                      <span className="text-gray-600 font-medium">{schedule.day}</span>
+                      <span className="text-gray-600 text-center">{schedule.morning}</span>
+                      <span className="text-gray-600 text-center">{schedule.afternoon}</span>
+                      <span className={schedule.isSpecial ? `${schedule.color} font-medium text-center` : "text-gray-600 text-center"}>
+                        {schedule.status}
                       </span>
                     </div>
                   ))}
