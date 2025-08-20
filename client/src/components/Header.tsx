@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Calendar } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import alpsyLogo from "@assets/ALPSY_1755678334816.webp";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";

@@ -1,4 +1,4 @@
-import { Heart, Users, Brain, Clock } from "lucide-react";
+import { Brain, Clock } from "lucide-react";
 
 export default function Services() {
   const services = [

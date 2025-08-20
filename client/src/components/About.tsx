@@ -1,4 +1,4 @@
-import { Users, Moon, Heart, Target, Star, MessageCircle, Brain, Sparkles } from "lucide-react";
+import { Users, Moon, Star, Target, Sparkles, MessageCircle, Brain } from "lucide-react";
 
 export default function About() {
   const approaches = [

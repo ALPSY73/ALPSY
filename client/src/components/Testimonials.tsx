@@ -1,4 +1,4 @@
-import { Calendar, Star } from "lucide-react";
+// Import optimized - removed unused icons
 import { Button } from "@/components/ui/button";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 

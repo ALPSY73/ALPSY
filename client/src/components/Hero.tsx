@@ -1,4 +1,4 @@
-import { Calendar, Info, Heart, Star } from "lucide-react";
+import { Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroPhoto from "@assets/Photo héro_1755678370552.webp";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
