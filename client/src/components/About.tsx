@@ -88,19 +88,19 @@ export default function About() {
                 data-testid={`formation-${index}`}
               >
                 <div className="flex items-center">
-                  <p className="font-medium text-dark-gray">{formation}</p>
                   {formation.includes("HTSMA") && (
-                    <Target className="h-4 w-4 text-red-500 ml-2" />
+                    <Target className="h-4 w-4 text-red-500 mr-2" />
                   )}
                   {formation.includes("D.I.U. Hypnose") && (
-                    <Star className="h-4 w-4 text-purple-500 ml-2" />
+                    <Star className="h-4 w-4 text-purple-500 mr-2" />
                   )}
                   {formation.includes("D.U. Thérapies cognitives") && (
-                    <MessageCircle className="h-4 w-4 text-green-500 ml-2" />
+                    <MessageCircle className="h-4 w-4 text-green-500 mr-2" />
                   )}
                   {formation.includes("Master en neuropsychologie") && (
-                    <Brain className="h-4 w-4 text-blue-500 ml-2" />
+                    <Brain className="h-4 w-4 text-blue-500 mr-2" />
                   )}
+                  <p className="font-medium text-dark-gray">{formation}</p>
                 </div>
               </div>
             ))}
