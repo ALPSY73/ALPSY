@@ -8,7 +8,7 @@ export default function Hero() {
     <section id="accueil" className="bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 lg:pt-8 lg:pb-20 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <div className="bg-gray-50 p-6 rounded-lg">
+          <div>
             <h1 id="sebastien-stuhec" className="text-4xl lg:text-5xl font-bold text-primary-blue mb-6" data-testid="title-hero">
               Sébastien Stuhec
             </h1>
