@@ -51,6 +51,12 @@ app.use((req, res, next) => {
   next();
 });
 
+// Serve robots.txt before other routes
+app.get('/robots.txt', (req: Request, res: Response) => {
+  res.type('text/plain');
+  res.sendFile('robots.txt', { root: './public' });
+});
+
 (async () => {
   const server = await registerRoutes(app);
 
