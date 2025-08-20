@@ -43,7 +43,7 @@ export default function Contact() {
               <div data-testid="contact-phone">
                 <div className="flex items-center mb-3">
                   <Phone className="text-green-500 h-5 w-5 mr-2 flex-shrink-0" />
-                  <h4 className="font-medium text-dark-gray">Téléphone</h4>
+                  <h4 className="font-bold text-dark-gray">Téléphone</h4>
                 </div>
                 <a href="tel:+33610919047" className="text-gray-600 hover:text-blue-600 transition-colors">06.10.91.90.47</a>
               </div>
