@@ -5,9 +5,9 @@ export default function Services() {
     {
       icon: User,
       title: "Thérapie individuelle",
-      description: "Séances adaptées aux objectifs spécifiques personnels, que vous souffrez d'anxiété, de dépression, de traumatismes ou de transitions de vie.",
-      price: "50€/séance",
-      duration: "Sur RDV"
+      description: "Séances individuelles axées sur vos objectifs personnels, la gestion de l'anxiété, la dépression, les traumatismes ou les transitions de vie.",
+      price: "65€/séance",
+      duration: "Séances de 45 minutes"
     },
   ];
 
