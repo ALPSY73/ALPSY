@@ -42,11 +42,14 @@ export default function Hero() {
                 <div className="text-3xl font-bold text-primary-blue">500+</div>
                 <div className="text-sm text-gray-600">Patients accompagnés</div>
               </div>
-              <div className="flex items-center" data-testid="feature-reconversion">
+              <div className="flex items-center" data-testid="feature-nouveaux-patients">
                 <div className="bg-green-500 rounded-full p-1 mr-1 flex items-center justify-center">
                   <Heart className="text-white h-3 w-3 fill-current" />
                 </div>
-                <span className="text-sm text-gray-600">Analyse de reconversion professionnelle</span>
+                <div className="text-sm text-gray-600">
+                  <div>Accepte de nouveaux patients</div>
+                  <div>Rendez-vous disponibles</div>
+                </div>
               </div>
             </div>
           </div>
