@@ -1,5 +1,4 @@
 import { Info, MapPin, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
 export default function Contact() {
@@ -102,8 +101,8 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button 
-                  className="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium"
+                <button 
+                  className="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center"
                   data-testid="button-contact-prendre-rdv"
                 >
                   <img 
@@ -113,7 +112,7 @@ export default function Contact() {
                     data-testid="logo-doctolib"
                   />
                   Prendre RDV
-                </Button>
+                </button>
               </a>
             </div>
           </div>

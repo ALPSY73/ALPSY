@@ -1,0 +1,984 @@
+
+Le fichier robots.txt n'est pas valide 326 erreurs détectées
+Si votre fichier robots.txt n'est pas créé correctement, il se peut que les robots d'exploration ne puissent pas comprendre comment votre site Web doit être exploré ou indexé. En savoir plus sur les fichiers robots.txt
+Line #
+Content
+Error
+1
+<!DOCTYPE html>
+Syntax not understood
+2
+<html lang="fr">
+Syntax not understood
+3
+<head>
+Syntax not understood
+4
+<meta charset="UTF-8" />
+Syntax not understood
+5
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+Syntax not understood
+7
+<!-- Basic performance hints -->
+Syntax not understood
+8
+<meta name="format-detection" content="telephone=no" />
+Syntax not understood
+10
+<!-- SEO Meta Tags -->
+Syntax not understood
+11
+<title>Sébastien Stuhec - Psychologue Clinicien à Challes-les-Eaux | ALPSY</title>
+Syntax not understood
+12
+<meta name="description" content="Psychologue clinicien expérimenté à Challes-les-Eaux. Sébastien Stuhec accompagne adultes et adolescents dans leur bien-être psychologique. Consultations individuelles, thérapie comportementale. Doctolib disponible." />
+Syntax not understood
+13
+<meta name="keywords" content="psychologue Challes-les-Eaux, psychologue clinicien, thérapie individuelle, consultation psychologique, Sébastien Stuhec, ALPSY, bien-être mental, psychothérapie Savoie" />
+Syntax not understood
+14
+<meta name="author" content="Sébastien Stuhec - ALPSY" />
+Syntax not understood
+15
+<meta name="robots" content="index, follow" />
+Syntax not understood
+16
+<meta name="language" content="French" />
+Syntax not understood
+17
+<meta name="geo.region" content="FR-73" />
+Syntax not understood
+18
+<meta name="geo.placename" content="Challes-les-Eaux" />
+Syntax not understood
+19
+<meta name="geo.position" content="45.5554194;5.9721243" />
+Syntax not understood
+20
+<meta name="ICBM" content="45.5554194, 5.9721243" />
+Syntax not understood
+22
+<!-- Canonical URL -->
+Syntax not understood
+23
+<link rel="canonical" href="https://alpsy.fr" />
+Unknown directive
+25
+<!-- Open Graph / Facebook -->
+Syntax not understood
+26
+<meta property="og:type" content="website" />
+Unknown directive
+27
+<meta property="og:url" content="https://alpsy.fr" />
+Unknown directive
+28
+<meta property="og:title" content="Sébastien Stuhec - Psychologue Clinicien à Challes-les-Eaux | ALPSY" />
+Unknown directive
+29
+<meta property="og:description" content="Psychologue clinicien expérimenté à Challes-les-Eaux. Accompagnement personnalisé pour adultes et adolescents. 12 ans d'expérience en thérapie individuelle." />
+Unknown directive
+30
+<meta property="og:site_name" content="ALPSY - Psychologue Sébastien Stuhec" />
+Unknown directive
+31
+<meta property="og:locale" content="fr_FR" />
+Unknown directive
+33
+<!-- Twitter -->
+Syntax not understood
+34
+<meta property="twitter:card" content="summary_large_image" />
+Unknown directive
+35
+<meta property="twitter:url" content="https://alpsy.fr" />
+Unknown directive
+36
+<meta property="twitter:title" content="Sébastien Stuhec - Psychologue Clinicien à Challes-les-Eaux" />
+Unknown directive
+37
+<meta property="twitter:description" content="Psychologue clinicien expérimenté à Challes-les-Eaux. Accompagnement personnalisé pour votre bien-être psychologique." />
+Unknown directive
+39
+<!-- Structured Data - JSON-LD -->
+Syntax not understood
+40
+<script type="application/ld+json">
+Syntax not understood
+41
+{
+Syntax not understood
+42
+"@context": "https://schema.org",
+Unknown directive
+43
+"@type": "Psychologist",
+Unknown directive
+44
+"name": "Sébastien Stuhec",
+Unknown directive
+45
+"alternateName": "ALPSY",
+Unknown directive
+46
+"description": "Psychologue clinicien expérimenté spécialisé dans l'accompagnement psychologique individuel",
+Unknown directive
+47
+"url": "https://alpsy.fr",
+Unknown directive
+48
+"telephone": "+33610919047",
+Unknown directive
+49
+"email": "contact@alpsy.fr",
+Unknown directive
+50
+"address": {
+Unknown directive
+51
+"@type": "PostalAddress",
+Unknown directive
+52
+"streetAddress": "400, avenue de la Breisse, 2ème étage - Bâtiment terre de soins",
+Unknown directive
+53
+"addressLocality": "Challes-les-Eaux",
+Unknown directive
+54
+"postalCode": "73190",
+Unknown directive
+55
+"addressRegion": "Savoie",
+Unknown directive
+56
+"addressCountry": "FR"
+Unknown directive
+57
+},
+Syntax not understood
+58
+"geo": {
+Unknown directive
+59
+"@type": "GeoCoordinates",
+Unknown directive
+60
+"latitude": 45.5554194,
+Unknown directive
+61
+"longitude": 5.9721243
+Unknown directive
+62
+},
+Syntax not understood
+63
+"openingHours": "Mo-Th 09:00-12:00,13:00-17:00",
+Unknown directive
+64
+"priceRange": "€€",
+Unknown directive
+65
+"hasOfferCatalog": {
+Unknown directive
+66
+"@type": "OfferCatalog",
+Unknown directive
+67
+"name": "Services de psychologie",
+Unknown directive
+68
+"itemListElement": [
+Unknown directive
+69
+{
+Syntax not understood
+70
+"@type": "Offer",
+Unknown directive
+71
+"itemOffered": {
+Unknown directive
+72
+"@type": "Service",
+Unknown directive
+73
+"name": "Thérapie individuelle",
+Unknown directive
+74
+"description": "Consultation psychologique individuelle pour adultes et adolescents"
+Unknown directive
+75
+}
+Syntax not understood
+76
+}
+Syntax not understood
+77
+]
+Syntax not understood
+78
+},
+Syntax not understood
+79
+"areaServed": {
+Unknown directive
+80
+"@type": "Place",
+Unknown directive
+81
+"name": "Challes-les-Eaux et région Savoie"
+Unknown directive
+82
+},
+Syntax not understood
+83
+"knowsAbout": ["Psychologie clinique", "Thérapie comportementale", "Accompagnement psychologique", "Santé mentale"],
+Unknown directive
+84
+"memberOf": {
+Unknown directive
+85
+"@type": "Organization",
+Unknown directive
+86
+"name": "Ordre des Psychologues"
+Unknown directive
+87
+}
+Syntax not understood
+88
+}
+Syntax not understood
+89
+</script>
+Syntax not understood
+91
+<!-- Performance Optimizations -->
+Syntax not understood
+92
+<link rel="dns-prefetch" href="https://replit.com">
+Unknown directive
+93
+<link rel="dns-prefetch" href="https://www.doctolib.fr">
+Unknown directive
+95
+<!-- Preconnect to own domain for faster asset loading -->
+Syntax not understood
+96
+<link rel="preconnect" href="https://alpsy-test-sebastienstuhec.replit.app">
+Unknown directive
+98
+<!-- Optimized preload for hero image -->
+Syntax not understood
+99
+<link rel="preload" href="/assets/Photo%20h%C3%A9ro_1755678370552-DmvLH9xu.webp" as="image" fetchpriority="high">
+Syntax not understood
+100
+<link rel="modulepreload" href="data:application/octet-stream;base64,aW1wb3J0IHsgY3JlYXRlUm9vdCB9IGZyb20gInJlYWN0LWRvbS9jbGllbnQiOwppbXBvcnQgQXBwIGZyb20gIi4vQXBwIjsKaW1wb3J0ICIuL2luZGV4LmNzcyI7CgpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJyb290IikhKS5yZW5kZXIoPEFwcCAvPik7Cg==" fetchpriority="high">
+Unknown directive
+101
+<link rel="modulepreload" href="data:application/octet-stream;base64,aW1wb3J0IHsgU3dpdGNoLCBSb3V0ZSB9IGZyb20gIndvdXRlciI7CmltcG9ydCB7IHF1ZXJ5Q2xpZW50IH0gZnJvbSAiLi9saWIvcXVlcnlDbGllbnQiOwppbXBvcnQgeyBRdWVyeUNsaWVudFByb3ZpZGVyIH0gZnJvbSAiQHRhbnN0YWNrL3JlYWN0LXF1ZXJ5IjsKaW1wb3J0IHsgVG9hc3RlciB9IGZyb20gIkAvY29tcG9uZW50cy91aS90b2FzdGVyIjsKaW1wb3J0IHsgVG9vbHRpcFByb3ZpZGVyIH0gZnJvbSAiQC9jb21wb25lbnRzL3VpL3Rvb2x0aXAiOwppbXBvcnQgSG9tZSBmcm9tICJAL3BhZ2VzL2hvbWUiOwppbXBvcnQgTm90Rm91bmQgZnJvbSAiQC9wYWdlcy9ub3QtZm91bmQiOwoKZnVuY3Rpb24gUm91dGVyKCkgewogIHJldHVybiAoCiAgICA8U3dpdGNoPgogICAgICA8Um91dGUgcGF0aD0iLyIgY29tcG9uZW50PXtIb21lfSAvPgogICAgICA8Um91dGUgY29tcG9uZW50PXtOb3RGb3VuZH0gLz4KICAgIDwvU3dpdGNoPgogICk7Cn0KCmZ1bmN0aW9uIEFwcCgpIHsKICByZXR1cm4gKAogICAgPFF1ZXJ5Q2xpZW50UHJvdmlkZXIgY2xpZW50PXtxdWVyeUNsaWVudH0+CiAgICAgIDxUb29sdGlwUHJvdmlkZXI+CiAgICAgICAgPFRvYXN0ZXIgLz4KICAgICAgICA8Um91dGVyIC8+CiAgICAgIDwvVG9vbHRpcFByb3ZpZGVyPgogICAgPC9RdWVyeUNsaWVudFByb3ZpZGVyPgogICk7Cn0KCmV4cG9ydCBkZWZhdWx0IEFwcDsK" fetchpriority="high">
+Unknown directive
+102
+<link rel="modulepreload" href="/assets/Hero-BGhUjsqq.tsx" fetchpriority="high">
+Syntax not understood
+104
+<!-- Performance optimizations -->
+Syntax not understood
+105
+<link rel="prefetch" href="/assets/Testimonials-DcWF25My.tsx">
+Syntax not understood
+106
+<link rel="prefetch" href="/assets/About-DAHmDXI4.tsx">
+Syntax not understood
+107
+<link rel="prefetch" href="data:application/octet-stream;base64,aW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBCcmFpbiwgQ2xvY2sgfSBmcm9tICJsdWNpZGUtcmVhY3QiOwppbXBvcnQgeyBTa2VsZXRvbiB9IGZyb20gIkAvY29tcG9uZW50cy91aS9za2VsZXRvbiIKaW1wb3J0IHsgdXNlSW50ZXJzZWN0aW9uT2JzZXJ2ZXIgfSBmcm9tICJAL2hvb2tzL3VzZS1pbnRlcnNlY3Rpb24tb2JzZXJ2ZXIiCgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBTZXJ2aWNlcygpIHsKICBjb25zdCBbaXNMb2FkZWQsIHNldElzTG9hZGVkXSA9IHVzZVN0YXRlKGZhbHNlKQogIGNvbnN0IHsgdGFyZ2V0UmVmLCBpc0ludGVyc2VjdGluZyB9ID0gdXNlSW50ZXJzZWN0aW9uT2JzZXJ2ZXIoeyB0aHJlc2hvbGQ6IDAuMSB9KQogIAogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoaXNJbnRlcnNlY3RpbmcpIHsKICAgICAgY29uc3QgdGltZXIgPSBzZXRUaW1lb3V0KCgpID0+IHNldElzTG9hZGVkKHRydWUpLCAxNTApCiAgICAgIHJldHVybiAoKSA9PiBjbGVhclRpbWVvdXQodGltZXIpCiAgICB9CiAgfSwgW2lzSW50ZXJzZWN0aW5nXSkKICAKICBjb25zdCBzZXJ2aWNlcyA9IFsKICAgIHsKICAgICAgaWNvbjogQnJhaW4sCiAgICAgIHRpdGxlOiAiVGjDqXJhcGllIGluZGl2aWR1ZWxsZSIsCiAgICAgIGRlc2NyaXB0aW9uOiAiU8OpYW5jZXMgaW5kaXZpZHVlbGxlcyBheMOpZXMgc3VyIHZvcyBvYmplY3RpZnMgcGVyc29ubmVscywgbGEgZ2VzdGlvbiBkZSBsJ2FueGnDqXTDqSwgbGEgZMOpcHJlc3Npb24sIGxlcyB0cmF1bWF0aXNtZXMgb3UgbGVzIHRyYW5zaXRpb25zIGRlIHZpZS4iLAogICAgICBwcmljZTogIjY14oKsL3PDqWFuY2UiLAogICAgICBkdXJhdGlvbjogIlPDqWFuY2VzIGRlIDQ1IG1pbnV0ZXMiCiAgICB9LAogIF07CgogIHJldHVybiAoCiAgICA8c2VjdGlvbiBpZD0icHJlc3RhdGlvbnMiIGNsYXNzTmFtZT0icHQtMiBwYi0yIGxnOnB0LTMgbGc6cGItMyIgcmVmPXt0YXJnZXRSZWZ9PgogICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctN3hsIG14LWF1dG8gcHgtNCBzbTpweC02IGxnOnB4LTgiPgogICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQtM3hsIGxnOnRleHQtNHhsIGZvbnQtYm9sZCB0ZXh0LWRhcmstZ3JheSBtYi0zIiBkYXRhLXRlc3RpZD0idGl0bGUtc2VydmljZXMiPgogICAgICAgICAgUHJlc3RhdGlvbnMKICAgICAgICA8L2gyPgogICAgICAgIAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIG1kOmdyaWQtY29scy0yIGxnOmdyaWQtY29scy0zIGdhcC04Ij4KICAgICAgICAgIHshaXNMb2FkZWQgPyAoCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJiZy13aGl0ZSBwLTggcm91bmRlZC14bCBzaGFkb3ctbGcgYm9yZGVyLTIgYm9yZGVyLWdyYXktMjAwIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgbWItNCI+CiAgICAgICAgICAgICAgICA8U2tlbGV0b24gY2xhc3NOYW1lPSJ3LTEyIGgtMTIgcm91bmRlZC1sZyBtci00IiAvPgogICAgICAgICAgICAgICAgPFNrZWxldG9uIGNsYXNzTmFtZT0iaC02IHctMzIiIC8+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPFNrZWxldG9uIGNsYXNzTmFtZT0iaC00IHctZnVsbCBtYi0yIiAvPgogICAgICAgICAgICAgIDxTa2VsZXRvbiBjbGFzc05hbWU9ImgtNCB3LWZ1bGwgbWItMiIgLz4KICAgICAgICAgICAgICA8U2tlbGV0b24gY2xhc3NOYW1lPSJoLTQgdy0zLzQgbWItNCIgLz4KICAgICAgICAgICAgICA8U2tlbGV0b24gY2xhc3NOYW1lPSJoLTQgdy0yNCBtYi0yIiAvPgogICAgICAgICAgICAgIDxTa2VsZXRvbiBjbGFzc05hbWU9ImgtNiB3LTIwIiAvPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICkgOiAoCiAgICAgICAgICAgIHNlcnZpY2VzLm1hcCgoc2VydmljZSwgaW5kZXgpID0+ICgKICAgICAgICAgICAgPGRpdiAKICAgICAgICAgICAgICBrZXk9e2luZGV4fSAKICAgICAgICAgICAgICBjbGFzc05hbWU9ImJnLXdoaXRlIHAtOCByb3VuZGVkLXhsIHNoYWRvdy1sZyBob3ZlcjpzaGFkb3cteGwgdHJhbnNpdGlvbi1zaGFkb3cgYm9yZGVyLTIgYm9yZGVyLWdyYXktMjAwIgogICAgICAgICAgICAgIGRhdGEtdGVzdGlkPXtgc2VydmljZS1jYXJkLSR7aW5kZXh9YH0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBtYi00Ij4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3LTEyIGgtMTIgYmctbGlnaHQtYmx1ZSByb3VuZGVkLWxnIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIG1yLTQiPgogICAgICAgICAgICAgICAgICA8c2VydmljZS5pY29uIGNsYXNzTmFtZT0idGV4dC1ibHVlLTcwMCB0ZXh0LXhsIGgtNiB3LTYiIC8+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9InRleHQteGwgZm9udC1zZW1pYm9sZCB0ZXh0LWRhcmstZ3JheSIgZGF0YS10ZXN0aWQ9e2BzZXJ2aWNlLXRpdGxlLSR7aW5kZXh9YH0+CiAgICAgICAgICAgICAgICAgIHtzZXJ2aWNlLnRpdGxlfQogICAgICAgICAgICAgICAgPC9oMz4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8cCBpZD0idGV4dC1wcmVzdGF0aW9ucyIgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNjAwIG1iLTQiIGRhdGEtdGVzdGlkPXtgc2VydmljZS1kZXNjcmlwdGlvbi0ke2luZGV4fWB9PgogICAgICAgICAgICAgICAge3NlcnZpY2UuZGVzY3JpcHRpb259CiAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LWdyYXktNTAwIHRleHQtc20gZmxleCBpdGVtcy1jZW50ZXIiIGRhdGEtdGVzdGlkPXtgc2VydmljZS1kdXJhdGlvbi0ke2luZGV4fWB9PgogICAgICAgICAgICAgICAgPENsb2NrIGNsYXNzTmFtZT0iaC00IHctNCBtci0xIHRleHQtYmx1ZS03MDAiIC8+CiAgICAgICAgICAgICAgICB7c2VydmljZS5kdXJhdGlvbn0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idGV4dC1ibHVlLTcwMCBmb250LWJvbGQgdGV4dC1sZyIgZGF0YS10ZXN0aWQ9e2BzZXJ2aWNlLXByaWNlLSR7aW5kZXh9YH0+CiAgICAgICAgICAgICAgICB7c2VydmljZS5wcmljZX0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICkpCiAgICAgICAgICApfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvc2VjdGlvbj4KICApOwp9Cg==">
+Unknown directive
+109
+<!-- Critical CSS Inline -->
+Syntax not understood
+110
+<style>
+Syntax not understood
+111
+/* Critical CSS Variables */
+Syntax not understood
+112
+:root {
+Unknown directive
+113
+--background: hsl(0 0% 100%);
+Unknown directive
+114
+--foreground: hsl(210 25% 7.8431%);
+Unknown directive
+115
+--primary: hsl(214 75% 56%);
+Unknown directive
+116
+--primary-foreground: hsl(0 0% 100%);
+Unknown directive
+117
+--muted: hsl(240 1.9608% 90%);
+Unknown directive
+118
+--border: hsl(201.4286 30.4348% 90.9804%);
+Unknown directive
+119
+--primary-blue: hsl(214 75% 56%);
+Unknown directive
+120
+--light-blue: hsl(214 85% 96%);
+Unknown directive
+121
+--dark-gray: hsl(0 0% 20%);
+Unknown directive
+122
+--light-gray: hsl(210 17% 97%);
+Unknown directive
+123
+}
+Syntax not understood
+125
+* {
+Syntax not understood
+126
+box-sizing: border-box;
+Unknown directive
+127
+border-color: var(--border);
+Unknown directive
+128
+}
+Syntax not understood
+130
+body {
+Syntax not understood
+131
+margin: 0;
+Unknown directive
+132
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+Unknown directive
+133
+line-height: 1.5;
+Unknown directive
+134
+background-color: var(--background);
+Unknown directive
+135
+color: var(--foreground);
+Unknown directive
+136
+-webkit-font-smoothing: antialiased;
+Unknown directive
+137
+-moz-osx-font-smoothing: grayscale;
+Unknown directive
+138
+}
+Syntax not understood
+140
+.font-inter { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+Unknown directive
+142
+/* Critical above-the-fold styles */
+Syntax not understood
+143
+.bg-white { background-color: #ffffff; }
+Unknown directive
+144
+.bg-gray-50 { background-color: #f9fafb; }
+Unknown directive
+145
+.bg-primary-blue { background-color: hsl(214 75% 56%); }
+Unknown directive
+146
+.bg-blue-700 { background-color: #1d4ed8; }
+Unknown directive
+147
+.hover\:bg-blue-800:hover { background-color: #1e40af; }
+Unknown directive
+148
+.text-white { color: #ffffff; }
+Unknown directive
+149
+.text-primary-blue { color: hsl(214 75% 56%); }
+Unknown directive
+150
+.text-dark-gray { color: hsl(0 0% 20%); }
+Unknown directive
+151
+.text-gray-600 { color: #4b5563; }
+Unknown directive
+152
+.shadow-sm { box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); }
+Unknown directive
+153
+.shadow-lg { box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05); }
+Unknown directive
+154
+.sticky { position: sticky; }
+Unknown directive
+155
+.relative { position: relative; }
+Unknown directive
+156
+.top-0 { top: 0px; }
+Unknown directive
+157
+.z-50 { z-index: 50; }
+Unknown directive
+158
+.max-w-7xl { max-width: 80rem; }
+Unknown directive
+159
+.max-w-md { max-width: 28rem; }
+Unknown directive
+160
+.mx-auto { margin-left: auto; margin-right: auto; }
+Unknown directive
+161
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+Unknown directive
+162
+.px-8 { padding-left: 2rem; padding-right: 2rem; }
+Unknown directive
+163
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+Unknown directive
+164
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+Unknown directive
+165
+.pt-2 { padding-top: 0.5rem; }
+Unknown directive
+166
+.pb-4 { padding-bottom: 1rem; }
+Unknown directive
+167
+.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+Unknown directive
+168
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+Unknown directive
+169
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+Unknown directive
+170
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+Unknown directive
+171
+.font-bold { font-weight: 700; }
+Unknown directive
+172
+.font-medium { font-weight: 500; }
+Unknown directive
+173
+.mb-6 { margin-bottom: 1.5rem; }
+Unknown directive
+174
+.mb-8 { margin-bottom: 2rem; }
+Unknown directive
+175
+.leading-relaxed { line-height: 1.625; }
+Unknown directive
+176
+.grid { display: grid; }
+Unknown directive
+177
+.gap-12 { gap: 3rem; }
+Unknown directive
+178
+.gap-4 { gap: 1rem; }
+Unknown directive
+179
+.items-start { align-items: flex-start; }
+Unknown directive
+180
+.items-center { align-items: center; }
+Unknown directive
+181
+.justify-center { justify-content: center; }
+Unknown directive
+182
+.flex { display: flex; }
+Unknown directive
+183
+.flex-col { flex-direction: column; }
+Unknown directive
+184
+.w-full { width: 100%; }
+Unknown directive
+185
+.w-auto { width: auto; }
+Unknown directive
+186
+.h-auto { height: auto; }
+Unknown directive
+187
+.h-3 { height: 0.75rem; }
+Unknown directive
+188
+.mr-2 { margin-right: 0.5rem; }
+Unknown directive
+189
+.rounded-lg { border-radius: 0.5rem; }
+Unknown directive
+190
+.rounded-xl { border-radius: 0.75rem; }
+Unknown directive
+191
+.border { border-width: 1px; }
+Unknown directive
+192
+.border-primary-blue { border-color: hsl(214 75% 56%); }
+Unknown directive
+193
+.object-cover { -o-object-fit: cover; object-fit: cover; }
+Unknown directive
+194
+.transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+Unknown directive
+195
+.hover\:bg-blue-600:hover { background-color: #2563eb; }
+Unknown directive
+196
+.hover\:bg-light-blue:hover { background-color: hsl(214 85% 96%); }
+Unknown directive
+198
+/* Additional critical styles to reduce external CSS dependency */
+Syntax not understood
+199
+.bg-blue-100 { background-color: #dbeafe; }
+Unknown directive
+200
+.bg-orange-100 { background-color: #fed7aa; }
+Unknown directive
+201
+.bg-green-100 { background-color: #dcfce7; }
+Unknown directive
+202
+.bg-purple-100 { background-color: #f3e8ff; }
+Unknown directive
+203
+.bg-green-500 { background-color: #22c55e; }
+Unknown directive
+204
+.bg-orange-500 { background-color: #f97316; }
+Unknown directive
+205
+.bg-purple-500 { background-color: #a855f7; }
+Unknown directive
+206
+.text-center { text-align: center; }
+Unknown directive
+207
+.italic { font-style: italic; }
+Unknown directive
+208
+.text-justify { text-align: justify; }
+Unknown directive
+209
+.font-semibold { font-weight: 600; }
+Unknown directive
+210
+.gap-8 { gap: 2rem; }
+Unknown directive
+211
+.p-6 { padding: 1.5rem; }
+Unknown directive
+212
+.mb-4 { margin-bottom: 1rem; }
+Unknown directive
+213
+.mr-4 { margin-right: 1rem; }
+Unknown directive
+214
+.mt-6 { margin-top: 1.5rem; }
+Unknown directive
+215
+.w-12 { width: 3rem; }
+Unknown directive
+216
+.h-12 { height: 3rem; }
+Unknown directive
+217
+.w-8 { width: 2rem; }
+Unknown directive
+218
+.h-8 { height: 2rem; }
+Unknown directive
+219
+.h-4 { height: 1rem; }
+Unknown directive
+220
+.w-4 { width: 1rem; }
+Unknown directive
+221
+.border-gray-100 { border-color: #f3f4f6; }
+Unknown directive
+222
+.rounded-full { border-radius: 9999px; }
+Unknown directive
+223
+.flex-shrink-0 { flex-shrink: 0; }
+Unknown directive
+224
+.fill-current { fill: currentColor; }
+Unknown directive
+226
+@media (min-width: 768px) {
+Unknown directive
+227
+.md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+Unknown directive
+228
+}
+Syntax not understood
+230
+@media (min-width: 1024px) {
+Unknown directive
+231
+.lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+Unknown directive
+232
+.lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+Unknown directive
+233
+.lg\:text-5xl { font-size: 3rem; line-height: 1; }
+Unknown directive
+234
+.lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+Unknown directive
+235
+.lg\:pt-3 { padding-top: 0.75rem; }
+Unknown directive
+236
+.lg\:pb-3 { padding-bottom: 0.75rem; }
+Unknown directive
+237
+.lg\:pb-6 { padding-bottom: 1.5rem; }
+Unknown directive
+238
+.lg\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+Unknown directive
+239
+}
+Syntax not understood
+241
+@media (min-width: 640px) {
+Unknown directive
+242
+.sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+Unknown directive
+243
+.sm\:flex-row { flex-direction: row; }
+Unknown directive
+244
+.sm\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+Unknown directive
+245
+.sm\:py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+Unknown directive
+246
+.sm\:text-base { font-size: 1rem; line-height: 1.5rem; }
+Unknown directive
+247
+.sm\:gap-8 { gap: 2rem; }
+Unknown directive
+248
+}
+Syntax not understood
+250
+/* Extended critical styles */
+Syntax not understood
+251
+.space-y-4 > * + * { margin-top: 1rem; }
+Unknown directive
+252
+.space-y-2 > * + * { margin-top: 0.5rem; }
+Unknown directive
+253
+.space-y-6 > * + * { margin-top: 1.5rem; }
+Unknown directive
+255
+/* Image optimization styles */
+Syntax not understood
+256
+img {
+Syntax not understood
+257
+width: auto;
+Unknown directive
+258
+height: auto;
+Unknown directive
+259
+max-width: 100%;
+Unknown directive
+260
+}
+Syntax not understood
+261
+.border-2 { border-width: 2px; }
+Unknown directive
+262
+.border-blue-700 { border-color: #1d4ed8; }
+Unknown directive
+263
+.border-l-4 { border-left-width: 4px; }
+Unknown directive
+264
+.border-l-gray-200 { border-left-color: #e5e7eb; }
+Unknown directive
+265
+.text-blue-700 { color: #1d4ed8; }
+Unknown directive
+266
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+Unknown directive
+267
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+Unknown directive
+268
+.hidden { display: none; }
+Unknown directive
+269
+.block { display: block; }
+Unknown directive
+270
+.inline-flex { display: inline-flex; }
+Unknown directive
+271
+.hover\:bg-blue-50:hover { background-color: #eff6ff; }
+Unknown directive
+272
+.hover\:text-white:hover { color: #ffffff; }
+Unknown directive
+273
+.hover\:text-gray-600:hover { color: #4b5563; }
+Unknown directive
+274
+.text-black { color: #000000; }
+Unknown directive
+275
+.bg-slate-100 { background-color: #f1f5f9; }
+Unknown directive
+276
+.text-gray-800 { color: #1f2937; }
+Unknown directive
+277
+.mb-2 { margin-bottom: 0.5rem; }
+Unknown directive
+278
+.mb-3 { margin-bottom: 0.75rem; }
+Unknown directive
+279
+.mb-12 { margin-bottom: 3rem; }
+Unknown directive
+280
+.mt-8 { margin-top: 2rem; }
+Unknown directive
+281
+.h-16 { height: 4rem; }
+Unknown directive
+282
+.h-5 { height: 1.25rem; }
+Unknown directive
+283
+.w-5 { width: 1.25rem; }
+Unknown directive
+284
+.h-6 { height: 1.5rem; }
+Unknown directive
+285
+.w-6 { width: 1.5rem; }
+Unknown directive
+286
+.justify-between { justify-content: space-between; }
+Unknown directive
+287
+.cursor-pointer { cursor: pointer; }
+Unknown directive
+288
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+Unknown directive
+289
+.bg-dark-gray { background-color: hsl(0 0% 20%); }
+Unknown directive
+290
+.text-gray-300 { color: #d1d5db; }
+Unknown directive
+291
+.text-gray-500 { color: #6b7280; }
+Unknown directive
+292
+.pb-12 { padding-bottom: 3rem; }
+Unknown directive
+293
+.bg-slate-50 { background-color: #f8fafc; }
+Unknown directive
+294
+.pb-8 { padding-bottom: 2rem; }
+Unknown directive
+295
+.animate-pulse { animation: pulse 1.2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+Unknown directive
+297
+/* Animation keyframes */
+Syntax not understood
+298
+@keyframes pulse {
+Syntax not understood
+299
+0%, 100% { opacity: 1; }
+Unknown directive
+300
+50% { opacity: 0.6; }
+Unknown directive
+301
+}
+Syntax not understood
+303
+/* Button styles */
+Syntax not understood
+304
+button, .btn {
+Syntax not understood
+305
+display: inline-flex;
+Unknown directive
+306
+align-items: center;
+Unknown directive
+307
+justify-content: center;
+Unknown directive
+308
+border: none;
+Unknown directive
+309
+cursor: pointer;
+Unknown directive
+310
+text-decoration: none;
+Unknown directive
+311
+font-family: inherit;
+Unknown directive
+312
+}
+Syntax not understood
+314
+/* Layout utilities */
+Syntax not understood
+315
+.min-h-screen { min-height: 100vh; }
+Unknown directive
+316
+.scroll-smooth { scroll-behavior: smooth; }
+Unknown directive
+318
+@media (min-width: 768px) {
+Unknown directive
+319
+.md\:flex { display: flex; }
+Unknown directive
+320
+.md\:hidden { display: none; }
+Unknown directive
+321
+.md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+Unknown directive
+322
+}
+Syntax not understood
+323
+</style>
+Syntax not understood
+325
+<!-- Completely deferred CSS loading -->
+Syntax not understood
+326
+<script>
+Syntax not understood
+327
+// Load CSS without blocking render
+Syntax not understood
+328
+function loadCSS(href) {
+Syntax not understood
+329
+var link = document.createElement('link');
+Syntax not understood
+330
+link.rel = 'stylesheet';
+Syntax not understood
+331
+link.href = href;
+Syntax not understood
+332
+document.head.appendChild(link);
+Syntax not understood
+333
+}
+Syntax not understood
+334
+// Load after DOM is ready
+Syntax not understood
+335
+if (document.readyState === 'loading') {
+Syntax not understood
+336
+document.addEventListener('DOMContentLoaded', function() {
+Syntax not understood
+337
+setTimeout(function() { loadCSS('/src/index.css'); }, 100);
+Syntax not understood
+338
+});
+Syntax not understood
+339
+} else {
+Syntax not understood
+340
+setTimeout(function() { loadCSS('/src/index.css'); }, 100);
+Syntax not understood
+341
+}
+Syntax not understood
+342
+</script>
+Syntax not understood
+343
+<noscript></noscript>
+Syntax not understood
+345
+<script type="module" crossorigin src="/assets/index-B1r7hCs_.js"></script>
+Syntax not understood
+346
+<link rel="stylesheet" crossorigin href="/assets/index-Bb12NLFS.css">
+Syntax not understood
+347
+</head>
+Syntax not understood
+348
+<body>
+Syntax not understood
+349
+<div id="root"></div>
+Syntax not understood
+350
+<!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+Syntax not understood
+351
+<script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js" async></script>
+Unknown directive
+352
+</body>
+Syntax not understood
+353
+</html>
+Syntax not understood

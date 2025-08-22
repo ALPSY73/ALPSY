@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Brain, Clock } from "lucide-react";
-import { Skeleton } from "@/components/ui/skeleton"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 
 export default function Services() {
@@ -35,14 +34,14 @@ export default function Services() {
           {!isLoaded ? (
             <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200">
               <div className="flex items-center mb-4">
-                <Skeleton className="w-12 h-12 rounded-lg mr-4" />
-                <Skeleton className="h-6 w-32" />
+                <div className="w-12 h-12 rounded-lg mr-4 bg-gray-200 animate-pulse" />
+                <div className="h-6 w-32 bg-gray-200 animate-pulse rounded" />
               </div>
-              <Skeleton className="h-4 w-full mb-2" />
-              <Skeleton className="h-4 w-full mb-2" />
-              <Skeleton className="h-4 w-3/4 mb-4" />
-              <Skeleton className="h-4 w-24 mb-2" />
-              <Skeleton className="h-6 w-20" />
+              <div className="h-4 w-full mb-2 bg-gray-200 animate-pulse rounded" />
+              <div className="h-4 w-full mb-2 bg-gray-200 animate-pulse rounded" />
+              <div className="h-4 w-3/4 mb-4 bg-gray-200 animate-pulse rounded" />
+              <div className="h-4 w-24 mb-2 bg-gray-200 animate-pulse rounded" />
+              <div className="h-6 w-20 bg-gray-200 animate-pulse rounded" />
             </div>
           ) : (
             services.map((service, index) => (

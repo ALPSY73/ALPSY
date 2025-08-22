@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import LazyImage from "@/components/LazyImage"
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
@@ -56,12 +54,12 @@ export default function Testimonials() {
             Array.from({ length: 4 }).map((_, index) => (
               <div key={index} className="p-6 rounded-xl shadow-lg border border-gray-100">
                 <div className="flex items-center mb-4">
-                  <Skeleton className="w-12 h-12 rounded-full mr-4" />
-                  <Skeleton className="h-6 w-20" />
+                  <div className="w-12 h-12 rounded-full mr-4 bg-gray-200 animate-pulse" />
+                  <div className="h-6 w-20 bg-gray-200 animate-pulse rounded" />
                 </div>
-                <Skeleton className="h-4 w-full mb-2" />
-                <Skeleton className="h-4 w-full mb-2" />
-                <Skeleton className="h-4 w-3/4" />
+                <div className="h-4 w-full mb-2 bg-gray-200 animate-pulse rounded" />
+                <div className="h-4 w-full mb-2 bg-gray-200 animate-pulse rounded" />
+                <div className="h-4 w-3/4 bg-gray-200 animate-pulse rounded" />
               </div>
             ))
           ) : (
@@ -95,13 +93,13 @@ export default function Testimonials() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button 
-              className="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium"
+            <button 
+              className="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center"
               data-testid="button-testimonials-prendre-rdv"
             >
               <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib psychologue Challes-les-Eaux" className="mr-2 h-4 w-auto" />
               Prendre RDV
-            </Button>
+            </button>
           </a>
         </div>
       </div>

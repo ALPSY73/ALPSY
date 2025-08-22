@@ -1,5 +1,4 @@
 import { Heart } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import LazyImage from "@/components/LazyImage";
 import heroPhoto from "@assets/Photo héro_1755678370552.webp";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
@@ -22,17 +21,16 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button 
-                  className="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium"
+                <button 
+                  className="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center"
                   data-testid="button-hero-prendre-rdv"
                 >
                   <img src={doctolibLogo} alt="Prendre rendez-vous en ligne psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
                   Prendre RDV
-                </Button>
+                </button>
               </a>
-              <Button 
-                variant="outline"
-                className="border-2 border-blue-700 text-blue-700 bg-white px-4 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium text-sm sm:text-base"
+              <button 
+                className="border-2 border-blue-700 text-blue-700 bg-white px-4 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium text-sm sm:text-base inline-flex items-center justify-center"
                 data-testid="button-hero-en-savoir-plus"
                 onClick={() => {
                   const element = document.querySelector("#text-apropos") as HTMLElement;
@@ -46,7 +44,7 @@ export default function Hero() {
                 }}
               >
                 En savoir plus
-              </Button>
+              </button>
             </div>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 mt-8">

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import alpsyLogo from "@assets/ALPSY_1755678334816.webp";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
@@ -59,21 +58,20 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button 
-                className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium"
+              <button 
+                className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center"
                 data-testid="button-prendre-rdv-desktop"
               >
                 <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib avec psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
                 Prendre RDV
-              </Button>
+              </button>
             </a>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button
-              variant="ghost"
-              className="text-black"
+            <button
+              className="text-black hover:text-gray-600 p-2 inline-flex items-center justify-center"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               data-testid="button-mobile-menu"
               aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
@@ -81,7 +79,7 @@ export default function Header() {
               aria-controls="mobile-menu"
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
+            </button>
           </div>
         </div>
 
@@ -105,13 +103,13 @@ export default function Header() {
                 rel="noopener noreferrer"
                 className="block"
               >
-                <Button 
-                  className="w-full text-left bg-blue-700 text-white px-3 py-2 rounded-lg hover:bg-blue-800 font-medium mt-2"
+                <button 
+                  className="w-full text-left bg-blue-700 text-white px-3 py-2 rounded-lg hover:bg-blue-800 font-medium mt-2 inline-flex items-center justify-start"
                   data-testid="button-prendre-rdv-mobile"
                 >
                   <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib avec psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
                   Prendre RDV
-                </Button>
+                </button>
               </a>
             </div>
           </div>

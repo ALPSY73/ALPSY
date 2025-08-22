@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Users, Moon, Star, Target, Sparkles, MessageCircle, Brain } from "lucide-react";
-import { Skeleton } from "@/components/ui/skeleton"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 
 export default function About() {
@@ -72,10 +71,10 @@ export default function About() {
                 Array.from({ length: 3 }).map((_, index) => (
                   <div key={index} className="bg-gray-50 p-4 rounded-lg border-l-4 border-l-gray-200">
                     <div className="flex items-center">
-                      <Skeleton className="w-8 h-8 rounded-full mr-4" />
+                      <div className="w-8 h-8 rounded-full mr-4 bg-gray-200 animate-pulse" />
                       <div className="flex-1">
-                        <Skeleton className="h-5 w-48 mb-1" />
-                        <Skeleton className="h-4 w-full" />
+                        <div className="h-5 w-48 mb-1 bg-gray-200 animate-pulse rounded" />
+                        <div className="h-4 w-full bg-gray-200 animate-pulse rounded" />
                       </div>
                     </div>
                   </div>
