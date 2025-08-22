@@ -89,8 +89,6 @@
     </script>
     
     <!-- Performance Optimizations -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://replit.com">
     <link rel="dns-prefetch" href="https://www.doctolib.fr">
     
@@ -217,21 +215,23 @@
       }
     </style>
     
-    <!-- Optimized CSS loading to reduce critical path -->
-    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" fetchpriority="high">
-    <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
+    <!-- Synchronous CSS loading for optimal critical path -->
+    <link rel="stylesheet" href="/src/index.css" fetchpriority="high">
     
-    <!-- Defer fonts loading to reduce critical chain -->
+    <!-- Fonts loading completely deferred -->
     <script>
-      // Load fonts after critical resources
-      window.addEventListener('load', function() {
-        var link = document.createElement('link');
-        link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap';
-        link.rel = 'stylesheet';
-        document.head.appendChild(link);
-      });
+      // Load fonts only after everything else is complete
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() {
+          setTimeout(function() {
+            var link = document.createElement('link');
+            link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap';
+            link.rel = 'stylesheet';
+            document.head.appendChild(link);
+          }, 2000);
+        });
+      }
     </script>
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
   </head>
   <body>
     <div id="root"></div>
