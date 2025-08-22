@@ -27,7 +27,7 @@ export default function Services() {
             >
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-light-blue rounded-lg flex items-center justify-center mr-4">
-                  <service.icon className="text-primary-blue text-xl h-6 w-6" />
+                  <service.icon className="text-blue-700 text-xl h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-dark-gray" data-testid={`service-title-${index}`}>
                   {service.title}
@@ -37,10 +37,10 @@ export default function Services() {
                 {service.description}
               </p>
               <div className="text-gray-500 text-sm flex items-center" data-testid={`service-duration-${index}`}>
-                <Clock className="h-4 w-4 mr-1 text-primary-blue" />
+                <Clock className="h-4 w-4 mr-1 text-blue-700" />
                 {service.duration}
               </div>
-              <div className="text-primary-blue font-bold" data-testid={`service-price-${index}`}>
+              <div className="text-blue-700 font-bold text-lg" data-testid={`service-price-${index}`}>
                 {service.price}
               </div>
             </div>

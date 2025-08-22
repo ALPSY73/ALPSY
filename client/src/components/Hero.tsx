@@ -31,7 +31,7 @@ export default function Hero() {
               </a>
               <Button 
                 variant="outline"
-                className="border border-primary-blue text-primary-blue px-4 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-light-blue transition-colors font-medium text-sm sm:text-base"
+                className="border-2 border-blue-700 text-blue-700 bg-white px-4 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-blue-50 transition-colors font-medium text-sm sm:text-base"
                 data-testid="button-hero-en-savoir-plus"
                 onClick={() => {
                   const element = document.querySelector("#text-apropos") as HTMLElement;
@@ -50,11 +50,11 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 mt-8">
               <div className="text-center" data-testid="stat-experience">
-                <div className="text-3xl font-bold text-primary-blue">12+</div>
+                <div className="text-3xl font-bold text-blue-700">12+</div>
                 <div className="text-sm text-gray-600">Années d'expérience</div>
               </div>
               <div className="text-center" data-testid="stat-patients">
-                <div className="text-3xl font-bold text-primary-blue">500+</div>
+                <div className="text-3xl font-bold text-blue-700">500+</div>
                 <div className="text-sm text-gray-600">Patients aidés</div>
               </div>
               <div className="bg-white p-3 rounded-lg shadow-sm border w-full sm:w-auto" data-testid="feature-nouveaux-patients">

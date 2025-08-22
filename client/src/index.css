@@ -40,7 +40,10 @@
   --font-mono: Menlo, monospace;
   --radius: 1.3rem;
   --primary-blue: hsl(214 75% 56%);
+  --primary-blue-darker: hsl(214 80% 40%);
+  --primary-blue-contrast: hsl(214 90% 30%);
   --light-blue: hsl(214 85% 96%);
+  --light-blue-contrast: hsl(214 60% 88%);
   --dark-gray: hsl(0 0% 20%);
   --light-gray: hsl(210 17% 97%);
 }
@@ -83,7 +86,10 @@
   --font-mono: Menlo, monospace;
   --radius: 1.3rem;
   --primary-blue: hsl(214 75% 56%);
+  --primary-blue-darker: hsl(214 80% 40%);
+  --primary-blue-contrast: hsl(214 90% 30%);
   --light-blue: hsl(214 85% 96%);
+  --light-blue-contrast: hsl(214 60% 88%);
   --dark-gray: hsl(0 0% 20%);
   --light-gray: hsl(210 17% 97%);
 }
