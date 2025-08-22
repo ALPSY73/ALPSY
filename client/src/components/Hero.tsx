@@ -72,8 +72,10 @@ export default function Hero() {
                 href="https://hoodspot.fr/autres-professionnels-de-sante/alpsy-psychologue-sebastien-stuhec-79779492200022/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-50"
-                style={{ fontSize: '1px', lineHeight: '1px', opacity: 0.01 }}
+                className="sr-only"
+                aria-hidden="true"
+                tabIndex={-1}
+                style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}
               >
                 ALPSY sur HoodSpot
               </a>
