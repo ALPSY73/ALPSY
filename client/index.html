@@ -97,10 +97,11 @@
     <!-- Preconnect to own domain for faster asset loading -->
     <link rel="preconnect" href="https://alpsy-test-sebastienstuhec.replit.app">
     
-    <!-- Critical Resources Preload (minimal) -->
+    <!-- Aggressive preload for critical JS path -->
     <link rel="preload" href="/assets/Photo%20h%C3%A9ro_1755678370552-DmvLH9xu.webp" as="image" fetchpriority="high">
     <link rel="modulepreload" href="/src/main.tsx" fetchpriority="high">
     <link rel="modulepreload" href="/src/App.tsx" fetchpriority="high">
+    <link rel="modulepreload" href="/src/components/Hero.tsx" fetchpriority="high">
     
     <!-- Critical CSS Inline -->
     <style>
@@ -216,11 +217,20 @@
       }
     </style>
     
-    <!-- Synchronous CSS loading for fastest critical path -->
-    <link rel="stylesheet" href="/src/index.css" fetchpriority="high">
+    <!-- Optimized CSS loading to reduce critical path -->
+    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" fetchpriority="high">
+    <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
     
-    <!-- Optimized Fonts Loading -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- Defer fonts loading to reduce critical chain -->
+    <script>
+      // Load fonts after critical resources
+      window.addEventListener('load', function() {
+        var link = document.createElement('link');
+        link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap';
+        link.rel = 'stylesheet';
+        document.head.appendChild(link);
+      });
+    </script>
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
   </head>
   <body>
