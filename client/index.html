@@ -91,8 +91,14 @@
     <link rel="dns-prefetch" href="https://replit.com">
     <link rel="dns-prefetch" href="https://www.doctolib.fr">
     
+    <!-- Critical resource hints for faster loading -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="prefetch" href="/src/components/Services.tsx">
+    <link rel="prefetch" href="/src/components/About.tsx">
+    
     <!-- Critical Resources Preload -->
     <link rel="preload" href="/assets/Photo%20h%C3%A9ro_1755678370552-DmvLH9xu.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="/src/index.css" as="style" fetchpriority="high">
     <link rel="modulepreload" href="/src/main.tsx" fetchpriority="high">
     <link rel="modulepreload" href="/src/App.tsx">
     <link rel="modulepreload" href="/src/components/Hero.tsx">
@@ -180,28 +186,39 @@
       }
     </style>
     
-    <!-- Non-critical CSS async loading with optimization -->
+    <!-- Synchronous CSS loading for better critical path -->
+    <link rel="stylesheet" href="/src/index.css" fetchpriority="high">
+    
+    <!-- Resource hints for generated assets -->
     <script>
-      // Load CSS asynchronously with high priority
-      function loadCSS(href, priority) {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = href;
-        link.media = 'print';
-        if (priority) link.fetchPriority = 'high';
-        link.onload = function() { this.media = 'all'; };
-        document.head.appendChild(link);
-      }
-      // Preload and prioritize critical path
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() {
-          loadCSS('/src/index.css', true);
+      // Optimize resource loading priority
+      (function() {
+        // Early DNS resolution for external resources
+        const prefetchDomains = ['fonts.googleapis.com', 'fonts.gstatic.com'];
+        prefetchDomains.forEach(function(domain) {
+          if (!document.querySelector('link[href*="' + domain + '"]')) {
+            var link = document.createElement('link');
+            link.rel = 'dns-prefetch';
+            link.href = '//' + domain;
+            document.head.appendChild(link);
+          }
         });
-      } else {
-        loadCSS('/src/index.css', true);
-      }
+        
+        // Priority hints for critical resources
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(function() {
+            // Preload additional components after critical path
+            const components = ['/src/components/Header.tsx', '/src/components/Footer.tsx'];
+            components.forEach(function(href) {
+              var link = document.createElement('link');
+              link.rel = 'modulepreload';
+              link.href = href;
+              document.head.appendChild(link);
+            });
+          });
+        }
+      })();
     </script>
-    <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
     
     <!-- Optimized Fonts Loading -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
