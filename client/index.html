@@ -95,7 +95,7 @@
     <!-- Preconnect to own domain for faster asset loading -->
     <link rel="preconnect" href="https://alpsy-test-sebastienstuhec.replit.app">
     
-    <!-- Aggressive preload for critical JS path -->
+    <!-- Optimized preload for hero image -->
     <link rel="preload" href="/assets/Photo%20h%C3%A9ro_1755678370552-DmvLH9xu.webp" as="image" fetchpriority="high">
     <link rel="modulepreload" href="/src/main.tsx" fetchpriority="high">
     <link rel="modulepreload" href="/src/App.tsx" fetchpriority="high">
@@ -251,6 +251,13 @@
       .space-y-4 > * + * { margin-top: 1rem; }
       .space-y-2 > * + * { margin-top: 0.5rem; }
       .space-y-6 > * + * { margin-top: 1.5rem; }
+      
+      /* Image optimization styles */
+      img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+      }
       .border-2 { border-width: 2px; }
       .border-blue-700 { border-color: #1d4ed8; }
       .border-l-4 { border-left-width: 4px; }

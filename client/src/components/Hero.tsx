@@ -86,7 +86,11 @@ export default function Hero() {
             <LazyImage 
               src={heroPhoto} 
               alt="Sébastien Stuhec - Psychologue clinicien à Challes-les-Eaux, cabinet ALPSY" 
-              className="rounded-xl shadow-lg w-full max-w-md h-auto object-cover"
+              className="rounded-xl shadow-lg w-full h-auto object-cover"
+              width={380}
+              height={172}
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 380px"
+              style={{aspectRatio: '380/172', maxWidth: '380px', height: 'auto'}}
               loading="eager"
               priority={true}
               data-testid="img-hero-photo"

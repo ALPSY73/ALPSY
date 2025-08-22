@@ -7,6 +7,10 @@ interface LazyImageProps {
   className?: string
   loading?: 'eager' | 'lazy'
   priority?: boolean
+  srcSet?: string
+  sizes?: string
+  width?: number
+  height?: number
   [key: string]: any
 }
 
@@ -16,6 +20,10 @@ export default function LazyImage({
   className = '', 
   loading = 'lazy', 
   priority = false,
+  srcSet,
+  sizes,
+  width,
+  height,
   ...props 
 }: LazyImageProps) {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -39,6 +47,10 @@ export default function LazyImage({
             <img
               src={src}
               alt={alt}
+              srcSet={srcSet}
+              sizes={sizes}
+              width={width}
+              height={height}
               className={`transition-opacity duration-300 ${
                 isLoaded ? 'opacity-100' : 'opacity-0'
               } ${className}`}
