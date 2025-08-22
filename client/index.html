@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     
-    <!-- Performance and caching hints -->
-    <meta http-equiv="Cache-Control" content="max-age=31536000, immutable" />
+    <!-- Basic performance hints -->
     <meta name="format-detection" content="telephone=no" />
-    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
     
     <!-- SEO Meta Tags -->
     <title>Sébastien Stuhec - Psychologue Clinicien à Challes-les-Eaux | ALPSY</title>
@@ -97,17 +94,9 @@
     <link rel="dns-prefetch" href="https://replit.com">
     <link rel="dns-prefetch" href="https://www.doctolib.fr">
     
-    <!-- Critical resource hints for faster loading -->
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-    <link rel="prefetch" href="/src/components/Services.tsx">
-    <link rel="prefetch" href="/src/components/About.tsx">
-    
-    <!-- Critical Resources Preload -->
+    <!-- Critical Resources Preload (minimal) -->
     <link rel="preload" href="/assets/Photo%20h%C3%A9ro_1755678370552-DmvLH9xu.webp" as="image" fetchpriority="high">
-    <link rel="preload" href="/src/index.css" as="style" fetchpriority="high">
     <link rel="modulepreload" href="/src/main.tsx" fetchpriority="high">
-    <link rel="modulepreload" href="/src/App.tsx">
-    <link rel="modulepreload" href="/src/components/Hero.tsx">
     
     <!-- Critical CSS Inline -->
     <style>
@@ -207,23 +196,9 @@
         font-family: inherit;
       }
       
-      /* Additional critical Tailwind base styles */
-      .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-      .container { width: 100%; }
-      .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; }
-      .space-y-6 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.5rem; }
-      .backdrop-blur-sm { backdrop-filter: blur(4px); }
+      /* Essential layout utilities only */
       .min-h-screen { min-height: 100vh; }
       .scroll-smooth { scroll-behavior: smooth; }
-      
-      /* Focus and interaction states */
-      .focus\:outline-none:focus { outline: 2px solid transparent; outline-offset: 2px; }
-      .focus\:ring-2:focus { box-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color); }
-      .active\:scale-95:active { transform: scale(0.95); }
-      
-      /* Performance optimizations */
-      .will-change-transform { will-change: transform; }
-      .transform { transform: translate(var(--tw-translate-x, 0), var(--tw-translate-y, 0)) rotate(var(--tw-rotate, 0)) skewX(var(--tw-skew-x, 0)) skewY(var(--tw-skew-y, 0)) scaleX(var(--tw-scale-x, 1)) scaleY(var(--tw-scale-y, 1)); }
       
       @media (min-width: 1024px) {
         .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -237,50 +212,8 @@
       }
     </style>
     
-    <!-- Optimized CSS loading with preload technique -->
-    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" fetchpriority="high">
-    <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
-    
-    <!-- Critical Path Optimization Script -->
-    <script>
-      // Optimize critical resource loading
-      (function() {
-        // Force CSS to apply immediately after preload
-        var cssLink = document.querySelector('link[href="/src/index.css"]');
-        if (cssLink && cssLink.rel === 'preload') {
-          cssLink.addEventListener('load', function() {
-            this.rel = 'stylesheet';
-          });
-        }
-        
-        // Aggressive resource prioritization
-        if ('requestIdleCallback' in window) {
-          requestIdleCallback(function() {
-            // Preload secondary components after critical path
-            const resources = [
-              '/src/components/Header.tsx',
-              '/src/components/Footer.tsx',
-              '/src/components/Services.tsx'
-            ];
-            resources.forEach(function(href) {
-              var link = document.createElement('link');
-              link.rel = 'modulepreload';
-              link.href = href;
-              document.head.appendChild(link);
-            });
-          });
-        }
-        
-        // Service Worker registration for caching (optional)
-        if ('serviceWorker' in navigator && location.protocol === 'https:') {
-          window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/sw.js').catch(function() {
-              // Silently fail if no service worker
-            });
-          });
-        }
-      })();
-    </script>
+    <!-- Synchronous CSS loading for fastest critical path -->
+    <link rel="stylesheet" href="/src/index.css" fetchpriority="high">
     
     <!-- Optimized Fonts Loading -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
