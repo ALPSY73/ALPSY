@@ -37,9 +37,11 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/sebastien-stuhec/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block"
+                className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+                aria-label="Profil LinkedIn de Sébastien Stuhec"
               >
-                <SiLinkedin className="text-gray-300 hover:text-white transition-colors cursor-pointer h-5 w-5" data-testid="footer-linkedin" />
+                <SiLinkedin className="h-5 w-5" data-testid="footer-linkedin" />
+                <span className="sr-only">LinkedIn</span>
               </a>
             </div>
           </div>

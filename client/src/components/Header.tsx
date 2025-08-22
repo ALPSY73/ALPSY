@@ -60,7 +60,7 @@ export default function Header() {
               rel="noopener noreferrer"
             >
               <Button 
-                className="bg-primary-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors font-medium"
+                className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium"
                 data-testid="button-prendre-rdv-desktop"
               >
                 <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib avec psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
@@ -106,7 +106,7 @@ export default function Header() {
                 className="block"
               >
                 <Button 
-                  className="w-full text-left bg-primary-blue text-white px-3 py-2 rounded-lg font-medium mt-2"
+                  className="w-full text-left bg-blue-700 text-white px-3 py-2 rounded-lg hover:bg-blue-800 font-medium mt-2"
                   data-testid="button-prendre-rdv-mobile"
                 >
                   <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib avec psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
