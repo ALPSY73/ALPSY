@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import LazyImage from "@/components/LazyImage";
 import heroPhoto from "@assets/Photo héro_1755678370552.webp";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
