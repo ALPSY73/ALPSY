@@ -1,8 +1,21 @@
-// Import optimized - removed unused icons
+import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton"
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
+import LazyImage from "@/components/LazyImage"
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
 export default function Testimonials() {
+  const [isLoaded, setIsLoaded] = useState(false)
+  const { targetRef, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
+  
+  useEffect(() => {
+    if (isIntersecting) {
+      const timer = setTimeout(() => setIsLoaded(true), 100)
+      return () => clearTimeout(timer)
+    }
+  }, [isIntersecting])
+  
   const testimonials = [
     {
       name: "Alain",
@@ -31,14 +44,28 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="temoignages" className="pt-2 pb-2 lg:pt-3 lg:pb-3">
+    <section id="temoignages" className="pt-2 pb-2 lg:pt-3 lg:pb-3" ref={targetRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold text-dark-gray mb-6 text-center" data-testid="title-testimonials">
           Ce que disent mes patients
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+          {!isLoaded ? (
+            // Skeleton loading
+            Array.from({ length: 4 }).map((_, index) => (
+              <div key={index} className="p-6 rounded-xl shadow-lg border border-gray-100">
+                <div className="flex items-center mb-4">
+                  <Skeleton className="w-12 h-12 rounded-full mr-4" />
+                  <Skeleton className="h-6 w-20" />
+                </div>
+                <Skeleton className="h-4 w-full mb-2" />
+                <Skeleton className="h-4 w-full mb-2" />
+                <Skeleton className="h-4 w-3/4" />
+              </div>
+            ))
+          ) : (
+            testimonials.map((testimonial, index) => (
             <div 
               key={index} 
               className={`${testimonial.name === "Alain" ? "bg-blue-100" : testimonial.name === "Leïla" ? "bg-orange-100" : testimonial.name === "Manon" ? "bg-green-100" : testimonial.name === "Maxime" ? "bg-purple-100" : "bg-white"} p-6 rounded-xl shadow-lg border border-gray-100`}
@@ -58,7 +85,8 @@ export default function Testimonials() {
                 "{testimonial.text}"
               </p>
             </div>
-          ))}
+            ))
+          )}
         </div>
         
         <div className="text-center mt-6">

@@ -1,6 +1,19 @@
+import { useState, useEffect } from 'react'
 import { Users, Moon, Star, Target, Sparkles, MessageCircle, Brain } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton"
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 
 export default function About() {
+  const [isLoaded, setIsLoaded] = useState(false)
+  const { targetRef, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
+  
+  useEffect(() => {
+    if (isIntersecting) {
+      const timer = setTimeout(() => setIsLoaded(true), 200)
+      return () => clearTimeout(timer)
+    }
+  }, [isIntersecting])
+  
   const approaches = [
     {
       bgColor: "bg-blue-50",
@@ -33,7 +46,7 @@ export default function About() {
   ];
 
   return (
-    <section id="apropos" className="pt-2 pb-2 lg:pt-3 lg:pb-3">
+    <section id="apropos" className="pt-2 pb-2 lg:pt-3 lg:pb-3" ref={targetRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold text-dark-gray mb-3" data-testid="title-about">
           À propos
@@ -55,9 +68,22 @@ export default function About() {
             </h3>
             
             <div className="space-y-4">
-              {approaches.map((approach, index) => {
-                const Icon = approach.icon;
-                return (
+              {!isLoaded ? (
+                Array.from({ length: 3 }).map((_, index) => (
+                  <div key={index} className="bg-gray-50 p-4 rounded-lg border-l-4 border-l-gray-200">
+                    <div className="flex items-center">
+                      <Skeleton className="w-8 h-8 rounded-full mr-4" />
+                      <div className="flex-1">
+                        <Skeleton className="h-5 w-48 mb-1" />
+                        <Skeleton className="h-4 w-full" />
+                      </div>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                approaches.map((approach, index) => {
+                  const Icon = approach.icon;
+                  return (
                   <div key={index} className={`${approach.bgColor} p-4 rounded-lg border-l-4 border-l-gray-200`} data-testid={`approach-${index}`}>
                     <div className="flex items-center">
                       <div className={`w-8 h-8 ${approach.circleColor} rounded-full mr-4 flex-shrink-0 flex items-center justify-center`}>
@@ -69,8 +95,9 @@ export default function About() {
                       </div>
                     </div>
                   </div>
-                );
-              })}
+                  );
+                })
+              )}
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LazyImage from "@/components/LazyImage";
 import heroPhoto from "@assets/Photo héro_1755678370552.webp";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
@@ -82,11 +83,12 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex justify-center">
-            <img 
+            <LazyImage 
               src={heroPhoto} 
               alt="Sébastien Stuhec - Psychologue clinicien à Challes-les-Eaux, cabinet ALPSY" 
               className="rounded-xl shadow-lg w-full max-w-md h-auto object-cover"
               loading="eager"
+              priority={true}
               data-testid="img-hero-photo"
             />
           </div>

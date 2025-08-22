@@ -1,6 +1,19 @@
+import { useState, useEffect } from 'react'
 import { Brain, Clock } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton"
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 
 export default function Services() {
+  const [isLoaded, setIsLoaded] = useState(false)
+  const { targetRef, isIntersecting } = useIntersectionObserver({ threshold: 0.1 })
+  
+  useEffect(() => {
+    if (isIntersecting) {
+      const timer = setTimeout(() => setIsLoaded(true), 150)
+      return () => clearTimeout(timer)
+    }
+  }, [isIntersecting])
+  
   const services = [
     {
       icon: Brain,
@@ -12,14 +25,27 @@ export default function Services() {
   ];
 
   return (
-    <section id="prestations" className="pt-2 pb-2 lg:pt-3 lg:pb-3">
+    <section id="prestations" className="pt-2 pb-2 lg:pt-3 lg:pb-3" ref={targetRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold text-dark-gray mb-3" data-testid="title-services">
           Prestations
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {!isLoaded ? (
+            <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200">
+              <div className="flex items-center mb-4">
+                <Skeleton className="w-12 h-12 rounded-lg mr-4" />
+                <Skeleton className="h-6 w-32" />
+              </div>
+              <Skeleton className="h-4 w-full mb-2" />
+              <Skeleton className="h-4 w-full mb-2" />
+              <Skeleton className="h-4 w-3/4 mb-4" />
+              <Skeleton className="h-4 w-24 mb-2" />
+              <Skeleton className="h-6 w-20" />
+            </div>
+          ) : (
+            services.map((service, index) => (
             <div 
               key={index} 
               className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200"
@@ -44,7 +70,8 @@ export default function Services() {
                 {service.price}
               </div>
             </div>
-          ))}
+            ))
+          )}
         </div>
       </div>
     </section>
