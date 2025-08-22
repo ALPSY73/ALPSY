@@ -97,21 +97,20 @@ export default function Header() {
                   {item.label}
                 </button>
               ))}
-              <div className="flex justify-center mt-2">
-                <a 
-                  href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <a 
+                href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-3 py-2 mt-2"
+              >
+                <button 
+                  className="w-full text-left bg-blue-700 text-white px-3 py-2 rounded-lg hover:bg-blue-800 font-medium inline-flex items-center justify-start"
+                  data-testid="button-prendre-rdv-mobile"
                 >
-                  <button 
-                    className="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 font-medium inline-flex items-center justify-center"
-                    data-testid="button-prendre-rdv-mobile"
-                  >
-                    <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib avec psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
-                    Prendre RDV
-                  </button>
-                </a>
-              </div>
+                  <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib avec psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
+                  Prendre RDV
+                </button>
+              </a>
             </div>
           </div>
         )}
