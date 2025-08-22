@@ -14,7 +14,7 @@ export default function Hero() {
               Sébastien Stuhec
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed" data-testid="text-hero-description">
-              Je suis un psychologue à l'écoute, empathique, je m'adapte à vos vulnérabilité et je parle, j'oriente, je conseille.
+              Je suis un psychologue à l'écoute, empathique, je m'adapte à vos vulnérabilités et je parle, j'oriente, je conseille.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-start">
               <a 
