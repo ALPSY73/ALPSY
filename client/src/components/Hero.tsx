@@ -67,19 +67,6 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="-mt-2">
-              <a 
-                href="https://hoodspot.fr/autres-professionnels-de-sante/alpsy-psychologue-sebastien-stuhec-79779492200022/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="sr-only"
-                aria-hidden="true"
-                tabIndex={-1}
-                style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}
-              >
-                ALPSY sur HoodSpot
-              </a>
-            </div>
           </div>
           <div className="flex justify-center">
             <img 
