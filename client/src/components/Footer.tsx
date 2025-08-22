@@ -26,11 +26,11 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-dark-gray text-white pb-12">
+    <footer className="bg-dark-gray text-white pb-12 pt-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div data-testid="footer-about">
-            <h3 className="font-semibold mb-4">Sébastien Stuhec</h3>
+            <h3 className="font-semibold mb-4 pt-2">Sébastien Stuhec</h3>
             <p className="text-gray-300 text-sm">Psychologue clinicien</p>
             <div className="mt-3">
               <a 
