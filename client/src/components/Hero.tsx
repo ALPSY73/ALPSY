@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <h1 id="sebastien-stuhec" className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent mb-6" data-testid="title-hero">
-              Sébastien Stuhec<span className="text-xl font-medium text-blue-700 block mt-1 tracking-wide">Psychologue Clinicien à Challes-les-Eaux</span>
+              Sébastien Stuhec<span className="text-xl font-medium text-blue-700 block mt-1 tracking-wide">Psychologue clinicien à Challes-les-Eaux</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed" data-testid="text-hero-description">
               Je suis un psychologue à l'écoute, empathique, je m'adapte à vos vulnérabilités et je parle, j'oriente, je conseille.
