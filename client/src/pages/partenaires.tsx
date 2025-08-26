@@ -10,7 +10,7 @@ export default function Partenaires() {
       <main className="min-h-screen bg-gray-50 pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Nos Partenaires</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">Partenaires</h1>
             <div className="mt-6">
               <Link href="/">
                 <button className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium">
