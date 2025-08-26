@@ -23,16 +23,18 @@ export default function Header() {
       return;
     }
 
-    // Sinon, comportement normal de scroll
+    // Test avec scrollIntoView
     const element = document.querySelector(href) as HTMLElement;
     if (element) {
-      const headerHeight = 80; // Hauteur du header sticky
-      const offset = href === "#informations-contact" ? headerHeight + 80 : headerHeight + 20;
-      const offsetTop = element.offsetTop - offset;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth"
+      element.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start',
+        inline: 'nearest' 
       });
+      // Ajustement pour le header sticky
+      setTimeout(() => {
+        window.scrollBy(0, -80);
+      }, 100);
     }
   };
 
