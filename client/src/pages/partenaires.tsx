@@ -89,19 +89,6 @@ export default function Partenaires() {
             </div>
           </div>
 
-          <div className="text-center mt-12">
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">Vous souhaitez devenir partenaire ?</h2>
-              <p className="text-gray-600 mb-6">
-                N'hésitez pas à nous contacter pour explorer les opportunités de partenariat.
-              </p>
-              <Link href="/#informations-contact">
-                <button className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium">
-                  Nous contacter
-                </button>
-              </Link>
-            </div>
-          </div>
         </div>
       </main>
       
