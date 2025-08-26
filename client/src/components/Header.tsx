@@ -27,7 +27,7 @@ export default function Header() {
     // Sinon, comportement normal de scroll
     const element = document.querySelector(href) as HTMLElement;
     if (element) {
-      const offset = href === "#informations-contact" ? 160 : 120;
+      const offset = href === "#informations-contact" ? 160 : 100;
       const offsetTop = element.offsetTop - offset;
       window.scrollTo({
         top: offsetTop,
