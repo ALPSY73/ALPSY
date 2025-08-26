@@ -1,5 +1,7 @@
 import { type User, type InsertUser } from "@shared/schema";
 import { randomUUID } from "crypto";
+import { initializeDatabase, DatabaseStorage } from "./db";
+import type { NeonDatabase } from 'drizzle-orm/neon-serverless';
 
 // modify the interface with any CRUD methods
 // you might need
@@ -35,4 +37,26 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new MemStorage();
+// Initialize storage - will use database if available, otherwise memory
+let storage: IStorage;
+
+export async function initializeStorage(): Promise<IStorage> {
+  const db = await initializeDatabase();
+  
+  if (db) {
+    console.log('✅ Using database storage');
+    storage = new DatabaseStorage(db);
+  } else {
+    console.log('⚠️ Using in-memory storage');
+    storage = new MemStorage();
+  }
+  
+  return storage;
+}
+
+export function getStorage(): IStorage {
+  if (!storage) {
+    throw new Error('Storage not initialized. Call initializeStorage() first.');
+  }
+  return storage;
+}

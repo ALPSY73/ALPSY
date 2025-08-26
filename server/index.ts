@@ -2,8 +2,15 @@ import express, { type Request, Response, NextFunction } from "express";
 import compression from "compression";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import { validateEnvironmentVariables, handleValidationResult } from "./env-validation";
+import { initializeStorage } from "./storage";
+import { createSessionMiddleware } from "./session";
 
 const app = express();
+
+// Validate environment variables at startup
+const envValidation = validateEnvironmentVariables();
+handleValidationResult(envValidation);
 
 // Enable gzip compression for all responses
 app.use(compression({
@@ -20,6 +27,9 @@ app.use(compression({
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// Setup session middleware
+app.use(createSessionMiddleware());
 
 app.use((req, res, next) => {
   const start = Date.now();
@@ -52,7 +62,12 @@ app.use((req, res, next) => {
 });
 
 (async () => {
-  const server = await registerRoutes(app);
+  try {
+    // Initialize storage before registering routes
+    await initializeStorage();
+    console.log('✅ Storage initialized successfully');
+    
+    const server = await registerRoutes(app);
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
@@ -83,4 +98,9 @@ app.use((req, res, next) => {
   }, () => {
     log(`serving on port ${port}`);
   });
+  
+  } catch (error) {
+    console.error('❌ Failed to start server:', error);
+    process.exit(1);
+  }
 })();
