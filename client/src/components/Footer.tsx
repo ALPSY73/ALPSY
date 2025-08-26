@@ -11,7 +11,7 @@ export default function Footer() {
 
   const navigation = [
     { href: "#sebastien-stuhec", label: "Accueil" },
-    { href: "#text-apropos", label: "À propos" },
+    { href: "#apropos", label: "À propos" },
     { href: "#prestations", label: "Prestations" },
     { href: "#temoignages", label: "Témoignages" },
     { href: "#informations-contact", label: "Contact" },
