@@ -69,7 +69,7 @@ export default function Header() {
               rel="noopener noreferrer"
             >
               <button 
-                className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center ml-2"
+                className="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center ml-2 whitespace-nowrap"
                 data-testid="button-prendre-rdv-desktop"
               >
                 <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib avec psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
