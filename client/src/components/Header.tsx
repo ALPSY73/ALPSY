@@ -52,12 +52,12 @@ export default function Header() {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-black hover:text-gray-600 font-medium transition-colors"
+                className="text-black hover:text-gray-600 font-medium transition-colors px-3 py-2 inline-flex items-center justify-center"
                 data-testid={`nav-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
               >
                 {item.label}
@@ -69,7 +69,7 @@ export default function Header() {
               rel="noopener noreferrer"
             >
               <button 
-                className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center"
+                className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center ml-2"
                 data-testid="button-prendre-rdv-desktop"
               >
                 <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib avec psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
@@ -101,20 +101,20 @@ export default function Header() {
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="block w-full text-left px-3 py-2 text-black font-medium"
+                  className="block w-full text-left px-3 py-3 text-black font-medium hover:bg-gray-50 transition-colors"
                   data-testid={`nav-mobile-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
                 >
                   {item.label}
                 </button>
               ))}
-              <div className="px-3 py-2 mt-2">
+              <div className="px-3 py-3 mt-2">
                 <a 
                   href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <button 
-                    className="bg-blue-700 text-white px-3 py-2 rounded-lg hover:bg-blue-800 font-medium inline-flex items-center justify-center"
+                    className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 font-medium inline-flex items-center justify-center w-full"
                     data-testid="button-prendre-rdv-mobile"
                   >
                     <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib avec psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
