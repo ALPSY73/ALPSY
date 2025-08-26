@@ -20,7 +20,6 @@ export default function Header() {
     // Si on n'est pas sur la page d'accueil, rediriger vers la page d'accueil avec l'ancre
     if (location !== "/") {
       window.location.href = "/" + href;
-      setIsMobileMenuOpen(false);
       return;
     }
 
@@ -34,7 +33,6 @@ export default function Header() {
         behavior: "smooth"
       });
     }
-    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -100,7 +98,10 @@ export default function Header() {
               {navItems.map((item) => (
                 <button
                   key={item.href}
-                  onClick={() => handleNavClick(item.href)}
+                  onClick={() => {
+                    handleNavClick(item.href);
+                    setIsMobileMenuOpen(false);
+                  }}
                   className="block w-full text-left px-3 py-3 text-black font-medium hover:bg-gray-50 transition-colors"
                   data-testid={`nav-mobile-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
                 >
