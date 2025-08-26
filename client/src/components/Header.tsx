@@ -26,7 +26,8 @@ export default function Header() {
     // Sinon, comportement normal de scroll
     const element = document.querySelector(href) as HTMLElement;
     if (element) {
-      const offset = href === "#informations-contact" ? 160 : 100;
+      const headerHeight = 80; // Hauteur du header sticky
+      const offset = href === "#informations-contact" ? headerHeight + 80 : headerHeight + 20;
       const offsetTop = element.offsetTop - offset;
       window.scrollTo({
         top: offsetTop,
