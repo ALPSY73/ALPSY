@@ -1,8 +1,10 @@
 import { SiLinkedin } from "react-icons/si";
 import { Phone, MapPin } from "lucide-react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 
 export default function Footer() {
+  const [location] = useLocation();
+  
   const prestations = [
     "Thérapie individuelle"
   ];
@@ -16,6 +18,13 @@ export default function Footer() {
   ];
 
   const handleNavClick = (href: string) => {
+    // Si on n'est pas sur la page d'accueil, rediriger vers la page d'accueil avec l'ancre
+    if (location !== "/") {
+      window.location.href = "/" + href;
+      return;
+    }
+
+    // Sinon, comportement normal de scroll
     const element = document.querySelector(href) as HTMLElement;
     if (element) {
       const offset = href === "#informations-contact" ? 160 : 120;
