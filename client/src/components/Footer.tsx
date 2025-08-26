@@ -1,5 +1,6 @@
 import { SiLinkedin } from "react-icons/si";
 import { Phone, MapPin } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Footer() {
   const prestations = [
@@ -10,7 +11,8 @@ export default function Footer() {
     { href: "#sebastien-stuhec", label: "Accueil" },
     { href: "#text-apropos", label: "À propos" },
     { href: "#prestations", label: "Prestations" },
-    { href: "#informations-contact", label: "Contact" }
+    { href: "#informations-contact", label: "Contact" },
+    { href: "/partenaires", label: "Partenaires", isRoute: true }
   ];
 
   const handleNavClick = (href: string) => {
@@ -67,13 +69,24 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300 text-sm">
               {navigation.map((item, index) => (
                 <li key={index}>
-                  <button 
-                    onClick={() => handleNavClick(item.href)}
-                    className="hover:text-white transition-colors"
-                    data-testid={`footer-nav-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
-                  >
-                    {item.label}
-                  </button>
+                  {item.isRoute ? (
+                    <Link href={item.href}>
+                      <button 
+                        className="hover:text-white transition-colors"
+                        data-testid={`footer-nav-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
+                      >
+                        {item.label}
+                      </button>
+                    </Link>
+                  ) : (
+                    <button 
+                      onClick={() => handleNavClick(item.href)}
+                      className="hover:text-white transition-colors"
+                      data-testid={`footer-nav-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
+                    >
+                      {item.label}
+                    </button>
+                  )}
                 </li>
               ))}
             </ul>
@@ -108,11 +121,6 @@ export default function Footer() {
         
         <div className="border-t border-gray-600 mt-4 pt-4 text-center text-gray-300 text-sm" data-testid="footer-copyright">
           <p>En cas d'urgence de santé mentale, appeler le 15 (SAMU) ou le 3114 (numéro national de prévention du suicide).</p>
-          <div className="mt-4">
-            <a href="https://www.alpcreaweb.fr/france/rhone-alpes/savoie/challes-les-eaux/commerce.html" title="Annuaire Commerce à CHALLES-LES-EAUX">
-              <img src="https://www.alpcreaweb.fr/images/logo-alpcreaweb.jpg" alt="Commerce CHALLES-LES-EAUX" className="mx-auto h-6 w-auto" />
-            </a>
-          </div>
         </div>
       </div>
     </footer>
