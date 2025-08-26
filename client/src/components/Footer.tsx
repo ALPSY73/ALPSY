@@ -12,7 +12,7 @@ export default function Footer() {
   const navigation = [
     { href: "#sebastien-stuhec", label: "Accueil" },
     { href: "#titre-apropos", label: "À propos" },
-    { href: "#prestations", label: "Prestations" },
+    { href: "#titre-prestations", label: "Prestations" },
     { href: "#ce-que-disent-mes-patients", label: "Témoignages" },
     { href: "#informations-contact", label: "Contact" },
     { href: "/partenaires", label: "Partenaires", isRoute: true }
@@ -64,7 +64,7 @@ export default function Footer() {
               {prestations.map((prestation, index) => (
                 <li key={index} data-testid={`footer-prestation-${index}`}>
                   <button 
-                    onClick={() => handleNavClick("#prestations")}
+                    onClick={() => handleNavClick("#titre-prestations")}
                     className="hover:text-white transition-colors text-left"
                   >
                     {prestation}

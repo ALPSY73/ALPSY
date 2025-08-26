@@ -26,7 +26,7 @@ export default function Services() {
   return (
     <section id="prestations" className="pt-2 pb-2 lg:pt-3 lg:pb-3" ref={targetRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl lg:text-4xl font-bold text-dark-gray mb-3" data-testid="title-services">
+        <h2 id="titre-prestations" className="text-3xl lg:text-4xl font-bold text-dark-gray mb-3" data-testid="title-services">
           Prestations
         </h2>
         
