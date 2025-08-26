@@ -12,8 +12,8 @@ export default function Header() {
     { href: "#sebastien-stuhec", label: "Accueil" },
     { href: "#text-apropos", label: "À propos" },
     { href: "#prestations", label: "Prestations" },
-    { href: "#temoignages", label: "Ce que disent mes patients" },
-    { href: "#informations-contact", label: "Informations de contact" },
+    { href: "#temoignages", label: "Témoignages" },
+    { href: "#informations-contact", label: "Contact" },
   ];
 
   const handleNavClick = (href: string) => {
