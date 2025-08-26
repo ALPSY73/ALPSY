@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useLocation } from "wouter";
 import alpsyLogo from "@assets/ALPSY_1755678334816.webp";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   const navItems = [
     { href: "#sebastien-stuhec", label: "Accueil" },
@@ -15,6 +17,14 @@ export default function Header() {
   ];
 
   const handleNavClick = (href: string) => {
+    // Si on n'est pas sur la page d'accueil, rediriger vers la page d'accueil avec l'ancre
+    if (location !== "/") {
+      window.location.href = "/" + href;
+      setIsMobileMenuOpen(false);
+      return;
+    }
+
+    // Sinon, comportement normal de scroll
     const element = document.querySelector(href) as HTMLElement;
     if (element) {
       const offset = href === "#informations-contact" ? 160 : 120;
