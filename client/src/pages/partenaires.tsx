@@ -22,67 +22,79 @@ export default function Partenaires() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Psys NosAvis */}
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Psys NosAvis</h3>
-              <p className="text-gray-600 mb-6">
-                Plateforme de référence pour trouver les meilleurs psychologues avec les avis clients authentiques.
-              </p>
-              <a 
-                href="https://psys.nosavis.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Visiter le site
-              </a>
+            <div className="bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between min-h-[280px]">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Psys NosAvis</h3>
+                <p className="text-gray-600 mb-6">
+                  Plateforme de référence pour trouver les meilleurs psychologues avec les avis clients authentiques.
+                </p>
+              </div>
+              <div className="mt-auto">
+                <a 
+                  href="https://psys.nosavis.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium w-full"
+                >
+                  Visiter le site
+                </a>
+              </div>
             </div>
 
             {/* AlpCréaWeb */}
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="mb-4">
-                <img 
-                  src="https://www.alpcreaweb.fr/images/logo-alpcreaweb.jpg" 
-                  alt="AlpCréaWeb" 
-                  className="mx-auto h-12 w-auto"
-                />
+            <div className="bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between min-h-[280px]">
+              <div>
+                <div className="mb-4">
+                  <img 
+                    src="https://www.alpcreaweb.fr/images/logo-alpcreaweb.jpg" 
+                    alt="AlpCréaWeb" 
+                    className="mx-auto h-12 w-auto"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">AlpCréaWeb</h3>
+                <p className="text-gray-600 mb-6">
+                  Annuaire commerce local à Challes-les-Eaux pour améliorer la visibilité des entreprises locales.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">AlpCréaWeb</h3>
-              <p className="text-gray-600 mb-6">
-                Annuaire commerce local à Challes-les-Eaux pour améliorer la visibilité des entreprises locales.
-              </p>
-              <a 
-                href="https://www.alpcreaweb.fr/france/rhone-alpes/savoie/challes-les-eaux/commerce.html" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                title="Annuaire Commerce à CHALLES-LES-EAUX"
-                className="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors"
-              >
-                Voir l'annuaire
-              </a>
+              <div className="mt-auto">
+                <a 
+                  href="https://www.alpcreaweb.fr/france/rhone-alpes/savoie/challes-les-eaux/commerce.html" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  title="Annuaire Commerce à CHALLES-LES-EAUX"
+                  className="inline-flex items-center justify-center bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-medium w-full"
+                >
+                  Voir l'annuaire
+                </a>
+              </div>
             </div>
 
             {/* Empreintes du Web */}
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="mb-4">
-                <img 
-                  src="https://www.empreintesduweb.com/kit_pub/bouton_1.png" 
-                  alt="Empreintes du Web" 
-                  className="mx-auto h-12 w-auto"
-                />
+            <div className="bg-white rounded-lg shadow-md p-6 text-center flex flex-col justify-between min-h-[280px]">
+              <div>
+                <div className="mb-4">
+                  <img 
+                    src="https://www.empreintesduweb.com/kit_pub/bouton_1.png" 
+                    alt="Empreintes du Web" 
+                    className="mx-auto h-12 w-auto"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Empreintes du Web</h3>
+                <p className="text-gray-600 mb-6">
+                  Annuaire professionnel pour améliorer votre référencement et votre visibilité sur le web.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Empreintes du Web</h3>
-              <p className="text-gray-600 mb-6">
-                Annuaire professionnel pour améliorer votre référencement et votre visibilité sur le web.
-              </p>
-              <a 
-                href="https://www.empreintesduweb.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                title="Notre annuaire pour améliorer votre référencement et votre visibilité"
-                className="inline-block bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors"
-              >
-                Découvrir l'annuaire
-              </a>
+              <div className="mt-auto">
+                <a 
+                  href="https://www.empreintesduweb.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  title="Notre annuaire pour améliorer votre référencement et votre visibilité"
+                  className="inline-flex items-center justify-center bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-medium w-full"
+                >
+                  Découvrir l'annuaire
+                </a>
+              </div>
             </div>
           </div>
 
