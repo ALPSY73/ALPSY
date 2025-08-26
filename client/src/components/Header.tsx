@@ -14,7 +14,6 @@ export default function Header() {
     { href: "#prestations", label: "Prestations" },
     { href: "#ce-que-disent-mes-patients", label: "Témoignages" },
     { href: "#informations-contact", label: "Contact" },
-    { href: "/partenaires", label: "Partenaires", isRoute: true }
   ];
 
   const handleNavClick = (href: string) => {
@@ -55,25 +54,14 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
-              item.isRoute ? (
-                <Link key={item.href} href={item.href}>
-                  <button
-                    className="text-black hover:text-gray-600 font-medium transition-colors px-3 py-2 inline-flex items-center justify-center"
-                    data-testid={`nav-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
-                  >
-                    {item.label}
-                  </button>
-                </Link>
-              ) : (
-                <button
-                  key={item.href}
-                  onClick={() => handleNavClick(item.href)}
-                  className="text-black hover:text-gray-600 font-medium transition-colors px-3 py-2 inline-flex items-center justify-center"
-                  data-testid={`nav-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
-                >
-                  {item.label}
-                </button>
-              )
+              <button
+                key={item.href}
+                onClick={() => handleNavClick(item.href)}
+                className="text-black hover:text-gray-600 font-medium transition-colors px-3 py-2 inline-flex items-center justify-center"
+                data-testid={`nav-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
+              >
+                {item.label}
+              </button>
             ))}
             <a 
               href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
