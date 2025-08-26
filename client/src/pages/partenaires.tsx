@@ -11,9 +11,6 @@ export default function Partenaires() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Nos Partenaires</h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Découvrez les partenaires qui nous accompagnent et nous font confiance dans notre mission d'accompagnement psychologique.
-            </p>
             <div className="mt-6">
               <Link href="/">
                 <button className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium">
