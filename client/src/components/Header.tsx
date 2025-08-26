@@ -12,7 +12,7 @@ export default function Header() {
     { href: "#sebastien-stuhec", label: "Accueil" },
     { href: "#apropos", label: "À propos" },
     { href: "#prestations", label: "Prestations" },
-    { href: "#temoignages", label: "Témoignages" },
+    { href: "#ce-que-disent-mes-patients", label: "Témoignages" },
     { href: "#informations-contact", label: "Contact" },
   ];
 
