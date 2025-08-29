@@ -79,7 +79,7 @@ export default function Services() {
                 <img 
                   src={therapyImage} 
                   alt="Salon de thérapie individuelle avec canapé vert et fauteuils"
-                  className="w-full max-w-md h-80 object-cover rounded-xl shadow-lg"
+                  className="w-full max-w-md h-96 object-cover object-top rounded-xl shadow-lg"
                   data-testid="img-therapy-room"
                 />
               </div>
