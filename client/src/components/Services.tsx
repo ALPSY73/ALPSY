@@ -31,7 +31,7 @@ export default function Services() {
           Prestations
         </h2>
         
-        <div className="grid lg:grid-cols-2 gap-8 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {!isLoaded ? (
             <>
               <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200">
