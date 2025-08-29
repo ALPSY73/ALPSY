@@ -75,11 +75,11 @@ export default function Services() {
                 </div>
               </div>
               ))}
-              <div className="flex justify-center lg:justify-end">
+              <div className="flex justify-center lg:justify-end px-4 sm:px-0">
                 <img 
                   src={therapyImage} 
                   alt="Salon de thérapie individuelle avec canapé vert et fauteuils"
-                  className="w-full max-w-md h-96 object-cover object-top rounded-xl shadow-lg"
+                  className="w-full max-w-sm sm:max-w-md h-80 sm:h-96 object-contain sm:object-cover object-center rounded-xl shadow-lg"
                   data-testid="img-therapy-room"
                 />
               </div>
