@@ -91,30 +91,28 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          
-          <div>
-            <div className="mt-1 flex justify-center" data-testid="doctolib-integration">
-              <a 
-                href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-6 -m-6 inline-block"
-              >
-                <button 
-                  className="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center"
-                  data-testid="button-contact-prendre-rdv"
+              
+              <div className="mt-6 flex justify-center" data-testid="doctolib-integration">
+                <a 
+                  href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-6 -m-6 inline-block"
                 >
-                  <img 
-                    src={doctolibLogo} 
-                    alt="Prendre rendez-vous Doctolib psychologue Challes-les-Eaux" 
-                    className="mr-2 h-3 w-auto"
-                    data-testid="logo-doctolib"
-                  />
-                  Prendre RDV
-                </button>
-              </a>
+                  <button 
+                    className="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center"
+                    data-testid="button-contact-prendre-rdv"
+                  >
+                    <img 
+                      src={doctolibLogo} 
+                      alt="Prendre rendez-vous Doctolib psychologue Challes-les-Eaux" 
+                      className="mr-2 h-3 w-auto"
+                      data-testid="logo-doctolib"
+                    />
+                    Prendre RDV
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
