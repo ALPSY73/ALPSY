@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Brain, Clock } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
+import therapyImage from "@assets/1_1756476836745.webp";
 
 export default function Services() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -30,46 +31,59 @@ export default function Services() {
           Prestations
         </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
           {!isLoaded ? (
-            <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-lg mr-4 bg-gray-200 animate-pulse" />
-                <div className="h-6 w-32 bg-gray-200 animate-pulse rounded" />
-              </div>
-              <div className="h-4 w-full mb-2 bg-gray-200 animate-pulse rounded" />
-              <div className="h-4 w-full mb-2 bg-gray-200 animate-pulse rounded" />
-              <div className="h-4 w-3/4 mb-4 bg-gray-200 animate-pulse rounded" />
-              <div className="h-4 w-24 mb-2 bg-gray-200 animate-pulse rounded" />
-              <div className="h-6 w-20 bg-gray-200 animate-pulse rounded" />
-            </div>
-          ) : (
-            services.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200"
-              data-testid={`service-card-${index}`}
-            >
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-light-blue rounded-lg flex items-center justify-center mr-4">
-                  <service.icon className="text-blue-700 text-xl h-6 w-6" />
+            <>
+              <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 rounded-lg mr-4 bg-gray-200 animate-pulse" />
+                  <div className="h-6 w-32 bg-gray-200 animate-pulse rounded" />
                 </div>
-                <h3 className="text-xl font-semibold text-dark-gray" data-testid={`service-title-${index}`}>
-                  {service.title}
-                </h3>
+                <div className="h-4 w-full mb-2 bg-gray-200 animate-pulse rounded" />
+                <div className="h-4 w-full mb-2 bg-gray-200 animate-pulse rounded" />
+                <div className="h-4 w-3/4 mb-4 bg-gray-200 animate-pulse rounded" />
+                <div className="h-4 w-24 mb-2 bg-gray-200 animate-pulse rounded" />
+                <div className="h-6 w-20 bg-gray-200 animate-pulse rounded" />
               </div>
-              <p id="text-prestations" className="text-gray-600 mb-4" data-testid={`service-description-${index}`}>
-                {service.description}
-              </p>
-              <div className="text-gray-500 text-sm flex items-center" data-testid={`service-duration-${index}`}>
-                <Clock className="h-4 w-4 mr-1 text-blue-700" />
-                {service.duration}
+              <div className="w-full h-80 bg-gray-200 animate-pulse rounded-xl" />
+            </>
+          ) : (
+            <>
+              {services.map((service, index) => (
+              <div 
+                key={index} 
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200"
+                data-testid={`service-card-${index}`}
+              >
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-light-blue rounded-lg flex items-center justify-center mr-4">
+                    <service.icon className="text-blue-700 text-xl h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-dark-gray" data-testid={`service-title-${index}`}>
+                    {service.title}
+                  </h3>
+                </div>
+                <p id="text-prestations" className="text-gray-600 mb-4" data-testid={`service-description-${index}`}>
+                  {service.description}
+                </p>
+                <div className="text-gray-500 text-sm flex items-center" data-testid={`service-duration-${index}`}>
+                  <Clock className="h-4 w-4 mr-1 text-blue-700" />
+                  {service.duration}
+                </div>
+                <div className="text-blue-700 font-bold text-lg" data-testid={`service-price-${index}`}>
+                  {service.price}
+                </div>
               </div>
-              <div className="text-blue-700 font-bold text-lg" data-testid={`service-price-${index}`}>
-                {service.price}
+              ))}
+              <div className="flex justify-center lg:justify-end">
+                <img 
+                  src={therapyImage} 
+                  alt="Salon de thérapie individuelle avec canapé vert et fauteuils"
+                  className="w-full max-w-md h-80 object-cover rounded-xl shadow-lg"
+                  data-testid="img-therapy-room"
+                />
               </div>
-            </div>
-            ))
+            </>
           )}
         </div>
       </div>
