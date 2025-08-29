@@ -31,10 +31,10 @@ export default function Services() {
           Prestations
         </h2>
         
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="flex flex-col lg:flex-row gap-8 items-center justify-center lg:justify-between max-w-6xl mx-auto">
           {!isLoaded ? (
             <>
-              <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200">
+              <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 flex-1 lg:max-w-md">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-lg mr-4 bg-gray-200 animate-pulse" />
                   <div className="h-6 w-32 bg-gray-200 animate-pulse rounded" />
@@ -45,14 +45,14 @@ export default function Services() {
                 <div className="h-4 w-24 mb-2 bg-gray-200 animate-pulse rounded" />
                 <div className="h-6 w-20 bg-gray-200 animate-pulse rounded" />
               </div>
-              <div className="w-full h-80 bg-gray-200 animate-pulse rounded-xl" />
+              <div className="w-full lg:w-auto h-80 lg:h-96 bg-gray-200 animate-pulse rounded-xl flex-1 lg:max-w-md" />
             </>
           ) : (
             <>
               {services.map((service, index) => (
               <div 
                 key={index} 
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200"
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200 flex-1 lg:max-w-md"
                 data-testid={`service-card-${index}`}
               >
                 <div className="flex items-center mb-4">
@@ -75,11 +75,11 @@ export default function Services() {
                 </div>
               </div>
               ))}
-              <div className="flex justify-center lg:justify-end px-4 sm:px-0">
+              <div className="flex justify-center px-4 sm:px-0 flex-1 lg:max-w-md">
                 <img 
                   src={therapyImage} 
                   alt="Salon de thérapie individuelle avec canapé vert et fauteuils"
-                  className="w-full max-w-sm sm:max-w-md h-80 sm:h-96 object-contain sm:object-cover object-center rounded-xl shadow-lg"
+                  className="w-full h-80 lg:h-96 object-contain lg:object-cover object-center rounded-xl shadow-lg"
                   data-testid="img-therapy-room"
                 />
               </div>
