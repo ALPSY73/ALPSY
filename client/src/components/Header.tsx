@@ -114,6 +114,7 @@ export default function Header() {
                   href="https://www.doctolib.fr/psychologue/challes-les-eaux/sebastien-stuhec?pid=practice-701704"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="p-6 -m-6 inline-block"
                 >
                   <button 
                     className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 font-medium inline-flex items-center justify-center w-full"
