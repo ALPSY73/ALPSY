@@ -25,8 +25,11 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname, "client"),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: path.resolve(import.meta.dirname, "dist"), // Build directement dans dist
     emptyOutDir: true,
+    rollupOptions: {
+      input: path.resolve(import.meta.dirname, "client/index.html"), // point d’entrée index.html
+    },
   },
   server: {
     fs: {
@@ -34,4 +37,5 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
+  publicDir: path.resolve(import.meta.dirname, "client/public"), // Fichiers statiques (robots.txt, sitemap.xml, _redirects)
 });
