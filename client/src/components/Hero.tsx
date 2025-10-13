@@ -22,7 +22,7 @@ export default function Hero() {
                 className="p-6 -m-6 inline-block"
               >
                 <button 
-                  className="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center"
+                  className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center text-sm"
                   data-testid="button-hero-prendre-rdv"
                 >
                   <img src={doctolibLogo} alt="Prendre rendez-vous en ligne psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
