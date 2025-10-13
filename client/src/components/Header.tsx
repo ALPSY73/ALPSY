@@ -68,10 +68,10 @@ export default function Header() {
               className="p-6 -m-6 inline-block"
             >
               <button 
-                className="bg-blue-700 text-white px-2 py-1 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center ml-2 text-xs"
+                className="bg-blue-700 text-white px-3 py-1.5 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center ml-2 text-sm"
                 data-testid="button-prendre-rdv-desktop"
               >
-                <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib avec psychologue Challes-les-Eaux" className="mr-1.5 h-2.5 w-auto" />
+                <img src={doctolibLogo} alt="Prendre rendez-vous Doctolib avec psychologue Challes-les-Eaux" className="mr-2 h-3 w-auto" />
                 Prendre RDV
               </button>
             </a>
