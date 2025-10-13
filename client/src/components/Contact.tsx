@@ -100,7 +100,7 @@ export default function Contact() {
                   className="p-6 -m-6 inline-block"
                 >
                   <button 
-                    className="bg-blue-700 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center"
+                    className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-flex items-center justify-center text-sm"
                     data-testid="button-contact-prendre-rdv"
                   >
                     <img 
