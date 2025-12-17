@@ -1,4 +1,3 @@
-import { Heart } from "lucide-react";
 import heroPhoto from "@assets/Photo héro_1755678370552.webp";
 import doctolibLogo from "@assets/Doctolib_1755679024101.webp";
 
@@ -55,17 +54,6 @@ export default function Hero() {
               <div className="text-center" data-testid="stat-patients">
                 <div className="text-3xl font-bold text-blue-700">500+</div>
                 <div className="text-sm text-gray-600">Patients aidés</div>
-              </div>
-              <div className="bg-white p-3 rounded-lg shadow-sm border w-full sm:w-auto" data-testid="feature-nouveaux-patients">
-                <div className="flex items-center">
-                  <div className="bg-green-500 rounded-full w-8 h-8 mr-3 flex items-center justify-center flex-shrink-0">
-                    <Heart className="text-white h-4 w-4 fill-current" />
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    <div className="font-medium">Accepte de nouveaux patients</div>
-                    <div>Rendez-vous disponibles</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
