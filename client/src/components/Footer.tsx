@@ -1,6 +1,6 @@
 import { SiLinkedin } from "react-icons/si";
 import { Phone, MapPin } from "lucide-react";
-import { Link, useLocation } from "wouter";
+import { useLocation } from "wouter";
 
 export default function Footer() {
   const [location] = useLocation();
@@ -15,7 +15,6 @@ export default function Footer() {
     { href: "#titre-prestations", label: "Prestations" },
     { href: "#ce-que-disent-mes-patients", label: "Témoignages" },
     { href: "#informations-contact", label: "Contact" },
-    { href: "/partenaires", label: "Partenaires", isRoute: true }
   ];
 
   const handleNavClick = (href: string) => {
@@ -79,24 +78,13 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300 text-sm">
               {navigation.map((item, index) => (
                 <li key={index}>
-                  {item.isRoute ? (
-                    <Link href={item.href}>
-                      <button 
-                        className="hover:text-white transition-colors"
-                        data-testid={`footer-nav-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
-                      >
-                        {item.label}
-                      </button>
-                    </Link>
-                  ) : (
-                    <button 
-                      onClick={() => handleNavClick(item.href)}
-                      className="hover:text-white transition-colors"
-                      data-testid={`footer-nav-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
-                    >
-                      {item.label}
-                    </button>
-                  )}
+                  <button 
+                    onClick={() => handleNavClick(item.href)}
+                    className="hover:text-white transition-colors"
+                    data-testid={`footer-nav-${item.label.toLowerCase().replace('à ', '').replace(' ', '-')}`}
+                  >
+                    {item.label}
+                  </button>
                 </li>
               ))}
             </ul>
