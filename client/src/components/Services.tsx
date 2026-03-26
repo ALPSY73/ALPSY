@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Brain, Clock } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
-import therapyImage from "@assets/IMG_20260320_155714_edit_294368939256090_1774560910569.webp";
+import therapyImage from "@assets/IMG_20260320_155714_edit_294368939256090_1774561190091.webp";
 
 export default function Services() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -79,7 +79,7 @@ export default function Services() {
                 <img 
                   src={therapyImage} 
                   alt="Salon de thérapie individuelle avec canapé vert et fauteuils"
-                  className="w-full h-80 sm:h-96 object-cover object-center rounded-lg"
+                  className="w-full h-auto object-cover object-center rounded-lg"
                   data-testid="img-therapy-room"
                 />
               </div>
