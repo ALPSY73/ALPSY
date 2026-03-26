@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Brain, Clock } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
-import therapyImage from "@assets/Sans titre 2_1756478405215.png";
+import therapyImage from "@assets/IMG_20260320_155714_edit_294368939256090_1774560910569.webp";
 
 export default function Services() {
   const [isLoaded, setIsLoaded] = useState(false)
