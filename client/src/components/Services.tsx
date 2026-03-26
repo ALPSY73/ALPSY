@@ -75,7 +75,7 @@ export default function Services() {
                 </div>
               </div>
               ))}
-              <div className="flex justify-center px-4 sm:px-0 flex-1 lg:max-w-md">
+              <div className="flex-1 lg:max-w-md">
                 <img 
                   src={therapyImage} 
                   alt="Salon de thérapie individuelle avec canapé vert et fauteuils"
